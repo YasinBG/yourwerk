@@ -7,7 +7,7 @@
         <div class="w-">
           <h2 class="text-2xl font-semibold mb-2 mt-2">title</h2>
         <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id...</p>
-        <button class="buton mt-4 w-1/2 mx-auto bg-green-500 text-white px-4  my-4 py-2 rounded-xl hover:bg-green-800 font-semibold">Detaylar</button>
+        <button class="buton mt-4 w-1/2 mx-auto bg-black text-white px-4  my-4 py-2 rounded-xl font-semibold">Detaylar</button>
         </div>
         
         
@@ -58,9 +58,11 @@
   
   <style scoped>
   .buton{
-    box-shadow: 4px 4px rgb(177, 154, 154);
+   
   transition: box-shadow 0.3s ease;
-
+  -webkit-box-shadow: -2.5px -1.5px 32px 32px #dddddd;
+-moz-box-shadow: -2.5px -1.5px 32px 32px #dddddd;
+box-shadow: -2.5px -1.5px 32px 32px #dddddd;
   }
   
   </style>
