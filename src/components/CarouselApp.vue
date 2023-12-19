@@ -274,10 +274,11 @@
         </span>
       </button>
       <button @click="scrollToNext">
-        <span class="scale-x-[-1]">
+        <span>
+          <!-- transform="scale(-1, 1)" -->
           <svg
             :style="{ fill: isAtEnd ? ' black' : '#f89844' }"
-            transform="scale(-1, 1)"
+            class="scale-x-[-1]"
             xmlns="http://www.w3.org/2000/svg"
             width="44"
             height="44"

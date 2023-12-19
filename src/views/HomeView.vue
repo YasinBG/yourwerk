@@ -268,7 +268,7 @@
     </div>
     <!-- SVG Background -->
     <div
-      class="background bgchange"
+      class="background bgchange relative"
       :class="{ 'background-hovered': isHovered }"
     >
       <svg
@@ -342,16 +342,15 @@
           </use>
         </g>
       </svg>
-    </div>
-    <!-- Shadow Hero Bottom -->
-    <div class="w-full relative">
+      <!-- Shadow Hero Bottom -->
+
       <div
-        class="absolute -bottom-14 h-32 w-full bg-gradient-to-b from-transparent to-mkPrimary z-30"
+        class="absolute bottom-0 lg:h-32 w-full bg-gradient-to-b from-transparent to-mkPrimary z-30"
       ></div>
     </div>
 
     <!-- Animation Section -->
-    <div v-motion="fadeUp" class="ScrollAnimation py-20 mt-20">
+    <div v-motion="fadeUp" class="ScrollAnimation py-20 mt-24 lg:mt-32">
       <h1 class="heading1 -skew-y-6">
         The Digital Infrastructure of the Future.
       </h1>
