@@ -350,7 +350,10 @@
     </div>
 
     <!-- Animation Section -->
-    <div v-motion="fadeUp" class="ScrollAnimation py-20 mt-24 lg:mt-32">
+    <div
+      v-motion="fadeUp"
+      class="ScrollAnimation py-20 mt-24 lg:mt-32 pointer-events-none"
+    >
       <h1 class="heading1 -skew-y-6">
         The Digital Infrastructure of the Future.
       </h1>
@@ -364,7 +367,7 @@
           <li
             v-for="(tag, index) in tags"
             :key="index"
-            class="p-8 bg-orange-400/30 rounded-lg shadow-md flex items-center"
+            class="p-8 bg-orange-400/30 rounded-lg shadow-md flex items-center font-semibold"
           >
             {{ tag }}
           </li>
@@ -404,10 +407,11 @@
         </div>
       </div>
     </div>
+    <!-- RoadMAp -->
     <div class="carousel flex flex-col justify-center max-w-6xl mx-auto py-4">
       <h3 class="heading1 uppercase" v-motion="fadeUp">Roadmap</h3>
       <p
-        class="text-center max-w-lg text-sm lg:text-base mx-auto"
+        class="text-center max-w-lg text-sm font-medium lg:text-base mx-auto"
         v-motion="fadeLeft"
       >
         Explore the limitless possibilities of blockchain technology. Unleash
@@ -420,6 +424,85 @@
       ></div>
       <CarouselApp v-motion="fadeLeft" />
     </div>
+    <!-- Features -->
+    <div class="features" v-motion="fadeLeft">
+      <div class="container mx-auto mt-16 px-6 md:px-0">
+        <h2 class="mb-6 heading1">Features</h2>
+        <p class="max-w-xl mx-auto text-center">
+          Blockchain is a decentralized ledger system that ensures reliability
+          and transparency. It maintains the immutability of data and supports
+          automated functionalities like smart contracts.
+        </p>
+      </div>
+    </div>
+    <!-- Features Tabs -->
+    <section id="tabs" v-motion="fadeUp">
+      <!-- Tabs/Panels Container -->
+      <div class="container relative mx-auto my-6 mb-32 mt-12 px-6">
+        <div class="bg-tabs"></div>
+        <!-- Tabs Flex Container -->
+        <div
+          class="flex flex-col justify-center w-full mx-auto mb-6 border-b border-b-gray-700 md:space-x-10 md:flex-row"
+        >
+          <!-- Tabs -->
+          <div
+            v-for="(tab, index) in tabs"
+            :key="index"
+            class="flex justify-center text-center cursor-pointer text-mkGray border-b md:border-b-0 hover:text-mkSecondary md:w-1/3 tab"
+            @click="activateTab(index)"
+          >
+            <div
+              class="py-5"
+              :class="{
+                'border-mkSecondary border-b-4 text-mkSecondary':
+                  activeTab === index,
+              }"
+            >
+              {{ tab.title }}
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab Panels -->
+        <div id="panels" class="container mx-auto">
+          <!-- Panels -->
+          <div
+            v-for="(panel, index) in tabs"
+            :key="index"
+            :class="[
+              'flex flex-col py-5 md:flex-row md:space-x-7 panel',
+              { hidden: activeTab !== index },
+            ]"
+          >
+            <!-- Panel Image -->
+            <div class="flex justify-center md:w-1/2">
+              <img
+                :src="require(`../assets/${panel.imgSrc}`)"
+                alt=""
+                class="relative z-10"
+              />
+            </div>
+            <!-- Panel Content -->
+            <div class="panel-content animate-fadeInSlide">
+              <h3
+                class="mt-12 text-3xl font-semibold text-center md:mt-0 md:text-left"
+              >
+                {{ panel.title }}
+              </h3>
+              <p class="max-w-md text-center text-mkGray md:text-left mt-4">
+                {{ panel.content }}
+              </p>
+              <p class="max-w-md text-center text-mkGray md:text-left mt-4">
+                {{ panel.content2 }}
+              </p>
+              <div class="mx-auto md:mx-0 mt-8 text-center md:text-start">
+                <button class="neon-button">More Info</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </div>
 </template>
 
@@ -512,6 +595,41 @@ export default {
       isHovered.value = false;
     };
 
+    //* tabs code
+
+    const activeTab = ref(0);
+
+    const tabs = ref([
+      {
+        title: "Decentralization for Enhanced Security",
+        content:
+          "Blockchain offers a decentralized structure, enhancing security by distributing control across the network and mitigating the risk of data manipulation.",
+        content2:
+          "Blockchain's consensus mechanisms, like proof-of-work or proof-of-stake, ensure agreement on the validity of transactions among network participants, fostering trust without a central authority.",
+        imgSrc: "illustration-features-tab-1.svg",
+      },
+      {
+        title: "Trustworthy and Tamper-Proof Records",
+        content:
+          "The immutability feature of blockchain ensures that once data is recorded, it remains unalterable, providing a trustworthy and tamper-proof ledger.",
+        content2:
+          "The transparency inherent in blockchain allows all participants to view the entire transaction history, promoting accountability and eliminating the need for blind trust in centralized systems.",
+        imgSrc: "illustration-features-tab-2.svg",
+      },
+      {
+        title: "Efficiency through Smart Contracts",
+        content:
+          "Smart contracts, a core feature of blockchain, facilitate self-executing agreements, automating processes and reducing the need for intermediaries, leading to increased operational efficiency.",
+        content2:
+          "Interoperability is a notable blockchain feature, facilitating seamless communication and data exchange between different blockchain networks, fostering a more connected and collaborative digital ecosystem.",
+        imgSrc: "illustration-features-tab-3.svg",
+      },
+    ]);
+
+    const activateTab = (index) => {
+      activeTab.value = index;
+    };
+
     return {
       headerBackgroundColor,
       fastScroller,
@@ -529,6 +647,9 @@ export default {
       handleHover,
       handleHoverOut,
       leftLine,
+      tabs,
+      activeTab,
+      activateTab,
     };
   },
   components: { AccordionApp, CarouselApp },

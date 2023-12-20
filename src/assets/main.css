@@ -2,10 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&family=Montserrat:wght@300;400;700&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&family=Montserrat:wght@300;400;700&display=swap"); */
+
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@300;400;500;600;700&display=swap");
 
 body {
-  font-family: "Montserrat", sans-serif;
+  /* font-family: "Montserrat", sans-serif; */
+  font-family: "Bai Jamjuree", sans-serif;
 }
 
 :root {
@@ -17,18 +20,21 @@ body {
 .heading1 {
   @apply text-5xl 
  font-semibold text-center mb-6 text-mkWhite;
-  font-family: "EB Garamond", serif;
+  /* font-family: "EB Garamond", serif; */
+  font-family: "Bai Jamjuree", sans-serif;
 }
 
 .heading2 {
   @apply text-4xl 
   font-semibold text-center mb-4 text-mkWhite;
-  font-family: "EB Garamond", serif;
+  /* font-family: "EB Garamond", serif; */
+  font-family: "Bai Jamjuree", sans-serif;
 }
 .heading3 {
   @apply text-3xl 
   font-semibold text-center mb-2 text-mkWhite;
-  font-family: "EB Garamond", serif;
+  /* font-family: "EB Garamond", serif; */
+  font-family: "Bai Jamjuree", sans-serif;
 }
 
 .gradientLine {
@@ -294,4 +300,13 @@ body {
 .neon-button:focus::after {
   opacity: 1;
   color: #eae9ea;
+}
+
+@media (min-width: 1000px) {
+  .bg-tabs {
+    width: 2000px;
+    height: 300px;
+    right: 60%;
+    @apply absolute rounded-r-full top-60 bg-mkSecondary;
+  }
 }

@@ -5,8 +5,9 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        header: ["EB Garamond", "serif"],
-        body: ["Montserrat", "sans-serif"],
+        // header: ["EB Garamond", "serif"],
+        // body: ["Montserrat", "sans-serif"],
+        body: ["Bai Jamjuree", "sans-serif"],
       },
       keyframes: {
         wiggle: {

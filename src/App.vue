@@ -3,6 +3,7 @@
     <router-link to="/">YOURWERK</router-link>
   </nav> -->
   <router-view />
+  <!-- <p class="text-[#4EC9B4]"></p> -->
 </template>
 
 <style>
@@ -13,7 +14,7 @@
   text-align: center;
   color: #2c3e50;
 }
-
+/*
 nav {
   padding: 30px;
 }

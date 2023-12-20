@@ -157,7 +157,7 @@
           <h2 class="text-xl font-bold mb-2">{{ item.title }}</h2>
           <h2 class="font-semibold mb-2">{{ item.subtitle }}</h2>
           <div class="space-y-2">
-            <div class="text-sm flex items-start justify-center">
+            <div class="text-sm flex items-start justify-center font-light">
               <span class="mr-1">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
