@@ -26,9 +26,9 @@
             :hovered="{ scale: 1.2 }"
             class="logo flex items-center text-3xl border-b-2 border-b-mkPurple cursor-pointer"
           >
-            Your<span class="italic font-serif dark:text-mkPurple text-mkGray"
-              >W</span
-            ><span class="font-bold">erk</span>
+          Multi<span class="italic font-serif dark:text-mkPurple text-mkGray"
+              >funct</span
+            ><span class="font-bold">ional</span>
           </span>
           <ul
             class="nav-list flex items-center space-x-12 font-semibold uppercase"
