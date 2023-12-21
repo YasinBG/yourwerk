@@ -565,12 +565,24 @@
               <div class="mx-auto md:mx-0 mt-8 text-center md:text-start">
                 <button class="neon-button">More Info</button>
               </div>
+              
             </div>
+            
           </div>
+          
         </div>
+        
       </div>
+      
+      
     </section>
+    <section>
+      <LayoutFooter></LayoutFooter>
+    </section>
+      
+    
   </div>
+  
 </template>
 
 <script>
@@ -583,8 +595,10 @@ import {
   leftLineAnimate,
 } from "@/directives/mkAnimate";
 import AccordionApp from "@/components/AccordionApp.vue";
-
+import LayoutFooter from "@/components/LayoutFooter.vue";
 export default {
+
+  
   setup() {
     const fadeUp = fadeUpAnimate;
     const fadeLeft = fadeLeftAnimate;
@@ -783,7 +797,7 @@ export default {
       isDarkMode,
     };
   },
-  components: { AccordionApp, CarouselApp },
+  components: { AccordionApp, CarouselApp,LayoutFooter },
 };
 </script>
 
