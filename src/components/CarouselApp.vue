@@ -1,12 +1,17 @@
 <template>
   <div class="my-20 flex flex-col items-center">
-    <div ref="scrollContainer" class="scroll-snap-container">
+    <div
+      ref="scrollContainer"
+      class="scroll-snap-container shadow-mkPurple/50 shadow-xl rounded-xl"
+    >
       <div
         v-for="(item, index) in items"
         :key="index"
-        class="scroll-snap-item dark:bg-mkDarkGray"
+        class="scroll-snap-item dark:bg-mkDarkGray !border-r-8 !border-r-mkPurple/40"
       >
-        <div class="p-4 max-w-xl flex flex-col text-start items-start shadow">
+        <div
+          class="p-4 max-w-xl flex flex-col text-start items-start rounded-xl"
+        >
           <span class="border-4 rounded-full p-3 bg-mkPurple mb-4">
             <!-- 1. card -->
             <svg
@@ -242,6 +247,7 @@
         </div>
       </div>
     </div>
+    <!-- Buttons -->
     <div
       class="button-container lg:my-6 my-2 flex items-center space-x-10 mx-auto"
     >

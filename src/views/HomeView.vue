@@ -79,7 +79,10 @@
               <svg
                 v-show="isDarkMode"
                 id="theme-toggle-light-icon"
-                class="w-5 h-5 fill-white"
+                class="w-5 h-5"
+                :class="{
+                  'fill-white': headerBackgroundColor === 'mkBg',
+                }"
                 fill="currentColor"
                 viewBox="0 0 20 20"
                 xmlns="http://www.w3.org/2000/svg"
@@ -447,7 +450,7 @@
             :key="index"
             :src="image"
             alt=""
-            class="rounded-full border-4 border-mkWhite"
+            class="rounded-full border-4 border-mkPurple/50"
           />
         </div>
       </div>
@@ -486,6 +489,7 @@
         class="gradientLine max-w-lg mx-auto !mt-10"
         v-motion="leftLine"
       ></div>
+
       <CarouselApp v-motion="fadeLeft" />
     </div>
     <!-- Features -->
@@ -709,24 +713,49 @@ export default {
 
     //* DarkMode - LightMode
 
+    // const toggleDarkMode = () => {
+    //   isDarkMode.value = !isDarkMode.value;
+    //   if (isDarkMode.value) {
+    //     document.documentElement.classList.add("dark");
+    //     localStorage.theme = "dark";
+    //   } else {
+    //     document.documentElement.classList.remove("dark");
+    //     localStorage.theme = "light";
+    //   }
+    // };
+
+    // onMounted(() => {
+    //   if (
+    //     localStorage.theme === "dark" ||
+    //     (!("theme" in localStorage) &&
+    //       window.matchMedia("(prefers-color-scheme: dark)").matches)
+    //   ) {
+    //     isDarkMode.value = true;
+    //   }
+    // });
+
     const toggleDarkMode = () => {
       isDarkMode.value = !isDarkMode.value;
       if (isDarkMode.value) {
         document.documentElement.classList.add("dark");
-        localStorage.theme = "dark";
+        localStorage.setItem("theme", "dark");
       } else {
         document.documentElement.classList.remove("dark");
-        localStorage.theme = "light";
+        localStorage.setItem("theme", "light");
       }
     };
 
     onMounted(() => {
-      if (
-        localStorage.theme === "dark" ||
-        (!("theme" in localStorage) &&
-          window.matchMedia("(prefers-color-scheme: dark)").matches)
-      ) {
-        isDarkMode.value = true;
+      const savedTheme = localStorage.getItem("theme");
+      if (savedTheme) {
+        isDarkMode.value = savedTheme === "dark";
+      } else {
+        isDarkMode.value = window.matchMedia(
+          "(prefers-color-scheme: dark)"
+        ).matches;
+      }
+      if (isDarkMode.value) {
+        document.documentElement.classList.add("dark");
       }
     });
 
