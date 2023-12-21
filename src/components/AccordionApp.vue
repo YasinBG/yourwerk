@@ -8,11 +8,7 @@
       <div class="faq-open cursor-pointer w-full" @click="toggleFaq(index)">
         <h3
           class="flex items-center justify-between py-2 px-2 font-body group-hover:duration-200 text-lg"
-          :class="
-            faq.open
-              ? ' text-[#eae9ea] border-none'
-              : 'border-b border-b-gray-800'
-          "
+          :class="faq.open ? '  border-none' : 'border-b border-b-gray-800'"
         >
           <span class="mr-4">
             {{ faq.question }}
@@ -29,7 +25,7 @@
               fill="none"
             >
               <path
-                :class="faq.open ? ' fill-mkSecondary' : 'fill-[#eae9ea]'"
+                :class="faq.open ? ' fill-mkPurple' : 'fill-mkGray'"
                 d="M11.0911 17.8819L0.679816 8.77207C0.177691 8.33271 0.177691 7.6204 0.679816 7.18109L1.89412 6.11857C2.39539 5.67996 3.2078 5.67912 3.71025 6.1167L12.0002 13.3364L20.2901 6.1167C20.7926 5.67912 21.605 5.67996 22.1062 6.11857L23.3205 7.18109C23.8227 7.62045 23.8227 8.33276 23.3205 8.77207L12.9094 17.8819C12.4072 18.3213 11.5932 18.3213 11.0911 17.8819Z"
                 fill="currentColor"
               />

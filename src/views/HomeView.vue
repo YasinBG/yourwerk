@@ -1,13 +1,13 @@
 <!-- Colors used: #f65215 (Orange), #f89844 (yellow) #eae9ea, #0d0a09, #8a8b8c,, #a6adb9(gray) -->
 <template>
   <div
-    class="bg-mkPrimary text-mkWhite selection:bg-mkSecondary selection:text-mkWhite"
+    class="dark:bg-mkPrimary text-mkPrimary dark:text-mkWhite selection:bg-mkPurple selection:text-mkWhite"
   >
     <header
       class="header sticky top-0 p-6 transition-all duration-500 ease-in-out z-50"
       :class="{
         'bg-mkDarkGray': headerBackgroundColor === 'dark',
-        'bg-light-blue-300': headerBackgroundColor === 'light',
+        'bg-mkPurple text-white': headerBackgroundColor === 'mkBg',
       }"
     >
       <!-- Desktop Navbar -->
@@ -24,9 +24,10 @@
             }"
             :variants="{ custom: { scale: 2 } }"
             :hovered="{ scale: 1.2 }"
-            class="logo flex items-center text-3xl border-b-2 border-b-mkSecondary cursor-pointer"
+            class="logo flex items-center text-3xl border-b-2 border-b-mkPurple cursor-pointer"
           >
-            Your<span class="italic font-serif text-mkSecondary">W</span
+            Your<span class="italic font-serif dark:text-mkPurple text-mkGray"
+              >W</span
             ><span class="font-bold">erk</span>
           </span>
           <ul
@@ -52,6 +53,44 @@
             >
               <a href="#">Contact</a>
             </li>
+            <!-- Dark/Light Mode Button -->
+            <button
+              @click="toggleDarkMode"
+              id="theme-toggle"
+              class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none rounded-lg text-sm p-2 5"
+            >
+              <!-- Dark SVG Icon -->
+              <svg
+                v-show="!isDarkMode"
+                id="theme-toggle-dark-icon"
+                class="w-5 h-5"
+                :class="{
+                  'fill-white': headerBackgroundColor === 'mkBg',
+                }"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"
+                ></path>
+              </svg>
+              <!-- Light SVG Icon -->
+              <svg
+                v-show="isDarkMode"
+                id="theme-toggle-light-icon"
+                class="w-5 h-5 fill-white"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </button>
           </ul>
         </div>
       </div>
@@ -69,9 +108,9 @@
             }"
             :variants="{ custom: { scale: 2 } }"
             :hovered="{ scale: 1.2 }"
-            class="logo flex items-center text-3xl border-b-2 border-b-mkSecondary cursor-pointer"
+            class="logo flex items-center text-3xl border-b-2 border-b-mkPurple cursor-pointer"
           >
-            Your<span class="italic font-serif text-mkSecondary">W</span
+            Your<span class="italic font-serif text-mkPurple">W</span
             ><span class="font-bold">erk</span>
           </span>
           <!-- hamburger menu -->
@@ -246,8 +285,18 @@
         </p>
 
         <a
+          v-if="isDarkMode"
           href="#"
           class="neon-button !mb-12 lg:mb-0"
+          :class="{ '!text-white': isDarkMode }"
+          @mouseover="handleHover"
+          @mouseout="handleHoverOut"
+          >Learn More</a
+        >
+        <a
+          v-else
+          href="#"
+          class="neon-button !bg-inherit !text-white !bg-mkPurple hover:!text-white hover:!border-mkPurple !mb-12 lg:mb-0"
           @mouseover="handleHover"
           @mouseout="handleHoverOut"
           >Learn More</a
@@ -258,15 +307,28 @@
           class="HeroImg shadow-xl bgchange"
           :class="{ 'animate-wiggle': isHovered }"
         >
-          <img
-            class="rounded-md shadow-md w-full h-full object-cover border-t-mkSecondary border-r-mkSecondary border-2 border-b-transparent border-l-transparent"
+          <!-- <img
+            v-if="isDarkMode"
+            class="rounded-md shadow-md w-full h-full object-cover border-t-mkPurple border-r-mkPurple border-2 border-b-transparent border-l-transparent"
             src="https://images.pexels.com/photos/1097946/pexels-photo-1097946.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            alt="image"
+          /> -->
+          <!-- <img
+            v-else
+            class="rounded-md shadow-md w-full h-full object-cover border-t-mkPurple border-r-mkPurple border-2 border-b-transparent border-l-transparent"
+            src="../assets/hero.png"
+            alt="image"
+          /> -->
+          <img
+            class="rounded-md w-full h-full object-cover border-t-mkPurple border-r-mkPurple border-2 border-b-transparent border-l-transparent"
+            src="../assets/hero.png"
             alt="image"
           />
         </div>
       </div>
     </div>
     <!-- SVG Background -->
+    <!-- style="stop-color: rgba(242, 144, 53, 0.6)" -->
     <div
       class="background bgchange relative"
       :class="{ 'background-hovered': isHovered }"
@@ -286,7 +348,7 @@
           <linearGradient id="bg" x2="0%" y2="100%">
             <stop
               offset="0%"
-              style="stop-color: rgba(242, 144, 53, 0.6)"
+              style="stop-color: rgba(138, 43, 226, 0.6)"
             ></stop>
             <stop
               offset="100%"
@@ -345,7 +407,7 @@
       <!-- Shadow Hero Bottom -->
 
       <div
-        class="absolute bottom-0 lg:h-32 w-full bg-gradient-to-b from-transparent to-mkPrimary z-30"
+        class="absolute bottom-0 lg:h-32 w-full bg-gradient-to-b from-transparent to-white dark:to-mkPrimary z-30"
       ></div>
     </div>
 
@@ -354,7 +416,7 @@
       v-motion="fadeUp"
       class="ScrollAnimation py-20 mt-24 lg:mt-32 pointer-events-none"
     >
-      <h1 class="heading1 -skew-y-6">
+      <h1 class="heading1 -skew-y-6 dark:!text-white !text-mkPrimary">
         The Digital Infrastructure of the Future.
       </h1>
 
@@ -367,7 +429,7 @@
           <li
             v-for="(tag, index) in tags"
             :key="index"
-            class="p-8 bg-orange-400/30 rounded-lg shadow-md flex items-center font-semibold"
+            class="p-8 bg-mkPurple/30 rounded-lg shadow-md flex items-center font-semibold"
           >
             {{ tag }}
           </li>
@@ -393,7 +455,9 @@
     <!-- Animation Section -->
     <div class="mx-4 lg:mx-0">
       <h3 class="heading1" v-motion="fadeUp">
-        <span class="text-mkWhite"> Frequently Asked Questions </span>
+        <span class="dark:!text-white !text-mkPrimary">
+          Frequently Asked Questions
+        </span>
         <div
           class="gradientLine max-w-lg mx-auto !my-10"
           v-motion="leftLine"
@@ -448,14 +512,13 @@
           <div
             v-for="(tab, index) in tabs"
             :key="index"
-            class="flex justify-center text-center cursor-pointer text-mkGray border-b md:border-b-0 hover:text-mkSecondary md:w-1/3 tab"
+            class="flex justify-center text-center cursor-pointer text-mkGray border-b md:border-b-0 hover:text-mkPurple md:w-1/3 tab"
             @click="activateTab(index)"
           >
             <div
               class="py-5"
               :class="{
-                'border-mkSecondary border-b-4 text-mkSecondary':
-                  activeTab === index,
+                'border-mkPurple border-b-4 text-mkPurple': activeTab === index,
               }"
             >
               {{ tab.title }}
@@ -523,11 +586,25 @@ export default {
     const fadeLeft = fadeLeftAnimate;
     const fadeRight = fadeRightAnimate;
     const leftLine = leftLineAnimate;
+    const isDarkMode = ref(false);
+
     // Header
     const headerBackgroundColor = ref("light");
     const handleScroll = () => {
       const scrollY = window.scrollY;
-      headerBackgroundColor.value = scrollY > 50 ? "dark" : "light";
+      // headerBackgroundColor.value = scrollY > 50 ? "dark" : "light";
+      // if (isDarkMode.value) {
+      //   headerBackgroundColor.value = scrollY > 50 ? "dark" : "dark"; // Dark mod aktifse ve scroll yapıldıysa kırmızı
+      // } else {
+      //   headerBackgroundColor.value = scrollY > 50 ? "light" : "light";
+      // }
+      if (scrollY > 50) {
+        // Scroll yukarıdaysa ve dark mod aktifse, rengi mkBg yap
+        headerBackgroundColor.value = isDarkMode.value ? "dark" : "mkBg";
+      } else {
+        // Scroll en üstteyse, varsayılan rengi ayarla (örneğin "light")
+        headerBackgroundColor.value = "light";
+      }
     };
     onMounted(() => {
       window.addEventListener("scroll", handleScroll);
@@ -630,6 +707,29 @@ export default {
       activeTab.value = index;
     };
 
+    //* DarkMode - LightMode
+
+    const toggleDarkMode = () => {
+      isDarkMode.value = !isDarkMode.value;
+      if (isDarkMode.value) {
+        document.documentElement.classList.add("dark");
+        localStorage.theme = "dark";
+      } else {
+        document.documentElement.classList.remove("dark");
+        localStorage.theme = "light";
+      }
+    };
+
+    onMounted(() => {
+      if (
+        localStorage.theme === "dark" ||
+        (!("theme" in localStorage) &&
+          window.matchMedia("(prefers-color-scheme: dark)").matches)
+      ) {
+        isDarkMode.value = true;
+      }
+    });
+
     return {
       headerBackgroundColor,
       fastScroller,
@@ -650,6 +750,8 @@ export default {
       tabs,
       activeTab,
       activateTab,
+      toggleDarkMode,
+      isDarkMode,
     };
   },
   components: { AccordionApp, CarouselApp },
@@ -700,8 +802,9 @@ export default {
 
 .scroller-bg {
   background: url("../assets/mks.svg");
-  border: 4px solid rgba(251, 146, 60, 0.3);
+  border: 4px solid rgba(138, 43, 226, 0.3);
 }
+
 .background {
   position: absolute;
   /* z-index: -1; */

@@ -2,6 +2,7 @@
 const plugin = require("tailwindcss/plugin");
 module.exports = {
   content: ["./src/**/*.{html,js,vue}"],
+  darkMode: "class",
   theme: {
     extend: {
       fontFamily: {
@@ -44,6 +45,9 @@ module.exports = {
       colors: {
         mkPrimary: "#0d0a09",
         mkSecondary: "#f89844",
+
+        mkBlue: "#007fff",
+        mkPurple: "#8a2be2",
         mkGray: "#a6adb9",
         mkDarkGray: "#14161a",
         mkWhite: "#eae9ea",

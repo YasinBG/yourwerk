@@ -4,10 +4,10 @@
       <div
         v-for="(item, index) in items"
         :key="index"
-        class="scroll-snap-item bg-mkDarkGray"
+        class="scroll-snap-item dark:bg-mkDarkGray"
       >
-        <div class="p-4 max-w-xl flex flex-col text-start items-start">
-          <span class="border-4 rounded-full p-3 bg-mkSecondary mb-4">
+        <div class="p-4 max-w-xl flex flex-col text-start items-start shadow">
+          <span class="border-4 rounded-full p-3 bg-mkPurple mb-4">
             <!-- 1. card -->
             <svg
               v-show="index === 0"
@@ -168,14 +168,14 @@
                 >
                   <path
                     d="M17.4805 7.63525H22.7301V12.8849"
-                    stroke="#f89844"
+                    stroke="#8a2be2"
                     stroke-width="1.49989"
                     stroke-linecap="round"
                     stroke-linejoin="round"
                   />
                   <path
                     d="M3.2334 18.1345L8.92219 12.4457C9.06147 12.3064 9.22683 12.1959 9.40883 12.1205C9.59082 12.0451 9.78589 12.0063 9.98289 12.0063C10.1799 12.0063 10.375 12.0451 10.5569 12.1205C10.7389 12.1959 10.9043 12.3064 11.0436 12.4457L13.4218 14.824C13.5611 14.9633 13.7265 15.0738 13.9085 15.1492C14.0905 15.2246 14.2856 15.2634 14.4825 15.2634C14.6795 15.2634 14.8746 15.2246 15.0566 15.1492C15.2386 15.0738 15.404 14.9633 15.5432 14.824L21.982 8.38525"
-                    stroke="#f89844"
+                    stroke="#8a2be2"
                     stroke-width="1.49989"
                     stroke-linecap="round"
                     stroke-linejoin="round"
@@ -195,14 +195,14 @@
                 >
                   <path
                     d="M17.4805 7.63525H22.7301V12.8849"
-                    stroke="#f89844"
+                    stroke="#8a2be2"
                     stroke-width="1.49989"
                     stroke-linecap="round"
                     stroke-linejoin="round"
                   />
                   <path
                     d="M3.2334 18.1345L8.92219 12.4457C9.06147 12.3064 9.22683 12.1959 9.40883 12.1205C9.59082 12.0451 9.78589 12.0063 9.98289 12.0063C10.1799 12.0063 10.375 12.0451 10.5569 12.1205C10.7389 12.1959 10.9043 12.3064 11.0436 12.4457L13.4218 14.824C13.5611 14.9633 13.7265 15.0738 13.9085 15.1492C14.0905 15.2246 14.2856 15.2634 14.4825 15.2634C14.6795 15.2634 14.8746 15.2246 15.0566 15.1492C15.2386 15.0738 15.404 14.9633 15.5432 14.824L21.982 8.38525"
-                    stroke="#f89844"
+                    stroke="#8a2be2"
                     stroke-width="1.49989"
                     stroke-linecap="round"
                     stroke-linejoin="round"
@@ -222,14 +222,14 @@
                 >
                   <path
                     d="M17.4805 7.63525H22.7301V12.8849"
-                    stroke="#f89844"
+                    stroke="#8a2be2"
                     stroke-width="1.49989"
                     stroke-linecap="round"
                     stroke-linejoin="round"
                   />
                   <path
                     d="M3.2334 18.1345L8.92219 12.4457C9.06147 12.3064 9.22683 12.1959 9.40883 12.1205C9.59082 12.0451 9.78589 12.0063 9.98289 12.0063C10.1799 12.0063 10.375 12.0451 10.5569 12.1205C10.7389 12.1959 10.9043 12.3064 11.0436 12.4457L13.4218 14.824C13.5611 14.9633 13.7265 15.0738 13.9085 15.1492C14.0905 15.2246 14.2856 15.2634 14.4825 15.2634C14.6795 15.2634 14.8746 15.2246 15.0566 15.1492C15.2386 15.0738 15.404 14.9633 15.5432 14.824L21.982 8.38525"
-                    stroke="#f89844"
+                    stroke="#8a2be2"
                     stroke-width="1.49989"
                     stroke-linecap="round"
                     stroke-linejoin="round"
@@ -248,7 +248,7 @@
       <button @click="scrollToPrev">
         <span>
           <svg
-            :style="{ fill: isAtStart ? ' black' : '#f89844' }"
+            :style="{ fill: isAtStart ? ' grey' : '#8a2be2' }"
             xmlns="http://www.w3.org/2000/svg"
             width="44"
             height="44"
@@ -256,14 +256,14 @@
             fill="none"
           >
             <path
-              :style="{ stroke: isAtStart ? '#f89844' : 'white' }"
+              :style="{ stroke: isAtStart ? 'white' : 'white' }"
               d="M12 22C17.5229 22 22 17.5229 22 12C22 6.47715 17.5229 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5229 6.47715 22 12 22Z"
               stroke="white"
               stroke-width="2"
               stroke-linejoin="round"
             />
             <path
-              :style="{ stroke: isAtStart ? '#f89844' : 'white' }"
+              :style="{ stroke: isAtStart ? 'white' : 'white' }"
               d="M13.5 16.5L9 12L13.5 7.5"
               stroke="white"
               stroke-width="2"
@@ -277,7 +277,7 @@
         <span>
           <!-- transform="scale(-1, 1)" -->
           <svg
-            :style="{ fill: isAtEnd ? ' black' : '#f89844' }"
+            :style="{ fill: isAtEnd ? ' gray' : '#8a2be2' }"
             class="scale-x-[-1]"
             xmlns="http://www.w3.org/2000/svg"
             width="44"
@@ -286,14 +286,14 @@
             fill="none"
           >
             <path
-              :style="{ stroke: isAtEnd ? '#f89844' : 'white' }"
+              :style="{ stroke: isAtEnd ? 'white' : 'white' }"
               d="M12 22C17.5229 22 22 17.5229 22 12C22 6.47715 17.5229 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5229 6.47715 22 12 22Z"
               stroke="white"
               stroke-width="2"
               stroke-linejoin="round"
             />
             <path
-              :style="{ stroke: isAtEnd ? '#f89844' : 'white' }"
+              :style="{ stroke: isAtEnd ? 'white' : 'white' }"
               d="M13.5 16.5L9 12L13.5 7.5"
               stroke="white"
               stroke-width="2"
