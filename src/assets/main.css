@@ -13,7 +13,7 @@ body {
 
 :root {
   /* --glow-color: hsl(186 100% 69%); */
-  /* --glow-color: hsl(28, 93%, 62%); */
+  --glow-color: hsl(28, 93%, 62%);
   /* --clr-neon: hsl(28, 93%, 62%); */
   --clr-neon: hsl(271, 76%, 53%);
 }

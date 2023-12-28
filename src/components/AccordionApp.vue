@@ -1,5 +1,5 @@
 <template>
-  <div class="faq-wrapper my-10 mx-auto max-w-5xl w-full">
+  <div class="faq-wrapper mb-10 pb-10 mx-auto max-w-5xl w-full">
     <div
       class="faq-field border-opacity-40 rounded-xl my-1.5 w-full group"
       v-for="(faq, index) in faqList"
