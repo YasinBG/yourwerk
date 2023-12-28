@@ -1,5 +1,5 @@
 <template>
-  <div class="dark:bg-mkPrimary text-mkPrimary dark:text-mkWhite selection:bg-mkPurple selection:text-mkWhite border-t-2 flex">
+  <div class="dark:bg-mkPrimary text-mkPrimary dark:text-mkWhite selection:bg-mkPurple selection:text-mkWhite border-t-2 flex py-12 justify-center items-center">
 
     <span
             v-motion
@@ -27,6 +27,44 @@
             </li>
     </ul>
 
+    <div class="w-[500px] mx-auto">
+      <h3>DISCLAIMER</h3>
+      <p class="mt-2">Cryptocurrency may be unregulated in your jurisdiction. The value of cryptocurrencies may go down as well as up. Profits may be subject to capital gains or other taxes applicable in your jurisdiction.</p>
+    </div>
+
+  </div>
+
+  <div class=" flex my-12">
+    <div class="w-1/2">
+
+    </div>
+    <ul class="flex w-1/3 justify--center items-end   mx-auto ">
+      <li class="w-10 h-10 text-center items-center mx-4 ">
+        <a href="">
+          <img src="https://cdn.pixabay.com/photo/2016/08/01/21/00/icon-1562136_1280.png" alt="">
+        </a>
+      </li>
+      <li class="w-10 h-10 mx-4 text-center items-center">
+        <a href="">
+          <img src="https://cdn.pixabay.com/photo/2016/11/19/03/08/youtube-1837872_1280.png" alt="">
+        </a>
+      </li>
+      <li class="w-10 h-10 mx-4 text-center items-center">
+        <a href="">
+          <img src="https://cdn.pixabay.com/photo/2020/10/17/13/21/telegram-5662082_1280.png" alt="">
+        </a>
+      </li>
+      <li class="w-10 h-10 mx-4 text-center items-center">
+        <a href="">
+          <img src="https://logowik.com/content/uploads/images/twitter-x5265.logowik.com.webp" alt="">
+        </a>
+      </li>
+      <li class="w-20 h-20 mx-4">
+        <a href="">
+          <img src="" alt="">
+        </a>
+      </li>
+    </ul>
   </div>
 </template>
 
