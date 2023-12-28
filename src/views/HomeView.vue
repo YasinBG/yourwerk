@@ -1,4 +1,3 @@
-<!-- Colors used: #f65215 (Orange), #f89844 (yellow) #eae9ea, #0d0a09, #8a8b8c,, #a6adb9(gray) -->
 <template>
   <div
     class="dark:bg-mkPrimary text-mkPrimary dark:text-mkWhite selection:bg-mkPurple selection:text-mkWhite"
@@ -26,7 +25,7 @@
             :hovered="{ scale: 1.2 }"
             class="logo flex items-center text-3xl border-b-2 border-b-mkPurple cursor-pointer"
           >
-          Multi<span class="italic font-serif dark:text-mkPurple text-mkGray"
+            Multi<span class="italic font-serif dark:text-mkPurple text-mkGray"
               >funct</span
             ><span class="font-bold">ional</span>
           </span>
@@ -46,7 +45,7 @@
             <li
               class="hover:opacity-70 focus:opacity-70 transition-all duration-200 ease-linear cursor-pointer"
             >
-              <a href="#">About</a>
+              <a href="#" @click="navigateTo('section1')">About</a>
             </li>
             <li
               class="hover:opacity-70 focus:opacity-70 transition-all duration-200 ease-linear cursor-pointer"
@@ -565,24 +564,108 @@
               <div class="mx-auto md:mx-0 mt-8 text-center md:text-start">
                 <button class="neon-button">More Info</button>
               </div>
-              
             </div>
-            
           </div>
-          
         </div>
-        
       </div>
-      
-      
+    </section>
+    <!-- Feature Box Section -->
+    <section id="section1" class="pb-32">
+      <div
+        class="relative container flex flex-col items-start px-6 mx-auto md:flex-row md:space-x-7"
+      >
+        <!-- Horizontal Line -->
+        <div
+          v-motion="leftLine2"
+          class="hidden absolute top-24 w-10/12 left-16 h-3 bg-mkPurple md:block"
+        ></div>
+        <!-- Vertical Line -->
+        <div
+          v-motion="leftLine2"
+          class="absolute w-2 left-1/2 h-full -ml-1 bg-mkPurple md:hidden"
+        ></div>
+
+        <!-- Box 1 -->
+        <div
+          v-motion="fadeUp1"
+          class="relative flex flex-col p-6 space-y-6 bg-gray-100 dark:bg-mkDarkGray rounded-lg md:w-1/3"
+        >
+          <!-- Image Positioning -->
+          <div class="absolute -ml-10 left-1/2 -top-10 md:left-16">
+            <!-- Image Container For Background & Center -->
+            <div
+              class="flex items-center justify-center w-20 h-20 p-4 rounded-full dark:mkPurple bg-mkPurple"
+            >
+              <img src="../assets/icon-brand-recognition.svg" alt="" />
+            </div>
+          </div>
+          <h5
+            class="pt-6 text-xl font-bold text-center capitalize md:text-left"
+          >
+            Blockchain Branding
+          </h5>
+          <p class="text-center text-gray-400 md:text-left">
+            Elevate your brand recognition with every transaction. Unique
+            blockchain links add authenticity and trust to your content.
+          </p>
+        </div>
+
+        <!-- Box 2 -->
+        <div
+          v-motion="fadeUp2"
+          class="relative flex flex-col mt-24 p-6 space-y-6 bg-gray-100 dark:bg-mkDarkGray rounded-lg md:mt-8 md:w-1/3"
+        >
+          <!-- Image Positioning -->
+          <div class="absolute -ml-10 left-1/2 -top-10 md:left-16">
+            <!-- Image Container For Background & Center -->
+            <div
+              class="flex items-center justify-center w-20 h-20 p-4 rounded-full dark:mkPurple bg-mkPurple"
+            >
+              <img src="../assets/icon-detailed-records.svg" alt="" />
+            </div>
+          </div>
+          <h5
+            class="pt-6 text-xl font-bold text-center capitalize md:text-left"
+          >
+            Transparent Records
+          </h5>
+          <p class="text-center text-gray-400 md:text-left">
+            Access detailed records of every interaction on the blockchain.
+            Understanding how and when users engage with your content
+            facilitates informed decision-making.
+          </p>
+        </div>
+
+        <!-- Box 3 -->
+        <div
+          v-motion="fadeUp3"
+          class="relative flex flex-col mt-24 p-6 space-y-6 bg-gray-100 dark:bg-mkDarkGray rounded-lg md:mt-16 md:w-1/3"
+        >
+          <!-- Image Positioning -->
+          <div class="absolute -ml-10 left-1/2 -top-10 md:left-16">
+            <!-- Image Container For Background & Center -->
+            <div
+              class="flex items-center justify-center w-20 h-20 p-4 rounded-full dark:mkPurple bg-mkPurple"
+            >
+              <img src="../assets/icon-fully-customizable.svg" alt="" />
+            </div>
+          </div>
+          <h5
+            class="pt-6 text-xl font-bold text-center capitalize md:text-left"
+          >
+            Fully Customizable Blockchain
+          </h5>
+          <p class="text-center text-gray-400 md:text-left">
+            Enhance brand awareness and content discoverability through
+            customizable blockchain links, supercharging audience engagement.
+          </p>
+        </div>
+      </div>
     </section>
     <section>
       <LayoutFooter></LayoutFooter>
     </section>
-      
-    
   </div>
-  
 </template>
 
 <script>
@@ -593,29 +676,34 @@ import {
   fadeLeftAnimate,
   fadeRightAnimate,
   leftLineAnimate,
+  fadeUpAnimate1,
+  fadeUpAnimate2,
+  fadeUpAnimate3,
+  leftLineAnimate2,
 } from "@/directives/mkAnimate";
 import AccordionApp from "@/components/AccordionApp.vue";
 import LayoutFooter from "@/components/LayoutFooter.vue";
+import useDarkMode from "@/directives/useDarkMode.js";
+import { useNavigation } from "@/directives/useNavigation";
 export default {
-
-  
   setup() {
     const fadeUp = fadeUpAnimate;
     const fadeLeft = fadeLeftAnimate;
     const fadeRight = fadeRightAnimate;
     const leftLine = leftLineAnimate;
-    const isDarkMode = ref(false);
+    const fadeUp1 = fadeUpAnimate1;
+    const fadeUp2 = fadeUpAnimate2;
+    const fadeUp3 = fadeUpAnimate3;
+    const leftLine2 = leftLineAnimate2;
+
+    // navigasyon yönlendirme
+    const { navigateTo } = useNavigation();
 
     // Header
     const headerBackgroundColor = ref("light");
     const handleScroll = () => {
       const scrollY = window.scrollY;
-      // headerBackgroundColor.value = scrollY > 50 ? "dark" : "light";
-      // if (isDarkMode.value) {
-      //   headerBackgroundColor.value = scrollY > 50 ? "dark" : "dark"; // Dark mod aktifse ve scroll yapıldıysa kırmızı
-      // } else {
-      //   headerBackgroundColor.value = scrollY > 50 ? "light" : "light";
-      // }
+
       if (scrollY > 50) {
         // Scroll yukarıdaysa ve dark mod aktifse, rengi mkBg yap
         headerBackgroundColor.value = isDarkMode.value ? "dark" : "mkBg";
@@ -727,51 +815,7 @@ export default {
 
     //* DarkMode - LightMode
 
-    // const toggleDarkMode = () => {
-    //   isDarkMode.value = !isDarkMode.value;
-    //   if (isDarkMode.value) {
-    //     document.documentElement.classList.add("dark");
-    //     localStorage.theme = "dark";
-    //   } else {
-    //     document.documentElement.classList.remove("dark");
-    //     localStorage.theme = "light";
-    //   }
-    // };
-
-    // onMounted(() => {
-    //   if (
-    //     localStorage.theme === "dark" ||
-    //     (!("theme" in localStorage) &&
-    //       window.matchMedia("(prefers-color-scheme: dark)").matches)
-    //   ) {
-    //     isDarkMode.value = true;
-    //   }
-    // });
-
-    const toggleDarkMode = () => {
-      isDarkMode.value = !isDarkMode.value;
-      if (isDarkMode.value) {
-        document.documentElement.classList.add("dark");
-        localStorage.setItem("theme", "dark");
-      } else {
-        document.documentElement.classList.remove("dark");
-        localStorage.setItem("theme", "light");
-      }
-    };
-
-    onMounted(() => {
-      const savedTheme = localStorage.getItem("theme");
-      if (savedTheme) {
-        isDarkMode.value = savedTheme === "dark";
-      } else {
-        isDarkMode.value = window.matchMedia(
-          "(prefers-color-scheme: dark)"
-        ).matches;
-      }
-      if (isDarkMode.value) {
-        document.documentElement.classList.add("dark");
-      }
-    });
+    const { isDarkMode, toggleDarkMode } = useDarkMode();
 
     return {
       headerBackgroundColor,
@@ -795,9 +839,14 @@ export default {
       activateTab,
       toggleDarkMode,
       isDarkMode,
+      fadeUp1,
+      fadeUp2,
+      fadeUp3,
+      leftLine2,
+      navigateTo,
     };
   },
-  components: { AccordionApp, CarouselApp,LayoutFooter },
+  components: { AccordionApp, CarouselApp, LayoutFooter },
 };
 </script>
 
