@@ -7,7 +7,8 @@
       <div
         v-for="(item, index) in items"
         :key="index"
-        class="scroll-snap-item dark:bg-mkDarkGray !border-r-8 !border-r-mkPurple/40"
+        class="scroll-snap-item !border-r-8 !border-r-mkPurple/40"
+        :class="{ 'bg-transparent': isDarkMode }"
       >
         <div
           class="p-4 max-w-xl flex flex-col text-start items-start rounded-xl"
@@ -314,7 +315,7 @@
 </template>
 
 <script>
-import { ref, computed, onMounted, onUnmounted } from "vue";
+import { ref, computed, onMounted, onUnmounted, inject } from "vue";
 
 export default {
   setup() {
@@ -419,6 +420,8 @@ export default {
       });
     };
 
+    const isDarkMode = inject("isDarkMode");
+
     return {
       items,
       scrollContainer,
@@ -426,6 +429,7 @@ export default {
       scrollToPrev,
       isAtStart,
       isAtEnd,
+      isDarkMode,
     };
   },
 };
@@ -476,5 +480,14 @@ export default {
 
 .button-container button {
   margin: 5px;
+}
+
+.bgCard {
+  /* background: url("../assets/mkover.webp"); */
+  background: linear-gradient(to right, #080a10, #241b28);
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 </style>

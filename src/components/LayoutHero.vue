@@ -121,12 +121,16 @@
     <div
       class="absolute bottom-0 lg:h-32 w-full bg-gradient-to-b from-transparent to-white dark:to-mkPrimary z-30"
     ></div>
+    <div
+      v-if="isDarkMode"
+      class="absolute -bottom-44 lg:h-44 w-full bg-gradient-to-b from-mkPrimary to-transparent z-30"
+    ></div>
   </div>
 </template>
 
 <script>
-import useDarkMode from "@/directives/useDarkMode.js";
-import { ref } from "vue";
+// import useDarkMode from "@/directives/useDarkMode.js";
+import { inject, ref } from "vue";
 export default {
   setup() {
     //* Button hover svg opacity
@@ -138,8 +142,14 @@ export default {
       isHovered.value = false;
     };
 
-    const { isDarkMode } = useDarkMode();
-    return { isDarkMode, isHovered, handleHoverOut, handleHover };
+    const isDarkMode = inject("isDarkMode");
+
+    return {
+      isDarkMode,
+      isHovered,
+      handleHoverOut,
+      handleHover,
+    };
   },
 };
 </script>

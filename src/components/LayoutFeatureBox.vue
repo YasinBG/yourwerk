@@ -21,7 +21,8 @@
       <!-- Box 1 -->
       <div
         v-motion="fadeUp1"
-        class="relative flex flex-col p-6 space-y-6 bg-gray-100 dark:bg-mkDarkGray rounded-lg md:w-1/3"
+        class="relative flex flex-col p-6 space-y-6 bg-gray-100 rounded-lg md:w-1/3"
+        :class="{ 'bgCard shadow-lg shadow-mkPrimary  ': isDarkMode }"
       >
         <!-- Image Positioning -->
         <div class="absolute -ml-10 left-1/2 -top-10 md:left-16">
@@ -44,7 +45,8 @@
       <!-- Box 2 -->
       <div
         v-motion="fadeUp2"
-        class="relative flex flex-col mt-24 p-6 space-y-6 bg-gray-100 dark:bg-mkDarkGray rounded-lg md:mt-8 md:w-1/3"
+        class="relative flex flex-col mt-24 p-6 space-y-6 bg-gray-100 rounded-lg md:mt-8 md:w-1/3"
+        :class="{ 'bgCard shadow-lg shadow-mkPrimary  ': isDarkMode }"
       >
         <!-- Image Positioning -->
         <div class="absolute -ml-10 left-1/2 -top-10 md:left-16">
@@ -68,7 +70,8 @@
       <!-- Box 3 -->
       <div
         v-motion="fadeUp3"
-        class="relative flex flex-col mt-24 p-6 space-y-6 bg-gray-100 dark:bg-mkDarkGray rounded-lg md:mt-16 md:w-1/3"
+        class="relative flex flex-col mt-24 p-6 space-y-6 bg-gray-100 rounded-lg md:mt-16 md:w-1/3"
+        :class="{ 'bgCard shadow-lg shadow-mkPrimary  ': isDarkMode }"
       >
         <!-- Image Positioning -->
         <div class="absolute -ml-10 left-1/2 -top-10 md:left-16">
@@ -100,6 +103,7 @@ import {
   leftLineAnimate,
   fadeRightAnimate,
 } from "@/directives/mkAnimate";
+import { inject } from "vue";
 export default {
   setup() {
     const fadeUp1 = fadeUpAnimate1; //
@@ -109,9 +113,28 @@ export default {
     const leftLine = leftLineAnimate;
     const fadeRight = fadeRightAnimate;
 
-    return { fadeUp1, fadeUp2, fadeUp3, leftLine2, leftLine, fadeRight };
+    const isDarkMode = inject("isDarkMode");
+
+    return {
+      fadeUp1,
+      fadeUp2,
+      fadeUp3,
+      leftLine2,
+      leftLine,
+      fadeRight,
+      isDarkMode,
+    };
   },
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="css" scoped>
+.bgCard {
+  background: url("../assets/mkover.webp");
+  /* background: linear-gradient(to right, #080a10, #241b28); */
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+</style>

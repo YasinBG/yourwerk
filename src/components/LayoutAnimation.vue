@@ -1,42 +1,47 @@
 <template>
   <!-- Animation Section -->
   <div
-    v-motion="fadeUp"
-    class="ScrollAnimation py-20 mt-24 lg:mt-32 pointer-events-none"
+    class="ScrollAnimation relative py-20 mt-24 lg:mt-32 pointer-events-none"
   >
-    <h1 class="heading1 -skew-y-6 dark:!text-white !text-mkPrimary">
-      The Digital Infrastructure of the Future.
-    </h1>
+    <div
+      :class="{ 'yes': isDarkMode }"
+      class="absolute -top-10 lg:h-32 w-full bg-gradient-to-t from-transparent to-white dark:to-mkPrimary z-30"
+    ></div>
+    <div v-motion="fadeUp" class="pt-20">
+      <h1 class="heading1 -skew-y-6 dark:!text-white !text-mkPrimary">
+        The Digital Infrastructure of the Future.
+      </h1>
 
-    <div
-      class="scroller scroller-bg w-full mx-auto py-4 -skew-y-6"
-      data-speed="fast"
-      ref="fastScroller"
-    >
-      <ul class="tag-list scroller__inner py-4 flex flex-wrap gap-4">
-        <li
-          v-for="(tag, index) in tags"
-          :key="index"
-          class="p-8 bg-mkPurple/30 rounded-lg shadow-md flex items-center font-semibold"
-        >
-          {{ tag }}
-        </li>
-      </ul>
-    </div>
-    <div
-      class="scroller max-w-[1000px] mx-auto mt-20"
-      data-direction="right"
-      data-speed="slow"
-      ref="slowScroller"
-    >
-      <div class="scroller__inner flex items-center gap-4 py-4 flex-wrap">
-        <img
-          v-for="(image, index) in images"
-          :key="index"
-          :src="image"
-          alt=""
-          class="rounded-full border-4 border-mkPurple/50"
-        />
+      <div
+        class="scroller scroller-bg w-full mx-auto py-4 -skew-y-6"
+        data-speed="fast"
+        ref="fastScroller"
+      >
+        <ul class="tag-list scroller__inner py-4 flex flex-wrap gap-4">
+          <li
+            v-for="(tag, index) in tags"
+            :key="index"
+            class="p-8 bg-mkPurple/30 rounded-lg shadow-md flex items-center font-semibold"
+          >
+            {{ tag }}
+          </li>
+        </ul>
+      </div>
+      <div
+        class="scroller max-w-[1000px] mx-auto mt-20"
+        data-direction="right"
+        data-speed="slow"
+        ref="slowScroller"
+      >
+        <div class="scroller__inner flex items-center gap-4 py-4 flex-wrap">
+          <img
+            v-for="(image, index) in images"
+            :key="index"
+            :src="image"
+            alt=""
+            class="rounded-full border-4 border-mkPurple/50"
+          />
+        </div>
       </div>
     </div>
   </div>
@@ -44,9 +49,8 @@
 </template>
 
 <script>
-import { onMounted, ref } from "vue";
+import { inject, onMounted, ref } from "vue";
 import { fadeUpAnimate } from "@/directives/mkAnimate";
-
 export default {
   setup() {
     onMounted(() => {
@@ -97,18 +101,26 @@ export default {
 
     const fadeUp = fadeUpAnimate;
 
+    const isDarkMode = inject("isDarkMode");
+    //   const toggleDarkMode = inject('toggleDarkMode');
+
     return {
       fastScroller,
       slowScroller,
       tags,
       images,
       fadeUp,
+      isDarkMode,
     };
   },
 };
 </script>
 
 <style lang="css" scoped>
+.yes {
+  display: none;
+}
+
 .scroller[data-animated="true"] {
   overflow: hidden;
   -webkit-mask: linear-gradient(

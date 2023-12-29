@@ -2,7 +2,7 @@
   <header
     class="header sticky top-0 p-6 transition-all duration-500 ease-in-out z-50"
     :class="{
-      'bg-mkDarkGray': headerBackgroundColor === 'dark',
+      'headerImgBg': headerBackgroundColor === 'dark',
       'bg-mkPurple text-white': headerBackgroundColor === 'mkBg',
     }"
   >
@@ -269,8 +269,7 @@
 </template>
 
 <script>
-import { onMounted, onUnmounted, ref } from "vue";
-import useDarkMode from "@/directives/useDarkMode.js";
+import { inject, onMounted, onUnmounted, ref } from "vue";
 import { useNavigation } from "@/directives/useNavigation";
 export default {
   setup() {
@@ -279,7 +278,7 @@ export default {
     const handleScroll = () => {
       const scrollY = window.scrollY;
 
-      if (scrollY > 50) {
+      if (scrollY > 5) {
         // Scroll yukarıdaysa ve dark mod aktifse, rengi mkBg yap
         headerBackgroundColor.value = isDarkMode.value ? "dark" : "mkBg";
       } else {
@@ -306,7 +305,8 @@ export default {
 
     //* Dark-Light Mode
 
-    const { isDarkMode, toggleDarkMode } = useDarkMode();
+    const isDarkMode = inject("isDarkMode");
+    const toggleDarkMode = inject("toggleDarkMode");
 
     //* Navigation Scroll
     const { navigateTo } = useNavigation();
@@ -327,6 +327,15 @@ export default {
 </script>
 
 <style lang="css" scoped>
+.headerImgBg {
+  /* background: url("../assets/mkover.webp"); */
+  background: linear-gradient(to right, #080a10, #241b28);
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 /* hamburger menü */
 
 .hamburger,
@@ -406,7 +415,7 @@ export default {
 .site-nav a:hover,
 .site-nav a:focus {
   /* background: #e4b363; */
-  background: #df8536;
+  background: #8a2be2;
   /* color: #464655; */
   color: #eae9ea;
 }
