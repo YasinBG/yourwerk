@@ -66,6 +66,29 @@
       </li>
     </ul>
   </div>
+
+  <footer class="bg-gray-800 text-white p-4">
+    <div class="flex justify-between items-center">
+      <!-- Logo bölümü -->
+      <img src="/path/to/your/logo.png" alt="Logo" class="w-12 h-12">
+      <div>
+        <!-- Ana sayfa, Hakkında ve İletişim bağlantıları -->
+        <router-link to="/">Home</router-link>
+        <router-link to="/about">About</router-link>
+        <router-link to="/contact">Contact</router-link>
+      </div>
+    </div>
+    <div>
+      <!-- 20 kelimelik açıklama -->
+      <p class="text-sm">Your 20-word description goes here...</p>
+      <!-- Sosyal medya linkleri -->
+      <div class="flex space-x-4 mt-2">
+        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">Twitter</a>
+        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a>
+        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
+      </div>
+    </div>
+  </footer>
 </template>
 
 <script>
