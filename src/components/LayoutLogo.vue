@@ -11,7 +11,7 @@
             }"
             :variants="{ custom: { scale: 2 } }"
             :hovered="{ scale: 1.2 }"
-            class="logo mt-12  flex items-center text-4xl border-b-2 border-b-mkPurple cursor-pointer"
+            class="logo  flex items-center text-4xl border-b-2 border-b-mkPurple cursor-pointer"
           >
           Multi<span class="italic font-serif dark:text-mkPurple text-mkGray"
               >funct</span

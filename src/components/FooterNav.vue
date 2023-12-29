@@ -1,7 +1,7 @@
 <template>
   <div>
      
-     <ul class="nav-list mt-12 flex items-center space-x-12 font-semibold uppercase ml-40 sm:justify-center">
+     <ul class="nav-list flex items-center space-x-12 font-semibold uppercase  ">
        <li  v-for="menu in menus" :key="menu"    
                class="hover:opacity-70 focus:opacity-70 transition-all duration-200 ease-linear cursor-pointer"
              >
