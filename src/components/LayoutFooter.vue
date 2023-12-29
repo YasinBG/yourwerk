@@ -1,6 +1,7 @@
 <template>
   <div class="dark:bg-mkPrimary text-mkPrimary dark:text-mkWhite selection:bg-mkPurple selection:text-mkWhite border-t-2 flex py-12 justify-center items-center">
-
+    <div class="flex justify-between w-full mx-12 ">
+       <div class="flex-col sm:flex-col">
     <span
             v-motion
             :initial="{ opacity: 0, y: -100 }"
@@ -12,14 +13,138 @@
             }"
             :variants="{ custom: { scale: 2 } }"
             :hovered="{ scale: 1.2 }"
-            class="logo mt-12 ml-24 flex items-center text-3xl border-b-2 border-b-mkPurple cursor-pointer"
+            class="logo mt-12  flex items-center text-4xl border-b-2 border-b-mkPurple cursor-pointer"
           >
           Multi<span class="italic font-serif dark:text-mkPurple text-mkGray"
               >funct</span
             ><span class="font-bold">ional</span>
           </span>
+          <span
+            v-motion
+            :initial="{ opacity: 0, y: -100 }"
+            :enter="{
+              opacity: 1,
+              y: 0,
+              scale: 1,
+              transition: { duration: 700 },
+            }"
+            :variants="{ custom: { scale: 2 } }"
+            :hovered="{ scale: 1.2 }"
+            class="logo mt-2  flex items-center text-3xl border-b-2 border-b-mkPurple cursor-pointer"
+          >
+          Multi<span class="italic font-serif dark:text-mkPurple text-mkGray"
+              >funct</span
+            ><span class="font-bold">ional</span>
+          </span>
+          <span
+            v-motion
+            :initial="{ opacity: 0, y: -100 }"
+            :enter="{
+              opacity: 1,
+              y: 0,
+              scale: 1,
+              transition: { duration: 700 },
+            }"
+            :variants="{ custom: { scale: 2 } }"
+            :hovered="{ scale: 1.2 }"
+            class="logo mt-2  flex items-center text-2xl border-b-2 border-b-mkPurple cursor-pointer"
+          >
+          Multi<span class="italic font-serif dark:text-mkPurple text-mkGray"
+              >funct</span
+            ><span class="font-bold">ional</span>
+          </span>
+          <span
+            v-motion
+            :initial="{ opacity: 0, y: -100 }"
+            :enter="{
+              opacity: 1,
+              y: 0,
+              scale: 1,
+              transition: { duration: 700 },
+            }"
+            :variants="{ custom: { scale: 2 } }"
+            :hovered="{ scale: 1.2 }"
+            class="logo mt-2  flex items-center text-xl border-b-2 border-b-mkPurple cursor-pointer"
+          >
+          Multi<span class="italic font-serif dark:text-mkPurple text-mkGray"
+              >funct</span
+            ><span class="font-bold">ional</span>
+          </span>
+          <span
+            v-motion
+            :initial="{ opacity: 0, y: -100 }"
+            :enter="{
+              opacity: 1,
+              y: 0,
+              scale: 1,
+              transition: { duration: 700 },
+            }"
+            :variants="{ custom: { scale: 2 } }"
+            :hovered="{ scale: 1.2 }"
+            class="logo mt-2  flex items-center text-lg border-b-2 border-b-mkPurple cursor-pointer"
+          >
+          Multi<span class="italic font-serif dark:text-mkPurple text-mkGray"
+              >funct</span
+            ><span class="font-bold">ional</span>
+          </span>
+          <span
+            v-motion
+            :initial="{ opacity: 0, y: -100 }"
+            :enter="{
+              opacity: 1,
+              y: 0,
+              scale: 1,
+              transition: { duration: 700 },
+            }"
+            :variants="{ custom: { scale: 2 } }"
+            :hovered="{ scale: 1.2 }"
+            class="logo mt-2  flex items-center text-base border-b-2 border-b-mkPurple cursor-pointer"
+          >
+          Multi<span class="italic font-serif dark:text-mkPurple text-mkGray"
+              >funct</span
+            ><span class="font-bold">ional</span>
+          </span>
+          <span
+            v-motion
+            :initial="{ opacity: 0, y: -100 }"
+            :enter="{
+              opacity: 1,
+              y: 0,
+              scale: 1,
+              transition: { duration: 700 },
+            }"
+            :variants="{ custom: { scale: 2 } }"
+            :hovered="{ scale: 1.2 }"
+            class="logo mt-2  flex items-center text-sm border-b-2 border-b-mkPurple cursor-pointer"
+          >
+          Multi<span class="italic font-serif dark:text-mkPurple text-mkGray"
+              >funct</span
+            ><span class="font-bold">ional</span>
+          </span>
+          <span
+            v-motion
+            :initial="{ opacity: 0, y: -100 }"
+            :enter="{
+              opacity: 1,
+              y: 0,
+              scale: 1,
+              transition: { duration: 700 },
+            }"
+            :variants="{ custom: { scale: 2 } }"
+            :hovered="{ scale: 1.2 }"
+            class="logo mt-2  flex items-center text-xs border-b-2 border-b-mkPurple cursor-pointer"
+          >
+          Multi<span class="italic font-serif dark:text-mkPurple text-mkGray"
+              >funct</span
+            ><span class="font-bold">ional</span>
+          </span>
+
+        </div>
+        <div class="flex justify-between mx-auto">
+
+        
      
-    <ul class="nav-list mt-12 flex items-center space-x-12 font-semibold uppercase ml-40">
+    <ul class="nav-list mt-12 flex items-center space-x-12 font-semibold uppercase ml-40 sm:justify-center">
       <li  v-for="menu in menus" :key="menu"    
               class="hover:opacity-70 focus:opacity-70 transition-all duration-200 ease-linear cursor-pointer"
             >
@@ -27,13 +152,15 @@
             </li>
     </ul>
 
-    <div class="w-[500px] mx-auto">
+  </div>
+
+    <div class="w-[500px] ml-12 mx-auto flex flex-col justify-center">
       <h3>DISCLAIMER</h3>
       <p class="mt-2">Cryptocurrency may be unregulated in your jurisdiction. The value of cryptocurrencies may go down as well as up. Profits may be subject to capital gains or other taxes applicable in your jurisdiction.</p>
     </div>
-
+  
   </div>
-
+</div>
   <div class=" flex my-12">
     <div class="w-1/2">
 
