@@ -269,28 +269,47 @@
 </template>
 
 <script>
-import { inject, onMounted, onUnmounted, ref } from "vue";
+import { inject, onMounted, onUnmounted, ref, watch } from "vue";
 import { useNavigation } from "@/directives/useNavigation";
 export default {
   setup() {
     // Header
     const headerBackgroundColor = ref("light");
-    const handleScroll = () => {
-      const scrollY = window.scrollY;
+    // const handleScroll = () => {
+    //   const scrollY = window.scrollY;
 
-      if (scrollY > 5) {
-        // Scroll yukarıdaysa ve dark mod aktifse, rengi mkBg yap
-        headerBackgroundColor.value = isDarkMode.value ? "dark" : "mkBg";
-      } else {
-        // Scroll en üstteyse, varsayılan rengi ayarla (örneğin "light")
-        headerBackgroundColor.value = "light";
-      }
+    //   if (scrollY > 5) {
+    //     // Scroll yukarıdaysa ve dark mod aktifse, rengi mkBg yap
+    //     headerBackgroundColor.value = isDarkMode.value ? "dark" : "mkBg";
+    //   } else {
+    //     // Scroll en üstteyse, varsayılan rengi ayarla (örneğin "light")
+    //     headerBackgroundColor.value = "light";
+    //   }
+    // };
+
+    const scrollY = ref(0);
+    //* Dark-Light Mode
+
+    const isDarkMode = inject("isDarkMode");
+    const toggleDarkMode = inject("toggleDarkMode");
+
+    const updateScroll = () => {
+      scrollY.value = window.scrollY;
     };
+
     onMounted(() => {
-      window.addEventListener("scroll", handleScroll);
+      window.addEventListener("scroll", updateScroll);
     });
     onUnmounted(() => {
-      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("scroll", updateScroll);
+    });
+
+    watch([scrollY, isDarkMode], ([newScrollY, newIsDarkMode]) => {
+      if (newScrollY > 5) {
+        headerBackgroundColor.value = newIsDarkMode ? "dark" : "mkBg";
+      } else {
+        headerBackgroundColor.value = "light";
+      }
     });
 
     //* Mobile Navbar
@@ -303,17 +322,12 @@ export default {
       dropDownMenu.value = !dropDownMenu.value;
     };
 
-    //* Dark-Light Mode
-
-    const isDarkMode = inject("isDarkMode");
-    const toggleDarkMode = inject("toggleDarkMode");
-
     //* Navigation Scroll
     const { navigateTo } = useNavigation();
 
     return {
       headerBackgroundColor,
-      handleScroll,
+      updateScroll,
       isNavOpen,
       toggleMenu,
       openDropdown,

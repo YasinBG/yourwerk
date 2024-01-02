@@ -61,7 +61,7 @@ export default {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
 
   /* background-image: linear-gradient(180deg, #080a10 0%, #080a1000 100%); */
   /* transition: background 0.3s, border-radius 0.3s, opacity 0.3s; */
