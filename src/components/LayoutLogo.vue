@@ -1,5 +1,5 @@
 <template>
-  <div class="flex-col sm:flex-col">
+  <div class="flex-col sm:flex-col justify-between">
     <span
             v-motion
             :initial="{ opacity: 0, y: -100 }"

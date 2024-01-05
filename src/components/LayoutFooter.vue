@@ -1,24 +1,32 @@
 <template>
-  <div class="lg:flex w-full justify-between border-t-2 px-12 py-10">
+<div class="border-t-2  py-12 px-96">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam sint voluptatem debitis, labore eos vel officiis tenetur cum eum velit sequi? Quibusdam nam veritatis fuga soluta illo omnis ipsum accusantium.</div>
+  
+  <div class="lg:flex w-full justify-evenly  py-10 ">
+
+
     <div>
        <LayoutLogo></LayoutLogo>
+
     </div>
 
-    <div class="">
+    <div class=" flex flex-col justify-center">
       <FooterNav></FooterNav>
+
+      <div class="mt-24 items-center">
+        
+        <FooterDetail></FooterDetail>
+  </div>
 
       
     </div>
 
-    <div class=" lg:flex flex-col justify-between">
-       <FooterDetail></FooterDetail>
-       <div class="mb-16 ">
-        <FooterIcons></FooterIcons>
+    <div class=" lg:flex flex-col justi">
+      <FooterIcons></FooterIcons>
+       
        </div>
        
     </div>
     
-  </div>
 </template>
 
 <script>
