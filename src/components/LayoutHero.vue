@@ -4,23 +4,25 @@
     style="position: relative"
   >
     <div class="leftSection lg:w-1/2 space-y-12 lg:text-start text-center">
-      <h1 class="text-3xl lg:text-5xl mb-6 tracking-wide font-header">
-        YourWerk lorem, ipsum dolor.
-      </h1>
-      <p class="tracking-widest px-4 lg:px-0 text-sm lg:text-base">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
-        laboriosam cum eveniet, asperiores voluptatibus facere quidem, nobis
-        beatae, cupiditate odio error esse? Fuga, assumenda aliquid.
+      <div class="text-5xl font-extrabold ...">
+        <span
+          class="bg-clip-text text-transparent bg-gradient-to-r from-mkSecondary to-white"
+        >
+          One Token, infinite possibilities!
+        </span>
+      </div>
+      <p class="px-4 lg:px-0 lg:text-xl font-semibold">
+        An innovative crypto project offering an accessible, secure, and
+        sustainable web3 experience for everyone.
       </p>
 
       <a
         v-if="isDarkMode"
         href="#"
-        class="neon-button !mb-12 lg:mb-0"
-        :class="{ '!text-white': isDarkMode }"
+        class="neon-button !mb-12 lg:mb-0 hover:!text-white"
         @mouseover="handleHover"
         @mouseout="handleHoverOut"
-        >Learn More</a
+        >WhitePaper</a
       >
       <a
         v-else
@@ -32,13 +34,10 @@
       >
     </div>
     <div class="rightSection w-1/2">
-      <div
-        class="HeroImg shadow-xl bgchange"
-        :class="{ 'animate-wiggle': isHovered }"
-      >
+      <div class="HeroImg bgchange" :class="{ 'animate-wiggle': isHovered }">
         <img
-          class="rounded-md w-full h-full object-cover border-t-mkPurple border-r-mkPurple border-2 border-b-transparent border-l-transparent"
-          src="../assets/hero.png"
+          class="w-full h-full object-cover rotate-12"
+          src="../assets/hero-removebg.png"
           alt="image"
         />
       </div>
@@ -61,11 +60,8 @@
     >
       <defs>
         <linearGradient id="bg" x2="0%" y2="100%">
-          <stop offset="0%" style="stop-color: rgba(138, 43, 226, 0.6)"></stop>
-          <stop
-            offset="100%"
-            style="stop-color: rgba(38, 122, 190, 0.06)"
-          ></stop>
+          <stop offset="0%" style="stop-color: #f89844"></stop>
+          <stop offset="100%" style="stop-color: #1c1203"></stop>
         </linearGradient>
         <path
           id="wave"
@@ -119,11 +115,11 @@
     <!-- Shadow Hero Bottom -->
 
     <div
-      class="absolute bottom-0 lg:h-32 w-full bg-gradient-to-b from-transparent to-white dark:to-mkPrimary z-30"
+      class="absolute bottom-0 lg:h-32 w-full bg-gradient-to-b from-transparent to-white dark:to-[#103B68] z-30"
     ></div>
     <div
       v-if="isDarkMode"
-      class="absolute -bottom-44 lg:h-44 w-full bg-gradient-to-b from-mkPrimary to-transparent z-30"
+      class="absolute -bottom-44 lg:h-44 w-full bg-gradient-to-b from-[#103B68] to-transparent z-30"
     ></div>
   </div>
 </template>

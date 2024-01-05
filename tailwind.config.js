@@ -47,11 +47,14 @@ module.exports = {
         mkSecondary: "#f89844",
 
         mkBlue: "#007fff",
-        mkPurple: "#8a2be2",
+        mkPurple: "#f89844",
         mkGray: "#a6adb9",
         // mkDarkGray: "#14161a",
         mkDarkGray: "#191a1e",
         mkWhite: "#eae9ea",
+      },
+      backgroundImage: {
+        "custom-gradient": "linear-gradient(to right, #103b68, #241b28)",
       },
     },
   },

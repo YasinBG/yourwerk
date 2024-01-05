@@ -20,11 +20,12 @@
           }"
           :variants="{ custom: { scale: 2 } }"
           :hovered="{ scale: 1.2 }"
-          class="logo flex items-center text-3xl border-b-2 border-b-mkPurple cursor-pointer"
+          class="logo flex items-center text-3xl cursor-pointer font-bold"
         >
-          Multi<span class="italic font-serif dark:text-mkPurple text-mkGray"
-            >funct</span
-          ><span class="font-bold">ional</span>
+          Your<span
+            class="italic font-serif bg-clip-text text-transparent bg-gradient-to-r from-mkSecondary to-white"
+            >W</span
+          ><span class="font-bold">erk</span>
         </span>
         <ul
           class="nav-list flex items-center space-x-12 font-semibold uppercase"
@@ -37,17 +38,22 @@
           <li
             class="hover:opacity-70 focus:opacity-70 transition-all duration-200 ease-linear cursor-pointer"
           >
-            <a href="#">Docs</a>
+            <a href="#">WhitePaper</a>
           </li>
           <li
             class="hover:opacity-70 focus:opacity-70 transition-all duration-200 ease-linear cursor-pointer"
           >
-            <a href="#" @click="navigateTo('section1')">About</a>
+            <a href="#" @click="navigateTo('section1')">How To Buy</a>
           </li>
           <li
             class="hover:opacity-70 focus:opacity-70 transition-all duration-200 ease-linear cursor-pointer"
           >
             <a href="#">Contact</a>
+          </li>
+          <li
+            class="hover:opacity-70 focus:opacity-70 transition-all duration-200 ease-linear cursor-pointer"
+          >
+            <a href="#">Buy</a>
           </li>
           <!-- Dark/Light Mode Button -->
           <button
@@ -305,7 +311,7 @@ export default {
     });
 
     watch([scrollY, isDarkMode], ([newScrollY, newIsDarkMode]) => {
-      if (newScrollY > 5) {
+      if (newScrollY > 80) {
         headerBackgroundColor.value = newIsDarkMode ? "dark" : "mkBg";
       } else {
         headerBackgroundColor.value = "light";
@@ -343,7 +349,7 @@ export default {
 <style lang="css" scoped>
 .headerImgBg {
   /* background: url("../assets/mkover.webp"); */
-  background: linear-gradient(to right, #080a10, #241b28);
+  background: linear-gradient(to right, #103b68, #241b28);
 
   background-position: center;
   background-repeat: no-repeat;

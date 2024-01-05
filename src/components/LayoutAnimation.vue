@@ -9,7 +9,7 @@
     ></div>
     <div v-motion="fadeUp" class="pt-20">
       <h1 class="heading1 -skew-y-6 dark:!text-white !text-mkPrimary">
-        The Digital Infrastructure of the Future.
+        The Transaction Tool of the Future
       </h1>
 
       <div
@@ -21,13 +21,13 @@
           <li
             v-for="(tag, index) in tags"
             :key="index"
-            class="p-8 bg-mkPurple/30 rounded-lg shadow-md flex items-center font-semibold"
+            class="p-8 bg-mkSecondary/80 rounded-lg shadow-md flex items-center font-semibold uppercase tagBg"
           >
             {{ tag }}
           </li>
         </ul>
       </div>
-      <div
+      <!-- <div
         class="scroller max-w-[1000px] mx-auto mt-20"
         data-direction="right"
         data-speed="slow"
@@ -42,7 +42,7 @@
             class="rounded-full border-4 border-mkPurple/50"
           />
         </div>
-      </div>
+      </div> -->
     </div>
   </div>
   <!-- Animation Section -->
@@ -65,25 +65,25 @@ export default {
     const fastScroller = ref(null);
     const slowScroller = ref(null);
     const tags = [
-      "#BlockchainTechnology",
-      "#Cryptocurrencies",
-      "#DistributedLedger",
-      "#SmartContracts",
-      "#DecentralizedFinance",
-      "#InterblockchainCommunication",
-      "#EncryptionTechnology",
-      "#TokenEconomy",
-      "#ImmutableLedger",
-      "#BlockchainNetwork",
+      "Sustainable",
+      "Innovative",
+      "Combiner",
+      "Trustworthy",
+      "Evolutionary",
+      "Revolutionary",
+      "Transaction",
+      // "#TokenEconomy",
+      // "#ImmutableLedger",
+      // "#BlockchainNetwork",
     ];
-    const images = [
-      "https://i.pravatar.cc/150?img=1",
-      "https://i.pravatar.cc/150?img=2",
-      "https://i.pravatar.cc/150?img=3",
-      "https://i.pravatar.cc/150?img=4",
-      "https://i.pravatar.cc/150?img=5",
-      "https://i.pravatar.cc/150?img=6",
-    ];
+    // const images = [
+    //   "https://i.pravatar.cc/150?img=1",
+    //   "https://i.pravatar.cc/150?img=2",
+    //   "https://i.pravatar.cc/150?img=3",
+    //   "https://i.pravatar.cc/150?img=4",
+    //   "https://i.pravatar.cc/150?img=5",
+    //   "https://i.pravatar.cc/150?img=6",
+    // ];
 
     // Animasyon ekleyen fonksiyon
     function addAnimation(scroller) {
@@ -108,7 +108,7 @@ export default {
       fastScroller,
       slowScroller,
       tags,
-      images,
+      // images,
       fadeUp,
       isDarkMode,
     };
@@ -164,6 +164,18 @@ export default {
 
 .scroller-bg {
   background: url("../assets/mks.svg");
-  border: 4px solid rgba(138, 43, 226, 0.3);
+  /* border: 4px solid rgba(138, 43, 226, 0.3); */
+}
+
+.tagBg {
+  background-image: linear-gradient(
+    to left,
+    #ecebea,
+    #f2d7be,
+    #f5c394,
+    #f7ae6c,
+    #f89844
+  );
+  color: #103b68;
 }
 </style>

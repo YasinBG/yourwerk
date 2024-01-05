@@ -15,7 +15,9 @@ body {
   /* --glow-color: hsl(186 100% 69%); */
   --glow-color: hsl(28, 93%, 62%);
   /* --clr-neon: hsl(28, 93%, 62%); */
-  --clr-neon: hsl(271, 76%, 53%);
+  /* --clr-neon: hsl(271, 76%, 53%); */
+  /* --clr-neon: hsl(28, 93%, 62%); */
+  --clr-neon: hsl(211, 76%, 51%);
 }
 
 .heading1 {
@@ -245,6 +247,7 @@ body {
   cursor: pointer;
   text-decoration: none;
   color: var(--clr-neon);
+  /* color: #103b68; */
   border: var(--clr-neon) 0.125em solid;
   padding: 0.25em 1em;
   border-radius: 0.25em;
@@ -288,7 +291,7 @@ body {
 .neon-button:hover,
 .neon-button:focus {
   color: #eae9ea;
-  /* color: var(--clr-bg); */
+  color: var(--clr-bg);
   text-shadow: none;
 }
 

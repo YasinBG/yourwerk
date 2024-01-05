@@ -52,7 +52,15 @@ export default {
 
 <style lang="css" scoped>
 .bgnew {
-  background: url("../assets/mkover.webp");
+  /* background: url("../assets/mkover.webp"); */
+  background: linear-gradient(
+    to right,
+    #0b2142,
+    #0d2e55,
+    #103b68,
+    #12487b,
+    #14558e
+  );
   /* background: linear-gradient(to right, #080a10, #241b28); */
 
   /* background: linear-gradient(to right, #080a10, #241b28, #241a28, #090b11); */
