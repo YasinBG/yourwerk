@@ -1,32 +1,39 @@
 <template>
-<div class="border-t-2  py-12 px-96">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam sint voluptatem debitis, labore eos vel officiis tenetur cum eum velit sequi? Quibusdam nam veritatis fuga soluta illo omnis ipsum accusantium.</div>
+<div class="border-t-2 flex flex-col justify-between">
+  <div class="items-center mx-auto pt-24 ">
+    2023© IRR Group LTD | All Rights Reserved
+  </div>
   
-  <div class="lg:flex w-full justify-evenly  py-10 ">
+</div>
+  <div class="text-center mt-2">
+    Ajeltake Road, Reg no: 118412, Marshall Island, info@multifunctional.com
+  </div>
+  <div class="lg:flex w-full lg:justify-evenly mx-auto  pt-10 mt-6 ">
 
 
-    <div>
+    <div class="my-12 mx-4">
        <LayoutLogo></LayoutLogo>
 
     </div>
 
-    <div class=" flex flex-col justify-center">
+    <div class="flex flex-col justify-center mx-4 ">
       <FooterNav></FooterNav>
 
-      <div class="mt-24 items-center">
-        
-        <FooterDetail></FooterDetail>
-  </div>
+      
 
       
     </div>
 
-    <div class=" lg:flex flex-col justi">
+    <div class=" lg:flex flex-col mt-12">
       <FooterIcons></FooterIcons>
        
        </div>
        
     </div>
-    
+    <div class="mt-24 items-center mx-4">
+        
+        <FooterDetail></FooterDetail>
+  </div>
 </template>
 
 <script>
