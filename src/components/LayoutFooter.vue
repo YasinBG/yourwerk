@@ -1,5 +1,5 @@
 <template>
-<div class="border-t-2 flex flex-col justify-between">
+<div class="border-t-2 flex flex-col justify-between w-full">
   <div class="items-center mx-auto pt-24 ">
     2023© IRR Group LTD | All Rights Reserved
   </div>
