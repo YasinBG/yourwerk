@@ -115,11 +115,11 @@
     <!-- Shadow Hero Bottom -->
 
     <div
-      class="absolute bottom-0 lg:h-32 w-full bg-gradient-to-b from-transparent to-white dark:to-[#103B68] z-30"
+      class="absolute bottom-0 lg:h-40 w-full bg-gradient-to-b from-transparent to-white dark:to-[#103B68] z-30"
     ></div>
     <div
       v-if="isDarkMode"
-      class="absolute -bottom-44 lg:h-44 w-full bg-gradient-to-b from-[#103B68] to-transparent z-30"
+      class="absolute -bottom-20 lg:h-20 w-full bg-gradient-to-b from-[#103B68] to-transparent z-30"
     ></div>
   </div>
 </template>
