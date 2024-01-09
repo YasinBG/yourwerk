@@ -7,13 +7,14 @@
     <!-- Hero Section -->
     <LayoutHero />
     <!-- Animation Section -->
+    <LayoutFeatures />
+    <!-- Features -->
     <LayoutAnimation />
     <!-- Feature Box Section -->
     <LayoutFeatureBox />
     <!-- RoadMAp -->
     <LayoutRoadmap />
-    <!-- Features -->
-    <LayoutFeatures />
+
     <!-- Faq Section -->
     <LayoutFaq />
     <!-- Footer -->

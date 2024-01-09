@@ -1,13 +1,15 @@
 <template>
   <!-- Features -->
-  <div class="features" v-motion="fadeLeft">
+  <div class="features mt-44 z-50" v-motion="fadeLeft">
     <div class="container mx-auto mt-16 px-6 md:px-0">
-      <h2 class="mb-6 heading1">Features</h2>
-      <p class="max-w-xl mx-auto text-center">
+      <h2 class="mb-6 heading1 !text-8xl">
+        One Token, infinite possibilities!
+      </h2>
+      <!-- <p class="max-w-xl mx-auto text-center">
         Blockchain is a decentralized ledger system that ensures reliability and
         transparency. It maintains the immutability of data and supports
         automated functionalities like smart contracts.
-      </p>
+      </p> -->
     </div>
   </div>
   <!-- Features Tabs -->
@@ -27,7 +29,7 @@
           @click="activateTab(index)"
         >
           <div
-            class="py-5"
+            class="py-5 font-semibold text-2xl"
             :class="{
               'border-mkPurple border-b-4 text-mkPurple': activeTab === index,
             }"
@@ -91,7 +93,7 @@ export default {
 
     const tabs = ref([
       {
-        title: "Decentralization for Enhanced Security",
+        title: "Decentralization",
         content:
           "Blockchain offers a decentralized structure, enhancing security by distributing control across the network and mitigating the risk of data manipulation.",
         content2:
@@ -99,7 +101,7 @@ export default {
         imgSrc: "illustration-features-tab-1.svg",
       },
       {
-        title: "Trustworthy and Tamper-Proof Records",
+        title: "Trustworthy",
         content:
           "The immutability feature of blockchain ensures that once data is recorded, it remains unalterable, providing a trustworthy and tamper-proof ledger.",
         content2:
@@ -107,7 +109,7 @@ export default {
         imgSrc: "illustration-features-tab-2.svg",
       },
       {
-        title: "Efficiency through Smart Contracts",
+        title: "Efficiency",
         content:
           "Smart contracts, a core feature of blockchain, facilitate self-executing agreements, automating processes and reducing the need for intermediaries, leading to increased operational efficiency.",
         content2:

@@ -28,7 +28,7 @@
         <div class="absolute -ml-10 left-1/2 -top-10 md:left-16">
           <!-- Image Container For Background & Center -->
           <div
-            class="flex items-center justify-center w-20 h-20 p-4 rounded-full dark:mkPurple bg-mkPurple"
+            class="flex items-center justify-center w-20 h-20 p-4 rounded-full dark:mkPurple bg-mkPurple border-8 border-[#13447a]"
           >
             <img src="../assets/icon-brand-recognition.svg" alt="" />
           </div>
@@ -52,7 +52,7 @@
         <div class="absolute -ml-10 left-1/2 -top-10 md:left-16">
           <!-- Image Container For Background & Center -->
           <div
-            class="flex items-center justify-center w-20 h-20 p-4 rounded-full dark:mkPurple bg-mkPurple"
+            class="flex items-center justify-center w-20 h-20 p-4 rounded-full dark:mkPurple bg-mkPurple border-8 border-[#13447a]"
           >
             <img src="../assets/icon-detailed-records.svg" alt="" />
           </div>
@@ -77,7 +77,7 @@
         <div class="absolute -ml-10 left-1/2 -top-10 md:left-16">
           <!-- Image Container For Background & Center -->
           <div
-            class="flex items-center justify-center w-20 h-20 p-4 rounded-full dark:mkPurple bg-mkPurple"
+            class="flex items-center justify-center w-20 h-20 p-4 rounded-full dark:mkPurple bg-mkPurple border-8 border-[#13447a]"
           >
             <img src="../assets/icon-fully-customizable.svg" alt="" />
           </div>
@@ -130,8 +130,21 @@ export default {
 
 <style lang="css" scoped>
 .bgCard {
-  background: url("../assets/mkover.webp");
+  /* background: url("../assets/mkover.webp"); */
   /* background: linear-gradient(to right, #080a10, #241b28); */
+
+  /* background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; */
+
+  background: linear-gradient(
+    to left,
+    #0b2142,
+    #0d2e55,
+    #13447a,
+    #12487b,
+    #14558e
+  );
 
   background-position: center;
   background-repeat: no-repeat;
