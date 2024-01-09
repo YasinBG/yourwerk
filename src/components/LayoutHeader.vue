@@ -1,6 +1,6 @@
 <template>
   <header
-    class="header sticky top-0 p-6 transition-all duration-500 ease-in-out z-50"
+    class="header w-full sticky top-0 p-6 transition-all duration-500 ease-in-out z-50"
     :class="{
       'headerImgBg': headerBackgroundColor === 'dark',
       'bg-mkPurple text-white': headerBackgroundColor === 'mkBg',

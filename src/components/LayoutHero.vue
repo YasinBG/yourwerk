@@ -119,7 +119,7 @@
     ></div>
     <div
       v-if="isDarkMode"
-      class="absolute -bottom-20 lg:h-20 w-full bg-gradient-to-b from-[#103B68] to-transparent z-30"
+      class="absolute -bottom-20 lg:h-20 w-full bg-gradient-to-b from-[#103B68] to-transparent z-10"
     ></div>
   </div>
 </template>

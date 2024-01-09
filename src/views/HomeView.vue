@@ -1,6 +1,6 @@
 <template>
   <div
-    class="dark:bg-mkPrimary text-mkPrimary dark:text-mkWhite selection:bg-mkPurple selection:text-mkWhite"
+    class="dark:bg-mkPrimary text-mkPrimary dark:text-mkWhite selection:bg-mkPurple selection:text-mkWhite flex flex-col items-center"
     :class="{ 'bgnew': isDarkMode }"
   >
     <LayoutHeader />

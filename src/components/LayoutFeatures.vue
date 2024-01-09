@@ -1,6 +1,6 @@
 <template>
   <!-- Features -->
-  <div class="features mt-44 z-50" v-motion="fadeLeft">
+  <div class="features mt-44 z-20" v-motion="fadeLeft">
     <div class="container mx-auto mt-16 px-6 md:px-0">
       <h2 class="mb-6 heading1 !text-8xl">
         One Token, infinite possibilities!
