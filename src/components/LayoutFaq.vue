@@ -1,7 +1,9 @@
 <template>
   <div class="mx-4 lg:mx-0 mt-44">
     <h3 class="heading1" v-motion="fadeUp">
-      <span class="dark:!text-white !text-mkPrimary">
+      <span
+        class="bg-clip-text text-transparent bg-gradient-to-r from-mkSecondary to-white"
+      >
         Frequently Asked Questions
       </span>
       <div

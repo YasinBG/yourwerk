@@ -34,7 +34,7 @@
         </h3>
         <div
           :class="faq.open ? ' answer-open' : ' answer'"
-          class="pl-4 pr-8 answer text-sm font-medium text-mkGray pb-4 leading-relaxed flex items-center flex-col"
+          class="pl-4 pr-8 answer text-lg font-medium text-mkGray pb-4 leading-relaxed flex items-center flex-col"
         >
           <span>
             {{ faq.answer }}
@@ -53,52 +53,71 @@ export default {
   setup() {
     const faqList = ref([
       {
-        question: "What is blockchain?",
+        question: "What is WERK Token and what is its purpose?",
         answer:
-          "Blockchain is a decentralized, distributed ledger technology that securely records and verifies transactions across a network of computers. It operates on a consensus mechanism, ensuring transparency and immutability of data.",
-        open: false,
-      },
-      {
-        question: "How does blockchain ensure security?",
-        answer:
-          "Blockchain employs cryptographic techniques to secure data integrity and uses a consensus algorithm to validate transactions. Once a block is added to the chain, it becomes extremely difficult to alter, ensuring a high level of security.",
-        open: false,
-      },
-      {
-        question: "What is a smart contract?",
-        answer:
-          "A smart contract is a self-executing contract with the terms of the agreement directly written into code. It automatically enforces and executes the terms when predefined conditions are met, eliminating the need for intermediaries in transactions",
-        open: false,
-      },
-      {
-        question: "Can blockchain be used beyond cryptocurrencies?",
-        answer:
-          "Yes, blockchain has diverse applications beyond cryptocurrencies. Industries such as supply chain, healthcare, finance, and more are exploring blockchain for its ability to enhance transparency, security, and efficiency in various processes.",
+          "WERK Token is an innovative and comprehensive crypto project aiming to revolutionize the Web3 world. It seeks to facilitate transaction processes among Web3 games, DeFi projects, and other Web3 applications, supporting the ecosystem's integrated and harmonious development.",
         open: false,
       },
       {
         question:
-          "What is the difference between public and private blockchains?",
+          "What problems does WERK Token address in the Web3 ecosystem?",
         answer:
-          "Public blockchains are open to anyone and are decentralized, while private blockchains are restricted to a specific group of participants and are often used within organizations. Public blockchains are more transparent, while private blockchains offer greater control over access.",
+          "WERK Token addresses the issue of isolated and disjointed development among Web3 projects by providing a common transaction tool. This enhances collaboration and interaction between projects, making the ecosystem more integrated and efficient.",
         open: false,
       },
       {
-        question: "How is consensus achieved in blockchain?",
+        question:
+          "What is WERK Token's deflationary tokenomics policy and how does it benefit investors?",
         answer:
-          "Consensus in blockchain refers to the process by which all nodes in a network agree on the validity of transactions. Common consensus mechanisms include Proof of Work (PoW), Proof of Stake (PoS), and Delegated Proof of Stake (DPoS).",
+          "WERK Token's deflationary tokenomics policy aims to gradually reduce the market supply of tokens, increasing their value over time. This offers investors a potential for long-term value appreciation.",
         open: false,
       },
       {
-        question: "What challenges does blockchain technology face?",
+        question:
+          "How does WERK Token integrate with advanced technologies like AI?",
         answer:
-          "Blockchain faces challenges such as scalability, interoperability, and regulatory concerns. Scaling solutions, standardization efforts, and evolving regulations are ongoing efforts to address these challenges.",
+          "WERK Token addresses the unique challenges in AI-supported projects by offering high transaction capacity and speed, optimized for AI applications. This enhances the efficiency and effectiveness of AI-based Web3 projects.",
         open: false,
       },
       {
-        question: "Is blockchain technology environmentally friendly?",
+        question: "What advantages does WERK Token offer to users?",
         answer:
-          "The environmental impact of blockchain, particularly in Proof of Work systems like Bitcoin, has raised concerns due to energy consumption. However, there are ongoing efforts to develop and adopt more energy-efficient consensus mechanisms, such as Proof of Stake, to mitigate environmental impact.",
+          "WERK Token is designed as a user-friendly, secure, and universal transaction tool, enabling users to transfer value safely and easily across Web3 projects.",
+        open: false,
+      },
+      {
+        question:
+          "How does WERK Token benefit the Web3 gaming and application sector?",
+        answer:
+          "WERK Token simplifies transaction processes for Web3 gaming and application users, facilitating cross-platform interaction. This encourages broader adoption of the sector and offers cost savings for developers.",
+        open: false,
+      },
+      {
+        question:
+          "What are WERK Token's blockchain infrastructure and technical features?",
+        answer:
+          "WERK Token utilizes the Binance Chain infrastructure, known for its high efficiency, reliability, low transaction costs, and advanced security protocols, ensuring a seamless and secure experience for its users.",
+        open: false,
+      },
+      {
+        question:
+          "How does WERK Token aim to increase transaction volume and liquidity?",
+        answer:
+          "WERK Token plans to increase transaction volume and liquidity by collaborating with Web3 applications and games by allowing them to receive commissions and performing regular token burns.",
+        open: false,
+      },
+      {
+        question:
+          "How does WERK Token manage community participation and engagement?",
+        answer:
+          "WERK Token actively engages with its community through interactive platforms and social media, incorporating their feedback into the project's development. It offers special advantages, rewards, and access to its users, further integrating them into the project.",
+        open: false,
+      },
+      {
+        question:
+          "What are WERK Token's future plans and sustainability strategies?",
+        answer:
+          "WERK Token aims to cater to a wide range of use cases in the medium and long term, aiming to become a common payment tool in everyday life. It plans to implement innovations like AI integration, token-based loyalty programs, and smart contract-enabled automatic payments to achieve this goal.",
         open: false,
       },
     ]);

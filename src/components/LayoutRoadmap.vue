@@ -1,6 +1,11 @@
 <template>
   <div class="carousel flex flex-col justify-center max-w-6xl mx-auto py-4">
-    <h3 class="heading1 uppercase" v-motion="fadeUp">Roadmap</h3>
+    <h3
+      class="heading1 uppercase bg-clip-text text-transparent bg-gradient-to-r from-mkSecondary to-white"
+      v-motion="fadeUp"
+    >
+      Roadmap
+    </h3>
     <p
       class="text-center max-w-lg text-sm font-medium lg:text-base mx-auto"
       v-motion="fadeLeft"
