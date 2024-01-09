@@ -1,5 +1,7 @@
 <template>
-  <div class="carousel flex flex-col justify-center max-w-6xl mx-auto py-4">
+  <div
+    class="carousel w-full flex flex-col justify-center max-w-6xl mx-auto py-4"
+  >
     <h3
       class="heading1 uppercase bg-clip-text text-transparent bg-gradient-to-r from-mkSecondary to-white"
       v-motion="fadeUp"

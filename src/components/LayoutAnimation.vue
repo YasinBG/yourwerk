@@ -1,7 +1,7 @@
 <template>
   <!-- Animation Section -->
   <div
-    class="ScrollAnimation relative py-20 mt-24 lg:mt-32 pointer-events-none !-skew-y-6"
+    class="ScrollAnimation w-full relative py-20 mt-24 lg:mt-32 pointer-events-none !-skew-y-6"
   >
     <div
       :class="{ 'yes': isDarkMode }"

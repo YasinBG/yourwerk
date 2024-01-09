@@ -1,5 +1,5 @@
 <template>
-  <div class="my-10 flex flex-col items-center">
+  <div class="my-10 flex flex-col w-full items-center">
     <div
       ref="scrollContainer"
       class="scroll-snap-container shadow-mkPurple/80 shadow-xl rounded-xl"
