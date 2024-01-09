@@ -7,9 +7,10 @@ import { provide } from "vue";
 import useDarkMode from "./directives/useDarkMode";
 export default {
   setup() {
-    const { isDarkMode, toggleDarkMode } = useDarkMode();
+    const { isDarkMode } = useDarkMode();
     provide("isDarkMode", isDarkMode);
-    provide("toggleDarkMode", toggleDarkMode);
+
+    return {};
   },
 };
 </script>

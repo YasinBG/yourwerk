@@ -56,12 +56,12 @@
             <a href="#">Buy</a>
           </li>
           <!-- Dark/Light Mode Button -->
-          <button
+          <!-- <button
             @click="toggleDarkMode"
             id="theme-toggle"
             class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none rounded-lg text-sm p-2 5"
           >
-            <!-- Dark SVG Icon -->
+
             <svg
               v-show="!isDarkMode"
               id="theme-toggle-dark-icon"
@@ -77,7 +77,7 @@
                 d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"
               ></path>
             </svg>
-            <!-- Light SVG Icon -->
+
             <svg
               v-show="isDarkMode"
               id="theme-toggle-light-icon"
@@ -95,7 +95,7 @@
                 clip-rule="evenodd"
               ></path>
             </svg>
-          </button>
+          </button> -->
         </ul>
       </div>
     </div>
@@ -281,23 +281,11 @@ export default {
   setup() {
     // Header
     const headerBackgroundColor = ref("light");
-    // const handleScroll = () => {
-    //   const scrollY = window.scrollY;
-
-    //   if (scrollY > 5) {
-    //     // Scroll yukarıdaysa ve dark mod aktifse, rengi mkBg yap
-    //     headerBackgroundColor.value = isDarkMode.value ? "dark" : "mkBg";
-    //   } else {
-    //     // Scroll en üstteyse, varsayılan rengi ayarla (örneğin "light")
-    //     headerBackgroundColor.value = "light";
-    //   }
-    // };
 
     const scrollY = ref(0);
     //* Dark-Light Mode
 
     const isDarkMode = inject("isDarkMode");
-    const toggleDarkMode = inject("toggleDarkMode");
 
     const updateScroll = () => {
       scrollY.value = window.scrollY;
@@ -339,7 +327,6 @@ export default {
       openDropdown,
       dropDownMenu,
       isDarkMode,
-      toggleDarkMode,
       navigateTo,
     };
   },

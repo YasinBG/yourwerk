@@ -72,7 +72,7 @@
               {{ panel.content2 }}
             </p>
             <div class="mx-auto md:mx-0 mt-8 text-center md:text-start">
-              <button class="neon-button">More Info</button>
+              <button class="neon-button !text-white">More Info</button>
             </div>
           </div>
         </div>

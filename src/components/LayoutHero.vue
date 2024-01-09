@@ -19,7 +19,7 @@
       <a
         v-if="isDarkMode"
         href="#"
-        class="neon-button !mb-12 lg:mb-0 hover:!text-white"
+        class="neon-button !mb-12 lg:mb-0 !text-white"
         @mouseover="handleHover"
         @mouseout="handleHoverOut"
         >WhitePaper</a
@@ -125,7 +125,6 @@
 </template>
 
 <script>
-// import useDarkMode from "@/directives/useDarkMode.js";
 import { inject, ref } from "vue";
 export default {
   setup() {

@@ -1,19 +1,19 @@
 <template>
-  <div class="my-20 flex flex-col items-center">
+  <div class="my-10 flex flex-col items-center">
     <div
       ref="scrollContainer"
-      class="scroll-snap-container shadow-mkPurple/50 shadow-xl rounded-xl"
+      class="scroll-snap-container shadow-mkPurple/80 shadow-xl rounded-xl"
     >
       <div
         v-for="(item, index) in items"
         :key="index"
-        class="scroll-snap-item !border-r-8 !border-r-mkPurple/40"
-        :class="{ 'bg-transparent': isDarkMode }"
+        class="scroll-snap-item !border-r-8 !border-r-mkPurple/80"
+        :class="{ 'cardBg': isDarkMode }"
       >
         <div
           class="p-4 max-w-xl flex flex-col text-start items-start rounded-xl"
         >
-          <span class="border-4 rounded-full p-3 bg-mkPurple mb-4">
+          <span class="border-4 rounded-full p-3 IconBg mb-4">
             <!-- 1. card -->
             <svg
               v-show="index === 0"
@@ -250,7 +250,7 @@
     </div>
     <!-- Buttons -->
     <div
-      class="button-container lg:my-6 my-2 flex items-center space-x-10 mx-auto"
+      class="button-container lg:my-12 my-2 flex items-center space-x-10 mx-auto"
     >
       <button @click="scrollToPrev">
         <span>
@@ -485,6 +485,37 @@ export default {
 .bgCard {
   /* background: url("../assets/mkover.webp"); */
   background: linear-gradient(to right, #080a10, #241b28);
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.IconBg {
+  background: linear-gradient(
+    to left top,
+    #0b2142,
+    #0d2e55,
+    #13447a,
+    #12487b,
+    #14558e
+  );
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  border: 3.5px solid #b9c7d5c7;
+}
+.cardBg {
+  background: linear-gradient(
+    to left top,
+    #0b2142,
+    #0d2e55,
+    #13447a,
+    #12487b,
+    #14558e
+  );
 
   background-position: center;
   background-repeat: no-repeat;

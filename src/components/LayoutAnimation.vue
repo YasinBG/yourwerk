@@ -1,23 +1,26 @@
 <template>
   <!-- Animation Section -->
   <div
-    class="ScrollAnimation relative py-20 mt-24 lg:mt-32 pointer-events-none"
+    class="ScrollAnimation relative py-20 mt-24 lg:mt-32 pointer-events-none !-skew-y-6"
   >
     <div
       :class="{ 'yes': isDarkMode }"
       class="absolute -top-10 lg:h-32 w-full bg-gradient-to-t from-transparent to-white dark:to-mkPrimary z-30"
     ></div>
-    <div v-motion="fadeUp" class="pt-20">
-      <h1 class="heading1 -skew-y-6 dark:!text-white !text-mkPrimary">
+    <div class="pt-20">
+      <h1
+        v-motion="fadeUp"
+        class="heading1 !text-7xl !mb-0 pt-10 dark:!text-white !text-mkPrimary scroller-bg"
+      >
         The Transaction Tool of the Future
       </h1>
 
       <div
-        class="scroller scroller-bg w-full mx-auto py-4 -skew-y-6"
+        class="scroller w-full mx-auto py-4 scroller-bg"
         data-speed="fast"
         ref="fastScroller"
       >
-        <ul class="tag-list scroller__inner py-4 flex flex-wrap gap-4">
+        <ul class="tag-list scroller__inner py-4 pb-12 flex flex-wrap gap-4">
           <li
             v-for="(tag, index) in tags"
             :key="index"
@@ -168,14 +171,15 @@ export default {
 }
 
 .tagBg {
-  background-image: linear-gradient(
-    to left,
-    #ecebea,
-    #f2d7be,
-    #f5c394,
-    #f7ae6c,
-    #f89844
+  background: linear-gradient(
+    to bottom,
+    #1c437d,
+    #0b2142,
+    #0d2e55,
+    #13447a,
+    #12487b,
+    #14558e
   );
-  color: #103b68;
+  color: #e2ecf6;
 }
 </style>

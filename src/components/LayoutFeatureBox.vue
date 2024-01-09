@@ -22,13 +22,13 @@
       <div
         v-motion="fadeUp1"
         class="relative flex flex-col p-6 space-y-6 bg-gray-100 rounded-lg md:w-1/3"
-        :class="{ 'bgCard shadow-lg shadow-mkPrimary  ': isDarkMode }"
+        :class="{ 'cardGlass shadow-lg shadow-[#12487b]  ': isDarkMode }"
       >
         <!-- Image Positioning -->
         <div class="absolute -ml-10 left-1/2 -top-10 md:left-16">
           <!-- Image Container For Background & Center -->
           <div
-            class="flex items-center justify-center w-20 h-20 p-4 rounded-full dark:mkPurple bg-mkPurple border-8 border-[#13447a]"
+            class="flex items-center justify-center w-20 h-20 p-4 rounded-full dark:mkPurple bgCard"
           >
             <img src="../assets/icon-brand-recognition.svg" alt="" />
           </div>
@@ -45,14 +45,16 @@
       <!-- Box 2 -->
       <div
         v-motion="fadeUp2"
-        class="relative flex flex-col mt-24 p-6 space-y-6 bg-gray-100 rounded-lg md:mt-8 md:w-1/3"
-        :class="{ 'bgCard shadow-lg shadow-mkPrimary  ': isDarkMode }"
+        class="relative flex flex-col mt-24 p-6 space-y-6 bg-gray-100 rounded-lg md:mt-0 md:w-1/3"
+        :class="{
+          'cardGlass shadow-lg shadow-[#12487b]  ': isDarkMode,
+        }"
       >
         <!-- Image Positioning -->
         <div class="absolute -ml-10 left-1/2 -top-10 md:left-16">
           <!-- Image Container For Background & Center -->
           <div
-            class="flex items-center justify-center w-20 h-20 p-4 rounded-full dark:mkPurple bg-mkPurple border-8 border-[#13447a]"
+            class="flex items-center justify-center w-20 h-20 p-4 rounded-full dark:mkPurple bgCard"
           >
             <img src="../assets/icon-detailed-records.svg" alt="" />
           </div>
@@ -70,14 +72,14 @@
       <!-- Box 3 -->
       <div
         v-motion="fadeUp3"
-        class="relative flex flex-col mt-24 p-6 space-y-6 bg-gray-100 rounded-lg md:mt-16 md:w-1/3"
-        :class="{ 'bgCard shadow-lg shadow-mkPrimary  ': isDarkMode }"
+        class="relative flex flex-col mt-24 p-6 space-y-6 bg-gray-100 rounded-lg md:mt-0 md:w-1/3"
+        :class="{ 'cardGlass shadow-lg shadow-[#12487b]  ': isDarkMode }"
       >
         <!-- Image Positioning -->
         <div class="absolute -ml-10 left-1/2 -top-10 md:left-16">
           <!-- Image Container For Background & Center -->
           <div
-            class="flex items-center justify-center w-20 h-20 p-4 rounded-full dark:mkPurple bg-mkPurple border-8 border-[#13447a]"
+            class="flex items-center justify-center w-20 h-20 p-4 rounded-full dark:mkPurple bgCard"
           >
             <img src="../assets/icon-fully-customizable.svg" alt="" />
           </div>
@@ -138,7 +140,25 @@ export default {
   background-size: cover; */
 
   background: linear-gradient(
-    to left,
+    to left top,
+    #0b2142,
+    #0d2e55,
+    #13447a,
+    #12487b,
+    #14558e
+  );
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  border: 3.5px solid #b9c7d5c7;
+}
+
+.cardGlass {
+  background: linear-gradient(
+    to bottom,
+    #1c437d,
     #0b2142,
     #0d2e55,
     #13447a,
