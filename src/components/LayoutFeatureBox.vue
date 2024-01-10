@@ -10,7 +10,7 @@
       <div class="gradientLine w-full mx-auto !mt-4" v-motion="leftLine"></div>
     </div>
     <div
-      class="relative container flex flex-col items-start px-6 mx-auto md:flex-row md:space-x-7"
+      class="relative container flex flex-col px-6 mx-auto flex-wrap md:flex-nowrap md:flex-row md:space-x-7"
     >
       <!-- Horizontal Line -->
       <div
@@ -26,7 +26,7 @@
       <!-- Box 1 -->
       <div
         v-motion="fadeUp1"
-        class="relative shadow-xl shadow-mkSecondary flex flex-col h-72 p-6 space-y-6 bg-gray-100 rounded-lg md:w-1/3"
+        class="relative shadow-xl shadow-mkSecondary flex flex-col p-6 h-f bg-gray-100 rounded-lg md:w-1/3"
         :class="{ 'cardGlass shadow-lg shadow-[#12487b]  ': isDarkMode }"
       >
         <!-- Image Positioning -->
@@ -38,20 +38,24 @@
             <img src="../assets/icon-brand-recognition.svg" alt="" />
           </div>
         </div>
-        <h5 class="pt-6 text-xl font-bold text-center md:text-left uppercase">
-          As an Investment Tool
-        </h5>
-        <p class="text-center text-gray-400 md:text-left">
-          WERK, as an innovative investment tool that enriches your digital
-          asset portfolios, offers sustainable growth and stable return
-          opportunities in the rapidly expanding market of the Web3 ecosystem.
-        </p>
+        <div class="h-full">
+          <h5
+            class="pt-8 pb-4 text-xl font-bold text-center md:text-left uppercase"
+          >
+            As an Investment Tool
+          </h5>
+          <p class="text-center text-gray-400 md:text-left flex-wrap">
+            WERK, as an innovative investment tool that enriches your digital
+            asset portfolios, offers sustainable growth and stable return
+            opportunities in the rapidly expanding market of the Web3 ecosystem.
+          </p>
+        </div>
       </div>
 
       <!-- Box 2 -->
       <div
         v-motion="fadeUp2"
-        class="relative flex flex-col shadow-xl shadow-mkSecondary h-72 mt-24 p-6 space-y-6 bg-gray-100 rounded-lg md:mt-0 md:w-1/3"
+        class="relative flex flex-col shadow-xl shadow-mkSecondary mt-24 p-6 h-f bg-gray-100 rounded-lg md:mt-0 md:w-1/3"
         :class="{
           'cardGlass shadow-lg shadow-[#12487b]  ': isDarkMode,
         }"
@@ -65,20 +69,24 @@
             <img src="../assets/icon-detailed-records.svg" alt="" />
           </div>
         </div>
-        <h5 class="pt-6 text-xl font-bold text-center md:text-left uppercase">
-          As a Currency
-        </h5>
-        <p class="text-center text-gray-400 md:text-left">
-          WERK, as a tool that simplifies your daily life and opens new doors in
-          the digital world, enables you to securely complete transactions in a
-          short time as an alternative payment method in Web3 projects.
-        </p>
+        <div class="h-full">
+          <h5
+            class="pt-8 pb-4 text-xl font-bold text-center md:text-left uppercase"
+          >
+            As a Currency
+          </h5>
+          <p class="text-center text-gray-400 md:text-left flex-wrap">
+            WERK, as a tool that simplifies your daily life and opens new doors
+            in the digital world, enables you to securely complete transactions
+            in a short time as an alternative payment method in Web3 projects.
+          </p>
+        </div>
       </div>
 
       <!-- Box 3 -->
       <div
         v-motion="fadeUp3"
-        class="relative flex flex-col shadow-xl shadow-mkSecondary h-72 mt-24 p-6 space-y-6 bg-gray-100 rounded-lg md:mt-0 md:w-1/3"
+        class="relative flex flex-col shadow-xl shadow-mkSecondary mt-24 p-6 h-f bg-gray-100 rounded-lg md:mt-0 md:w-1/3"
         :class="{ 'cardGlass shadow-lg shadow-[#12487b]  ': isDarkMode }"
       >
         <!-- Image Positioning -->
@@ -90,15 +98,19 @@
             <img src="../assets/icon-fully-customizable.svg" alt="" />
           </div>
         </div>
-        <h5 class="pt-6 text-xl font-bold text-center md:text-left uppercase">
-          Management and Voting
-        </h5>
-        <p class="text-center text-gray-400 md:text-left">
-          WERK grants token holders an active role in shaping the project’s
-          future, offering a transparent and tamper-resistant voting mechanism
-          at the heart of the Web3 ecosystem, fostering a democratic and
-          participatory approach.
-        </p>
+        <div class="h-full">
+          <h5
+            class="pt-8 pb-4 text-xl font-bold text-center md:text-left uppercase"
+          >
+            Management and Voting
+          </h5>
+          <p class="text-center text-gray-400 md:text-left flex-wrap">
+            WERK grants token holders an active role in shaping the project’s
+            future, offering a transparent and tamper-resistant voting mechanism
+            at the heart of the Web3 ecosystem, fostering a democratic and
+            participatory approach.
+          </p>
+        </div>
       </div>
     </div>
   </section>

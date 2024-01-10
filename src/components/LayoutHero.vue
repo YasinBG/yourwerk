@@ -33,7 +33,7 @@
         >Learn More</a
       >
     </div>
-    <div class="rightSection w-1/2">
+    <div class="rightSection w-full overflow-hidden lg:w-1/2">
       <div class="HeroImg bgchange" :class="{ 'animate-wiggle': isHovered }">
         <img
           class="w-full h-full object-cover rotate-12"
@@ -191,5 +191,32 @@ export default {
 }
 .st1 {
   fill: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .background {
+    position: absolute;
+    /* z-index: -1; */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* transform: translateY(-90deg); */
+    overflow: hidden;
+  }
+
+  .background svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: scaleY(1.3) scaleX(2.25);
+    /* transform: scaleY(2.2); */
+    transform-origin: bottom;
+    box-sizing: border-box;
+    display: block;
+    pointer-events: none;
+  }
 }
 </style>
