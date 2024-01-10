@@ -55,47 +55,6 @@
           >
             <a href="#">Buy</a>
           </li>
-          <!-- Dark/Light Mode Button -->
-          <!-- <button
-            @click="toggleDarkMode"
-            id="theme-toggle"
-            class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none rounded-lg text-sm p-2 5"
-          >
-
-            <svg
-              v-show="!isDarkMode"
-              id="theme-toggle-dark-icon"
-              class="w-5 h-5"
-              :class="{
-                'fill-white': headerBackgroundColor === 'mkBg',
-              }"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"
-              ></path>
-            </svg>
-
-            <svg
-              v-show="isDarkMode"
-              id="theme-toggle-light-icon"
-              class="w-5 h-5"
-              :class="{
-                'fill-white': headerBackgroundColor === 'mkBg',
-              }"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-              ></path>
-            </svg>
-          </button> -->
         </ul>
       </div>
     </div>
@@ -113,9 +72,11 @@
           }"
           :variants="{ custom: { scale: 2 } }"
           :hovered="{ scale: 1.2 }"
-          class="logo flex items-center text-3xl border-b-2 border-b-mkPurple cursor-pointer"
+          class="logo flex items-center text-3xl cursor-pointer font-bold"
         >
-          Your<span class="italic font-serif text-mkPurple">W</span
+          Your<span
+            class="italic font-serif bg-clip-text text-transparent bg-gradient-to-r from-mkSecondary to-white"
+            >W</span
           ><span class="font-bold">erk</span>
         </span>
         <!-- hamburger menu -->
@@ -127,10 +88,10 @@
           <div class="hamburger"></div>
         </div>
       </div>
-      <nav class="site-nav" :class="{ 'site-nav--open': isNavOpen }">
+      <nav class="site-nav mobileBg" :class="{ 'site-nav--open': isNavOpen }">
         <ul>
-          <li class="flex items-center">
-            <router-link to="/" class="!flex items-center w-full">
+          <li class="flex items-center border-b border-b-[#103b68]">
+            <router-link to="/" class="!flex items-center w-full px-4 py-6">
               <span class="mr-4">
                 <svg
                   class="w-8 h-8"
@@ -148,15 +109,11 @@
               <span>Home</span>
             </router-link>
           </li>
-          <li class="">
+          <li class="border-b border-b-[#103b68]">
             <routerLink
               to="#"
               href="#"
-              :class="{
-                '!bg-[#8a8b8c] transition-all duration-200': dropDownMenu,
-              }"
-              @click="openDropdown"
-              class="!flex items-center w-full"
+              class="!flex items-center w-full px-4 py-6"
             >
               <span class="mr-4">
                 <svg
@@ -173,17 +130,15 @@
                   />
                 </svg>
               </span>
-              <span
-                >Docs
-                <span class="ml-2">{{ dropDownMenu ? "▲" : "▼" }}</span></span
-              >
+              <span>WhitePaper </span>
             </routerLink>
-
-            <a href="" class="!pl-12 !py-4" v-show="dropDownMenu">WhitePaper</a>
-            <a href="" class="!pl-12 !py-4" v-show="dropDownMenu">Lorem</a>
           </li>
-          <li>
-            <routerLink to="#" class="!flex items-center w-full">
+          <li class="border-b border-b-[#103b68]">
+            <routerLink
+              @click="mobileNavigate('section1')"
+              to="#"
+              class="!flex items-center w-full px-4 py-6"
+            >
               <span class="w-8 h-8">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -199,11 +154,11 @@
                   />
                 </svg>
               </span>
-              <span>About</span>
+              <span>How to Buy</span>
             </routerLink>
           </li>
-          <li>
-            <routerLink to="#" class="!flex items-center w-full">
+          <li class="border-b border-b-[#103b68]">
+            <routerLink to="#" class="!flex items-center w-full px-4 py-6">
               <span class="mr-4">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -222,53 +177,187 @@
               <span> Contact </span>
             </routerLink>
           </li>
+          <li class="">
+            <routerLink to="#" class="!flex items-center w-full px-4 py-6">
+              <span class="mr-4">
+                <svg
+                  fill="#FFF"
+                  height="24px"
+                  width="24px"
+                  version="1.1"
+                  id="Capa_1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  viewBox="0 0 487.888 487.888"
+                  xml:space="preserve"
+                >
+                  <g>
+                    <g>
+                      <path
+                        d="M457.2,80.881c-40.9-40.9-107.1-40.9-148,0c-39.4,39.4-40.8,102.3-4.4,143.4l1.1,0.9c-4,8.5-10.8,19.1-21.6,24.4
+			c-3.6,1.8-2.7,7.1,1.2,7.7c11.8,1.8,28.7-0.2,44.5-12.2l0.2,0.2c40.1,23.6,92.6,18.2,127.1-16.3
+			C498.1,188.081,498.1,121.781,457.2,80.881z M411.1,193.281c-4.2,5.2-9.8,8.6-16.2,10.4c-2.8,0.8-4.1,2.2-3.9,5.2
+			c0.1,2.9,0,5.7,0,8.6c0,2.6-1.3,3.9-3.8,4c-3.1,0.1-6.2,0.1-9.3,0c-2.7,0-4-1.6-4-4.2c0-2.1,0-4.2-0.1-6.3c0-4.6-0.2-4.8-4.6-5.5
+			c-5.7-0.9-11.3-2.2-16.5-4.7c-4.1-2-4.5-3-3.3-7.3c0.9-3.2,1.8-6.4,2.7-9.6c1.2-3.7,2.1-4.1,5.5-2.4c5.8,3,11.9,4.7,18.3,5.5
+			c4.1,0.5,8.2,0.1,12-1.6c7.1-3.1,8.3-11.4,2.2-16.4c-2.1-1.7-4.4-2.9-6.8-4c-6.3-2.8-12.8-4.9-18.7-8.4
+			c-9.6-5.7-15.7-13.6-15-25.3c0.8-13.2,8.3-21.4,20.4-25.9c5-1.8,5-1.7,5-7c0-1.8,0-3.5,0-5.3c0.1-3.9,0.8-4.6,4.7-4.7
+			c1.2,0,2.4,0,3.6,0c8.4,0,8.4,0,8.4,8.3c0,5.9,0,5.9,5.9,6.9c4.5,0.7,8.8,2,13,3.9c2.3,1,3.2,2.6,2.5,5c-1,3.6-2,7.2-3.2,10.8
+			c-1.1,3.4-2.2,3.9-5.4,2.3c-6.5-3.2-13.4-4.5-20.6-4.1c-1.9,0.1-3.7,0.4-5.5,1.1c-6.2,2.7-7.2,9.6-1.9,13.8c2.7,2.1,5.7,3.7,8.9,5
+			c5.5,2.3,11.1,4.5,16.3,7.4C418.4,158.081,422.9,178.981,411.1,193.281z"
+                      />
+                      <path
+                        d="M427.4,368.481c-3.2-4-5-8.9-5-14v-23.1v-14.8v-42.8c-12.5,4.1-25.7,6.2-39.2,6.2v36.6v14.8v25.4H66.9v-29.8v-10.4v-161.6
+			c0,0,0-0.1,0.1-0.1h191.2c0-13.3,2.1-26.5,6.3-39.2H67c-21.7,0-39.3,17.6-39.3,39.3v161.5v8.6v29c0,5.1-1.8,10-5,14l-20.3,24.9
+			c-1.5,1.9-2.4,4.2-2.4,6.6v11.4c0,14.7,11.9,26.7,26.7,26.7h396.4c14.7,0,26.7-11.9,26.7-26.7v-11.4c0-2.4-0.8-4.8-2.4-6.7
+			L427.4,368.481z M267.7,398.881c0,7.5-6.1,13.6-13.6,13.6H196c-7.5,0-13.6-6.1-13.6-13.6v-2.9h85.2v2.9H267.7z"
+                      />
+                    </g>
+                  </g>
+                </svg>
+              </span>
+              <span> Buy </span>
+            </routerLink>
+          </li>
         </ul>
-        <!-- Social media -->
-        <div class="Social-Media flex items-center w-full">
-          <a
-            href="https://www.facebook.com"
-            target="_blank"
-            class="facebook w-24 h-24"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-            >
-              <g clip-path="url(#clip0_2_20289)">
-                <path
-                  d="M23.625 12C23.625 5.57812 18.4219 0.375 12 0.375C5.57812 0.375 0.375 5.57812 0.375 12C0.375 17.8022 4.62609 22.6116 10.1836 23.4844V15.3605H7.23047V12H10.1836V9.43875C10.1836 6.52547 11.918 4.91625 14.5744 4.91625C15.8466 4.91625 17.1769 5.14313 17.1769 5.14313V8.0025H15.7106C14.2669 8.0025 13.8164 8.89875 13.8164 9.81797V12H17.0405L16.5248 15.3605H13.8164V23.4844C19.3739 22.6116 23.625 17.8022 23.625 12Z"
-                  fill="white"
-                />
-              </g>
-              <defs>
-                <clipPath id="clip0_2_20289">
-                  <rect width="24" height="24" fill="white" />
-                </clipPath>
-              </defs>
-            </svg>
-          </a>
-          <a
-            href="https://www.facebook.com"
-            target="_blank"
-            class="facebook w-24 h-24"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-            >
-              <path
-                d="M7.8 2H16.2C19.4 2 22 4.6 22 7.8V16.2C22 17.7383 21.3889 19.2135 20.3012 20.3012C19.2135 21.3889 17.7383 22 16.2 22H7.8C4.6 22 2 19.4 2 16.2V7.8C2 6.26174 2.61107 4.78649 3.69878 3.69878C4.78649 2.61107 6.26174 2 7.8 2ZM7.6 4C6.64522 4 5.72955 4.37928 5.05442 5.05442C4.37928 5.72955 4 6.64522 4 7.6V16.4C4 18.39 5.61 20 7.6 20H16.4C17.3548 20 18.2705 19.6207 18.9456 18.9456C19.6207 18.2705 20 17.3548 20 16.4V7.6C20 5.61 18.39 4 16.4 4H7.6ZM17.25 5.5C17.5815 5.5 17.8995 5.6317 18.1339 5.86612C18.3683 6.10054 18.5 6.41848 18.5 6.75C18.5 7.08152 18.3683 7.39946 18.1339 7.63388C17.8995 7.8683 17.5815 8 17.25 8C16.9185 8 16.6005 7.8683 16.3661 7.63388C16.1317 7.39946 16 7.08152 16 6.75C16 6.41848 16.1317 6.10054 16.3661 5.86612C16.6005 5.6317 16.9185 5.5 17.25 5.5ZM12 7C13.3261 7 14.5979 7.52678 15.5355 8.46447C16.4732 9.40215 17 10.6739 17 12C17 13.3261 16.4732 14.5979 15.5355 15.5355C14.5979 16.4732 13.3261 17 12 17C10.6739 17 9.40215 16.4732 8.46447 15.5355C7.52678 14.5979 7 13.3261 7 12C7 10.6739 7.52678 9.40215 8.46447 8.46447C9.40215 7.52678 10.6739 7 12 7ZM12 9C11.2044 9 10.4413 9.31607 9.87868 9.87868C9.31607 10.4413 9 11.2044 9 12C9 12.7956 9.31607 13.5587 9.87868 14.1213C10.4413 14.6839 11.2044 15 12 15C12.7956 15 13.5587 14.6839 14.1213 14.1213C14.6839 13.5587 15 12.7956 15 12C15 11.2044 14.6839 10.4413 14.1213 9.87868C13.5587 9.31607 12.7956 9 12 9Z"
-                fill="black"
-              />
-            </svg>
-          </a>
+        <div class="border-t-mkPrimary border-t my-2"></div>
+        <div class="text-center py-2 font-semibold uppercase">
+          Us on social media
         </div>
+        <!-- Social media -->
+        <div class="Social-Media flex items-center w-full py-4 mx-auto">
+          <ul class="flex justify-around items-center w-full">
+            <li class="social-Icon p-4 rounded-full">
+              <a href="" class="">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-youtube"
+                >
+                  <path
+                    d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"
+                  ></path>
+                  <polygon
+                    points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"
+                  ></polygon>
+                </svg>
+              </a>
+            </li>
+            <li class="social-Icon p-4 rounded-full">
+              <a href="">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-facebook"
+                >
+                  <path
+                    d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
+                  ></path>
+                </svg>
+              </a>
+            </li>
+            <li class="social-Icon p-4 rounded-full">
+              <a href="">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-instagram"
+                >
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                  <path
+                    d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"
+                  ></path>
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                </svg>
+              </a>
+            </li>
+            <li class="social-Icon p-4 rounded-full">
+              <a href="">
+                <svg
+                  width="24px"
+                  height="24px"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M23.1117 4.49449C23.4296 2.94472 21.9074 1.65683 20.4317 2.227L2.3425 9.21601C0.694517 9.85273 0.621087 12.1572 2.22518 12.8975L6.1645 14.7157L8.03849 21.2746C8.13583 21.6153 8.40618 21.8791 8.74917 21.968C9.09216 22.0568 9.45658 21.9576 9.70712 21.707L12.5938 18.8203L16.6375 21.8531C17.8113 22.7334 19.5019 22.0922 19.7967 20.6549L23.1117 4.49449ZM3.0633 11.0816L21.1525 4.0926L17.8375 20.2531L13.1 16.6999C12.7019 16.4013 12.1448 16.4409 11.7929 16.7928L10.5565 18.0292L10.928 15.9861L18.2071 8.70703C18.5614 8.35278 18.5988 7.79106 18.2947 7.39293C17.9906 6.99479 17.4389 6.88312 17.0039 7.13168L6.95124 12.876L3.0633 11.0816ZM8.17695 14.4791L8.78333 16.6015L9.01614 15.321C9.05253 15.1209 9.14908 14.9366 9.29291 14.7928L11.5128 12.573L8.17695 14.4791Z"
+                    fill="white"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li class="social-Icon p-4 rounded-full">
+              <a href="">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  version="1.1"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 256 256"
+                  xml:space="preserve"
+                >
+                  <defs></defs>
+                  <g
+                    style="
+                      stroke: none;
+                      stroke-width: 0;
+                      stroke-dasharray: none;
+                      stroke-linecap: butt;
+                      stroke-linejoin: miter;
+                      stroke-miterlimit: 10;
+                      fill: none;
+                      fill-rule: nonzero;
+                      opacity: 1;
+                    "
+                    transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)"
+                  >
+                    <path
+                      d="M 0.219 2.882 l 34.748 46.461 L 0 87.118 h 7.87 l 30.614 -33.073 l 24.735 33.073 H 90 L 53.297 38.043 L 85.844 2.882 h -7.87 L 49.781 33.341 L 27.001 2.882 H 0.219 z M 11.793 8.679 h 12.303 L 78.425 81.32 H 66.122 L 11.793 8.679 z"
+                      style="
+                        stroke: none;
+                        stroke-width: 1;
+                        stroke-dasharray: none;
+                        stroke-linecap: butt;
+                        stroke-linejoin: miter;
+                        stroke-miterlimit: 10;
+                        fill: rgb(248, 244, 244);
+                        fill-rule: nonzero;
+                        opacity: 1;
+                      "
+                      transform=" matrix(1 0 0 1 0 0) "
+                      stroke-linecap="round"
+                    />
+                  </g>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="border-b-mkPrimary border-b my-2"></div>
       </nav>
     </div>
   </header>
@@ -299,7 +388,7 @@ export default {
     });
 
     watch([scrollY, isDarkMode], ([newScrollY, newIsDarkMode]) => {
-      if (newScrollY > 80) {
+      if (newScrollY > 10) {
         headerBackgroundColor.value = newIsDarkMode ? "dark" : "mkBg";
       } else {
         headerBackgroundColor.value = "light";
@@ -311,23 +400,24 @@ export default {
     const toggleMenu = () => {
       isNavOpen.value = !isNavOpen.value;
     };
-    const dropDownMenu = ref(false);
-    const openDropdown = () => {
-      dropDownMenu.value = !dropDownMenu.value;
-    };
 
     //* Navigation Scroll
     const { navigateTo } = useNavigation();
+
+    //* Mobile'de scroll yönlendirmesi.
+    const mobileNavigate = (event) => {
+      navigateTo(event);
+      isNavOpen.value = false;
+    };
 
     return {
       headerBackgroundColor,
       updateScroll,
       isNavOpen,
       toggleMenu,
-      openDropdown,
-      dropDownMenu,
       isDarkMode,
       navigateTo,
+      mobileNavigate,
     };
   },
 };
@@ -389,6 +479,7 @@ export default {
   transition: clip-path ease-in-out 500ms;
   width: 100%;
   z-index: 999;
+
   /*   display: none; */
 }
 
@@ -403,18 +494,10 @@ export default {
   list-style: none;
 }
 
-.site-nav li {
-  border-bottom: 1px solid #575766;
-}
-
-.site-nav li:last-child {
-  border-bottom: none;
-}
-
 .site-nav a {
   color: #ebebd3;
-  display: block;
-  padding: 2em 4em 2em 1.5em;
+  /* display: block; */
+  /* padding: 2em 4em 2em 1.5em; */
   text-transform: uppercase;
   text-decoration: none;
 }
@@ -422,8 +505,36 @@ export default {
 .site-nav a:hover,
 .site-nav a:focus {
   /* background: #e4b363; */
-  background: #8a2be2;
+  background: #0d2e55;
   /* color: #464655; */
   color: #eae9ea;
+}
+
+.mobileBg {
+  background: linear-gradient(
+    to right,
+    #0b2142,
+    #0d2e55,
+    #103b68,
+    #12487b,
+    #14558e
+  );
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.social-Icon {
+  background: linear-gradient(
+    to top,
+    #1c437d,
+    #0b2142,
+    #0d2e55,
+    #13447a,
+    #12487b,
+    #14558e,
+    #0d2e55
+  );
 }
 </style>

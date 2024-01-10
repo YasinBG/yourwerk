@@ -155,4 +155,10 @@ export default {
     #0d2e55
   );
 }
+
+@media (max-width: 768px) {
+  .scroll-to-top-btn {
+    display: none;
+  }
+}
 </style>
