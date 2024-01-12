@@ -161,9 +161,9 @@
             </svg>
           </span>
           <h2 class="text-xl font-bold mb-2">{{ item.title }}</h2>
-          <h2 class="font-semibold mb-2">{{ item.subtitle }}</h2>
+          <!-- <h2 class="font-semibold mb-2">{{ item.subtitle }}</h2> -->
           <div class="space-y-2">
-            <div class="text-sm flex items-start justify-center font-light">
+            <div class="text-sm flex items-start justify-start font-light">
               <span class="mr-1">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -190,7 +190,7 @@
               </span>
               <span>{{ item.text1 }}</span>
             </div>
-            <div class="text-sm flex items-start justify-center">
+            <div class="text-sm flex items-start justify-start">
               <span class="mr-1">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -217,7 +217,7 @@
               </span>
               <span>{{ item.text2 }}</span>
             </div>
-            <div class="text-sm flex items-start justify-center">
+            <div class="text-sm flex items-start justify-start">
               <span class="mr-1">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -243,6 +243,126 @@
                 </svg>
               </span>
               <span>{{ item.text3 }}</span>
+            </div>
+            <div
+              class="text-sm flex items-start justify-start"
+              v-if="item.text4"
+            >
+              <span class="mr-1">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="25"
+                  height="25"
+                  viewBox="0 0 25 25"
+                  fill="none"
+                >
+                  <path
+                    d="M17.4805 7.63525H22.7301V12.8849"
+                    stroke="#f89844"
+                    stroke-width="1.49989"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M3.2334 18.1345L8.92219 12.4457C9.06147 12.3064 9.22683 12.1959 9.40883 12.1205C9.59082 12.0451 9.78589 12.0063 9.98289 12.0063C10.1799 12.0063 10.375 12.0451 10.5569 12.1205C10.7389 12.1959 10.9043 12.3064 11.0436 12.4457L13.4218 14.824C13.5611 14.9633 13.7265 15.0738 13.9085 15.1492C14.0905 15.2246 14.2856 15.2634 14.4825 15.2634C14.6795 15.2634 14.8746 15.2246 15.0566 15.1492C15.2386 15.0738 15.404 14.9633 15.5432 14.824L21.982 8.38525"
+                    stroke="#f89844"
+                    stroke-width="1.49989"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </span>
+              <span>{{ item.text4 }}</span>
+            </div>
+            <div
+              class="text-sm flex items-start justify-start"
+              v-if="item.text5"
+            >
+              <span class="mr-1">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="25"
+                  height="25"
+                  viewBox="0 0 25 25"
+                  fill="none"
+                >
+                  <path
+                    d="M17.4805 7.63525H22.7301V12.8849"
+                    stroke="#f89844"
+                    stroke-width="1.49989"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M3.2334 18.1345L8.92219 12.4457C9.06147 12.3064 9.22683 12.1959 9.40883 12.1205C9.59082 12.0451 9.78589 12.0063 9.98289 12.0063C10.1799 12.0063 10.375 12.0451 10.5569 12.1205C10.7389 12.1959 10.9043 12.3064 11.0436 12.4457L13.4218 14.824C13.5611 14.9633 13.7265 15.0738 13.9085 15.1492C14.0905 15.2246 14.2856 15.2634 14.4825 15.2634C14.6795 15.2634 14.8746 15.2246 15.0566 15.1492C15.2386 15.0738 15.404 14.9633 15.5432 14.824L21.982 8.38525"
+                    stroke="#f89844"
+                    stroke-width="1.49989"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </span>
+              <span>{{ item.text5 }}</span>
+            </div>
+            <div
+              class="text-sm flex items-start justify-start"
+              v-if="item.text6"
+            >
+              <span class="mr-1">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="25"
+                  height="25"
+                  viewBox="0 0 25 25"
+                  fill="none"
+                >
+                  <path
+                    d="M17.4805 7.63525H22.7301V12.8849"
+                    stroke="#f89844"
+                    stroke-width="1.49989"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M3.2334 18.1345L8.92219 12.4457C9.06147 12.3064 9.22683 12.1959 9.40883 12.1205C9.59082 12.0451 9.78589 12.0063 9.98289 12.0063C10.1799 12.0063 10.375 12.0451 10.5569 12.1205C10.7389 12.1959 10.9043 12.3064 11.0436 12.4457L13.4218 14.824C13.5611 14.9633 13.7265 15.0738 13.9085 15.1492C14.0905 15.2246 14.2856 15.2634 14.4825 15.2634C14.6795 15.2634 14.8746 15.2246 15.0566 15.1492C15.2386 15.0738 15.404 14.9633 15.5432 14.824L21.982 8.38525"
+                    stroke="#f89844"
+                    stroke-width="1.49989"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </span>
+              <span>{{ item.text6 }}</span>
+            </div>
+            <div
+              class="text-sm flex items-start justify-start"
+              v-if="item.text7"
+            >
+              <span class="mr-1">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="25"
+                  height="25"
+                  viewBox="0 0 25 25"
+                  fill="none"
+                >
+                  <path
+                    d="M17.4805 7.63525H22.7301V12.8849"
+                    stroke="#f89844"
+                    stroke-width="1.49989"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M3.2334 18.1345L8.92219 12.4457C9.06147 12.3064 9.22683 12.1959 9.40883 12.1205C9.59082 12.0451 9.78589 12.0063 9.98289 12.0063C10.1799 12.0063 10.375 12.0451 10.5569 12.1205C10.7389 12.1959 10.9043 12.3064 11.0436 12.4457L13.4218 14.824C13.5611 14.9633 13.7265 15.0738 13.9085 15.1492C14.0905 15.2246 14.2856 15.2634 14.4825 15.2634C14.6795 15.2634 14.8746 15.2246 15.0566 15.1492C15.2386 15.0738 15.404 14.9633 15.5432 14.824L21.982 8.38525"
+                    stroke="#f89844"
+                    stroke-width="1.49989"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </span>
+              <span>{{ item.text7 }}</span>
             </div>
           </div>
         </div>
@@ -321,55 +441,53 @@ export default {
   setup() {
     const items = ref([
       {
-        title: "Understanding Blockchain",
+        title: "First Quarter",
         subtitle: "The Core Principles",
-        text1:
-          "Decentralization: Explaining how blockchain operates on a peer-to-peer network, eliminating the need for a central authority.",
-        text2:
-          "Transparency & Security: Discussing the immutable and transparent nature of blockchain transactions.",
-        text3:
-          "Consensus Algorithms: Overview of mechanisms like Proof of Work (PoW) and Proof of Stake (PoS) that validate transactions.",
+        text1: "Complete the Token Pre-Sale Process.",
+        text2: "Initiate the First and Second Public Sale Processes.",
+        text3: "Form Technical, PR, Promotion, and Advertising Teams.",
+        text4: "Activate Token Staking Processes.",
+        text5:
+          "Establish Special Agreements with DEX Projects and Wallet Applications.",
+        text6:
+          "Develop Collaborations with at least 30 Web3 AI projects and 70 Web3 game/application projects.",
+        text7: "Burn 12.500.000 tokens.",
       },
       {
-        title: "Blockchain Revolutionizing Finance",
-        subtitle: "A New Era of Fintech",
-        text1:
-          "Cryptocurrencies: Introduction to Bitcoin and other digital currencies as applications of blockchain.",
-        text2:
-          "Smart Contracts: How blockchain enables automatic, self-executing contracts.",
-        text3:
-          "Cross-Border Payments: Benefits of blockchain in reducing costs and time for international transactions.",
-      },
-      {
-        title: "Diverse Applications of Blockchain",
+        title: "Second Quarter",
         subtitle: "Beyond Just Cryptocurrency",
-        text1:
-          "Supply Chain Transparency: Enhancing traceability and accountability in supply chains.",
-        text2:
-          "Voting Systems: Potential of blockchain in creating secure and transparent voting mechanisms.",
-        text3:
-          "Decentralized Identity: How blockchain can provide secure and sovereign digital identities.",
+        text1: "Increase the number of collaborative projects to 300.",
+        text2: "Increase the number of burned tokens to at least 25.000.000.",
+        text3: "Initiate efforts to list on Cryptocurrency Exchanges.",
+        text4:
+          "Make deals with large investors to increase market demand for tokens.",
       },
       {
-        title: "Navigating Blockchain Challenges",
+        title: "Third Quarter",
+        subtitle: "Beyond Just Cryptocurrency",
+        text1: "Reach 37.500.000 burned tokens.",
+        text2: "Increase the number of collaborative projects to 500.",
+        text3: "Strengthen ongoing deals with large investors.",
+      },
+      {
+        title: "Fourth Quarter",
         subtitle: "Addressing Key Issues",
         text1:
-          "Scalability: Discussing the limitations in transaction speed and volume.",
-        text2:
-          "Energy Consumption: Addressing concerns over the environmental impact of blockchain technologies like Bitcoin.",
+          "Maximize the number of burned tokens to 50.000.000 by the end of the year.",
+        text2: "Extend collaborations to 750 projects.",
         text3:
-          "Regulatory Hurdles: Exploring the evolving landscape of government regulations and compliance.",
+          "Continue partnerships with large investors to maintain and support market value.",
       },
-      {
-        title: "The Future of Blockchain",
-        subtitle: "Emerging Trends and Predictions",
-        text1:
-          "Integration with AI and IoT: Exploring how blockchain can synergize with other technologies.",
-        text2:
-          "Decentralized Finance (DeFi): The rise of financial services built on blockchain.",
-        text3:
-          "Quantum Computing & Blockchain: Preparing for future challenges in blockchain security with the advent of quantum computing.",
-      },
+      // {
+      //   title: "The Future of Blockchain",
+      //   subtitle: "Emerging Trends and Predictions",
+      //   text1:
+      //     "Integration with AI and IoT: Exploring how blockchain can synergize with other technologies.",
+      //   text2:
+      //     "Decentralized Finance (DeFi): The rise of financial services built on blockchain.",
+      //   text3:
+      //     "Quantum Computing & Blockchain: Preparing for future challenges in blockchain security with the advent of quantum computing.",
+      // },
     ]);
     const scrollContainer = ref(null);
     const isMobile = ref(window.innerWidth < 1024);

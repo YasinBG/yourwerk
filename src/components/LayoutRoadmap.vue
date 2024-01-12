@@ -12,9 +12,10 @@
       class="text-center max-w-lg text-sm font-medium lg:text-base mx-auto"
       v-motion="fadeLeft"
     >
-      Explore the limitless possibilities of blockchain technology. Unleash
-      decentralized solutions, foster innovation, and navigate the future of
-      secure, transparent, and trustless systems.
+      Detailed action plan for the first year. This roadmap comprehensively
+      outlines WERK Token project’s goals and main strategies for 2024, with
+      each quarter set to contribute to the overall success and growth of the
+      project.
     </p>
     <div class="gradientLine max-w-lg mx-auto !mt-10" v-motion="leftLine"></div>
 
