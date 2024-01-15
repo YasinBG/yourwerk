@@ -32,7 +32,66 @@
           enhance service quality and user experience.
         </li>
       </ul>
-      
+
+      <h3>2. Application of Data:</h3>
+      <ul>
+        <li>
+          Service Delivery and Improvement: Utilization of data is critical for effective service provision and enhancement.
+        </li>
+        <li>
+          Communication and Support: Personal Data facilitates user support, updates, and information dissemination related to WERK Token website.
+
+        </li>
+        <li>
+          Compliance and Security: Ensuring the integrity of our services and adherence to legal standards.
+
+        </li>
+      </ul>
+
+      <h3>3. Data Disclosure and Sharing: </h3>
+      <ul>
+        <li>
+          Third-party Services: Collaboration with third parties for transaction processing, analytics, and security.
+
+        </li>
+
+        <li>
+          Legal Compliance: Disclosure of Personal Data may occur as mandated by law.
+
+        </li>
+
+        <li>
+          Consent-Based Sharing: Apart from necessary service provision, your data is not shared without explicit consent.
+
+        </li>
+      </ul>
+
+      <h3>4. Data Protection Measures: </h3>
+      <p>
+        Implementing robust security protocols to protect personal and transaction data against unauthorized access and breaches.
+
+      </p>
+
+      <h3>5. User Rights </h3>
+
+      <p>
+        You retain the right to access, correct, or request the deletion of your personal data in our custody.
+
+      </p>
+
+      <h3>6. Policy Amendments </h3>
+
+      <p>
+        Periodic updates to this Privacy Policy will be communicated through our platforms.
+
+      </p>
+
+      <h3>7. Inquiries and Feedback</h3>
+
+      <p>
+        For any queries or concerns about this Privacy Policy, reach out to us at [Your Contact Information].
+
+      </p>
     </div>
     <LayoutFooter />
   </div>

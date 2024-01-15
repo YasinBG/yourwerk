@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import PrivacyView from '../views/PrivacyView.vue'
+import TermsConditionView from '../views/TermsConditionView.vue'
 const routes = [
   {
     path: '/',
@@ -12,6 +13,11 @@ const routes = [
     path: '/Privacy',
     name: 'Privacy',
     component: PrivacyView
+  },
+  {
+    path: '/TermsCondition',
+    name: 'TermsCondition',
+    component: TermsConditionView
   },
 
   
