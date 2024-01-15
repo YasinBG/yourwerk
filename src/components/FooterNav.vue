@@ -6,8 +6,15 @@
                class="hover:opacity-70 focus:opacity-70 transition-all duration-200 ease-linear cursor-pointer uppercase"
              >
              <a href="#">{{ menu.name }}</a>
+               
              </li>
+             <router-link to="Privacy">
             
+             <button class="border w-24 h-10">
+              
+              Privacy</button>
+               
+            </router-link>
      </ul>
    </div>
 </template>
@@ -15,9 +22,10 @@
 <script>
 
 import { ref } from 'vue'
+
 export default {
     components:{
-   
+    
     },
 
     setup(){
