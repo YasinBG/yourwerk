@@ -3,7 +3,7 @@
      
      <ul class="nav-list flex items-center space-x-12 font-semibold uppercase  ">
        <li  v-for="menu in menus" :key="menu"    
-               class="hover:opacity-70 focus:opacity-70 transition-all duration-200 ease-linear cursor-pointer"
+               class="hover:opacity-70 focus:opacity-70 transition-all duration-200 ease-linear cursor-pointer uppercase"
              >
              <a href="#">{{ menu.name }}</a>
              </li>
@@ -27,14 +27,22 @@ export default {
         name:'home', detail:'',
       },
       {
-        name:'Docs',  detail:'',
+        name:'whitepaper',  detail:'',
       },
       {
-        name:'about',  detail:'',
+        name:'home to buy',  detail:'',
       },
       {
         name:'contact',  detail:'',
+      },
+       {
+      name:'buy',  detail:'',
+      },
+     
+      {
+      name:'privacy',  detail:'',
       }
+     
      
     ])
       return{
