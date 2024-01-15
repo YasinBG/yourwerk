@@ -1,5 +1,8 @@
 <template>
-  <div>
+  <div class="bgnew text-white">
+  <LayoutHeader></LayoutHeader>
+</div>
+  <div class="text-white">
     <h2>Privacy Policy for WERK Token WEBSITE</h2>
     <p>Effective Date: 01/10/2024</p>
     <h4>Introduction:</h4>
@@ -15,16 +18,77 @@
     Usage Data: We may track interaction with the WERK Token platform to enhance service quality and user experience.
 
 </li>
+
+
     </ul>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, ratione consequatur voluptate cupiditate, ipsa aliquam, error perspiciatis saepe cumque maiores incidunt laboriosam pariatur possimus quis tempora labore? Veritatis, praesentium quisquam!lorem10
+
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, ratione consequatur voluptate cupiditate, ipsa aliquam, error perspiciatis saepe cumque maiores incidunt laboriosam pariatur possimus quis tempora labore? Veritatis, praesentium quisquam!lorem10
+      
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, ratione consequatur voluptate cupiditate, ipsa aliquam, error perspiciatis saepe cumque maiores incidunt laboriosam pariatur possimus quis tempora labore? Veritatis, praesentium quisquam!lorem10
+      
+    </p>
+
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, ratione consequatur voluptate cupiditate, ipsa aliquam, error perspiciatis saepe cumque maiores incidunt laboriosam pariatur possimus quis tempora labore? Veritatis, praesentium quisquam!lorem10
+      
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, ratione consequatur voluptate cupiditate, ipsa aliquam, error perspiciatis saepe cumque maiores incidunt laboriosam pariatur possimus quis tempora labore? Veritatis, praesentium quisquam!lorem10
+      
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, ratione consequatur voluptate cupiditate, ipsa aliquam, error perspiciatis saepe cumque maiores incidunt laboriosam pariatur possimus quis tempora labore? Veritatis, praesentium quisquam!lorem10
+      
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, ratione consequatur voluptate cupiditate, ipsa aliquam, error perspiciatis saepe cumque maiores incidunt laboriosam pariatur possimus quis tempora labore? Veritatis, praesentium quisquam!lorem10
+      
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, ratione consequatur voluptate cupiditate, ipsa aliquam, error perspiciatis saepe cumque maiores incidunt laboriosam pariatur possimus quis tempora labore? Veritatis, praesentium quisquam!lorem10
+      
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, ratione consequatur voluptate cupiditate, ipsa aliquam, error perspiciatis saepe cumque maiores incidunt laboriosam pariatur possimus quis tempora labore? Veritatis, praesentium quisquam!lorem10
+      
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, ratione consequatur voluptate cupiditate, ipsa aliquam, error perspiciatis saepe cumque maiores incidunt laboriosam pariatur possimus quis tempora labore? Veritatis, praesentium quisquam!lorem10
+      
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, ratione consequatur voluptate cupiditate, ipsa aliquam, error perspiciatis saepe cumque maiores incidunt laboriosam pariatur possimus quis tempora labore? Veritatis, praesentium quisquam!lorem10
+      
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, ratione consequatur voluptate cupiditate, ipsa aliquam, error perspiciatis saepe cumque maiores incidunt laboriosam pariatur possimus quis tempora labore? Veritatis, praesentium quisquam!lorem10
+      
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, ratione consequatur voluptate cupiditate, ipsa aliquam, error perspiciatis saepe cumque maiores incidunt laboriosam pariatur possimus quis tempora labore? Veritatis, praesentium quisquam!lorem10
+      
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, ratione consequatur voluptate cupiditate, ipsa aliquam, error perspiciatis saepe cumque maiores incidunt laboriosam pariatur possimus quis tempora labore? Veritatis, praesentium quisquam!lorem10
+      
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, ratione consequatur voluptate cupiditate, ipsa aliquam, error perspiciatis saepe cumque maiores incidunt laboriosam pariatur possimus quis tempora labore? Veritatis, praesentium quisquam!lorem10
+      
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, ratione consequatur voluptate cupiditate, ipsa aliquam, error perspiciatis saepe cumque maiores incidunt laboriosam pariatur possimus quis tempora labore? Veritatis, praesentium quisquam!lorem10
+      
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, ratione consequatur voluptate cupiditate, ipsa aliquam, error perspiciatis saepe cumque maiores incidunt laboriosam pariatur possimus quis tempora labore? Veritatis, praesentium quisquam!lorem10
+      
+    </p>
+    
   </div>
 </template>
 
 <script>
-export default {
 
+import LayoutHeader from '../components/LayoutHeader.vue'
+export default {
+ components:{
+  LayoutHeader
+ }
 }
 </script>
 
-<style>
+<style scoped>
+
 
 </style>

@@ -423,7 +423,7 @@ export default {
 };
 </script>
 
-<style lang="css" scoped>
+<style lang="css">
 .headerImgBg {
   /* background: url("../assets/mkover.webp"); */
   background: linear-gradient(to right, #103b68, #241b28);

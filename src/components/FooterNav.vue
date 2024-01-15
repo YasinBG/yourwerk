@@ -8,14 +8,15 @@
              <a href="#">{{ menu.name }}</a>
                
              </li>
-             <router-link to="Privacy">
-            
-             <button class="border w-24 h-10">
-              
-              Privacy</button>
-               
-            </router-link>
+             
      </ul>
+     <router-link to="/Privacy">
+            
+            <button class="border w-24 h-10">
+             
+             Privacy Policy</button>
+           
+           </router-link>
    </div>
 </template>
 
