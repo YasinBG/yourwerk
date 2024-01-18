@@ -10,9 +10,11 @@
              </li>
              
      </ul>
-     <router-link to="/Privacy">
+
+     <div class="flex items-center space-x-12 font-semibold uppercase mx-auto justify-center mt-10">
+      <router-link to="/Privacy">
             
-            <button class="border w-24 h-10">
+            <button class="hover:opacity-70 focus:opacity-70 transition-all duration-200 ease-linear cursor-pointer uppercase">
              
              Privacy Policy</button>
 
@@ -21,18 +23,20 @@
            </router-link>
 
            <router-link to="/TermsCondition">
-           <button class="border w-24 h-10">
+           <button class="hover:opacity-70 focus:opacity-70 transition-all duration-200 ease-linear cursor-pointer uppercase">
             TermsCondition
              </button>
 
             </router-link>
 
             <router-link to="/PresalePublic">
-           <button class="border w-24 h-10">
+           <button class="hover:opacity-70 focus:opacity-70 transition-all duration-200 ease-linear cursor-pointer uppercase">
             PresalePublic
              </button>
 
             </router-link>
+     </div>
+     
 
             
    </div>
@@ -66,9 +70,7 @@ export default {
       name:'buy',  detail:'',
       },
      
-      {
-      name:'privacy',  detail:'',
-      }
+      
      
      
     ])
