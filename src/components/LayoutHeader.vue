@@ -9,7 +9,8 @@
     <!-- Desktop Navbar -->
     <div class="wrapper hidden lg:block max-w-5xl mx-auto">
       <div class="primary-header flex justify-between items-center">
-        <span
+        <RouterLink
+          to="/"
           v-motion
           :initial="{ opacity: 0, y: -100 }"
           :enter="{
@@ -20,25 +21,32 @@
           }"
           :variants="{ custom: { scale: 2 } }"
           :hovered="{ scale: 1.2 }"
-          class="logo flex items-center text-3xl cursor-pointer font-bold"
+          class="logo flex items-center text-3xl cursor-pointer italic"
         >
-          Your<span
-            class="italic font-serif bg-clip-text text-transparent bg-gradient-to-r from-mkSecondary to-white"
-            >W</span
-          ><span class="font-bold">erk</span>
-        </span>
+          <p
+            class="font-serif text-6xl bg-clip-text text-transparent bg-gradient-to-r from-mkSecondary to-white"
+          >
+            W
+          </p>
+          ERK<span
+            class="bg-clip-text text-transparent bg-gradient-to-r from-mkSecondary to-white ml-2"
+            >1000</span
+          ><span class="text-3xl">X</span>
+        </RouterLink>
         <ul
           class="nav-list flex items-center space-x-12 font-semibold uppercase"
         >
           <li
             class="hover:opacity-70 focus:opacity-70 transition-all duration-200 ease-linear cursor-pointer"
           >
-            <a href="#">Home</a>
+            <RouterLink to="/">Home</RouterLink>
           </li>
           <li
             class="hover:opacity-70 focus:opacity-70 transition-all duration-200 ease-linear cursor-pointer"
           >
-            <a href="#">WhitePaper</a>
+            <a href="https://werktoken.netlify.app/#/" target="_blank"
+              >WhitePaper</a
+            >
           </li>
           <li
             class="hover:opacity-70 focus:opacity-70 transition-all duration-200 ease-linear cursor-pointer"

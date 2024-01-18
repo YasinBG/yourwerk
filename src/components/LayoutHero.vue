@@ -8,17 +8,18 @@
         <span
           class="bg-clip-text text-transparent bg-gradient-to-r from-mkSecondary to-white"
         >
-          One Token, infinite possibilities!
+          Transaction Tool for Whole Web3 Ecosystem
         </span>
       </div>
       <p class="px-4 lg:px-0 lg:text-xl font-semibold">
-        An innovative crypto project offering an accessible, secure, and
+        An innovative token project offering an accessible, secure, and
         sustainable web3 experience for everyone.
       </p>
 
       <a
         v-if="isDarkMode"
-        href="#"
+        href="https://werktoken.netlify.app/#/"
+        target="_blank"
         class="neon-button !mb-12 lg:mb-0 !text-white"
         @mouseover="handleHover"
         @mouseout="handleHoverOut"
