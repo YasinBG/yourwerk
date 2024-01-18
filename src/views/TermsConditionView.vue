@@ -1,5 +1,8 @@
 <template>
-  <div>
+  <div  class="dark:bg-mkPrimary text-mkPrimary dark:text-mkWhite selection:bg-mkPurple selection:text-mkWhite flex flex-col items-center"
+    :class="{ 'bgnew': isDarkMode }">
+
+    <LayoutHeader></LayoutHeader>
     <h2>Terms of Use for Werk Token</h2>
 
     <h3>1. Introduction to the WERK Token Ecosystem</h3>
@@ -252,13 +255,19 @@
     We welcome and value your feedback and suggestions for improvements to the WERK Token. You can submit your feedback through our official communication channels. By providing feedback, you acknowledge that we may use your suggestions without any obligation to compensate you for them.
 
    </p>
-
+   <LayoutFooter />
   </div>
 </template>
 
 <script>
-export default {
 
+import LayoutHeader from "../components/LayoutHeader.vue";
+import LayoutFooter from "@/components/LayoutFooter.vue";
+export default {
+  components: {
+    LayoutHeader,
+    LayoutFooter,
+  },
 }
 </script>
 
