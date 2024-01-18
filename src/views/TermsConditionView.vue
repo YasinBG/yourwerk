@@ -3,6 +3,8 @@
     :class="{ 'bgnew': isDarkMode }">
 
     <LayoutHeader></LayoutHeader>
+
+    <div class="text-white bg-transparent flex flex-col p-12">
     <h2>Terms of Use for Werk Token</h2>
 
     <h3>1. Introduction to the WERK Token Ecosystem</h3>
@@ -255,12 +257,13 @@
     We welcome and value your feedback and suggestions for improvements to the WERK Token. You can submit your feedback through our official communication channels. By providing feedback, you acknowledge that we may use your suggestions without any obligation to compensate you for them.
 
    </p>
+  </div>
    <LayoutFooter />
   </div>
 </template>
 
 <script>
-
+import { inject } from "vue";
 import LayoutHeader from "../components/LayoutHeader.vue";
 import LayoutFooter from "@/components/LayoutFooter.vue";
 export default {
@@ -268,9 +271,37 @@ export default {
     LayoutHeader,
     LayoutFooter,
   },
+
+  setup() {
+    const isDarkMode = inject("isDarkMode");
+
+    return { isDarkMode };
+  },
 }
 </script>
 
 <style>
+.bgnew {
+  /* background: url("../assets/mkover.webp"); */
+  background: linear-gradient(
+    to right,
+    #0b2142,
+    #0d2e55,
+    #103b68,
+    #12487b,
+    #14558e
+  );
+  /* background: linear-gradient(to right, #080a10, #241b28); */
 
+  /* background: linear-gradient(to right, #080a10, #241b28, #241a28, #090b11); */
+  /* background: linear-gradient(to right, #1a182c, #241a28); */
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-attachment: fixed; */
+
+  /* background-image: linear-gradient(180deg, #080a10 0%, #080a1000 100%); */
+  /* transition: background 0.3s, border-radius 0.3s, opacity 0.3s; */
+}
 </style>

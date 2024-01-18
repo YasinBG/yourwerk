@@ -16,11 +16,16 @@
              
              Privacy Policy</button>
 
-             <button class="border w-24 h-10">
-              TermsCondition
-             </button>
+             
            
            </router-link>
+
+           <router-link to="/TermsCondition">
+           <button class="border w-24 h-10">
+            TermsCondition
+             </button>
+
+            </router-link>
    </div>
 </template>
 
