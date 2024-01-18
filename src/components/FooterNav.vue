@@ -26,6 +26,15 @@
              </button>
 
             </router-link>
+
+            <router-link to="/PresalePublic">
+           <button class="border w-24 h-10">
+            PresalePublic
+             </button>
+
+            </router-link>
+
+            
    </div>
 </template>
 

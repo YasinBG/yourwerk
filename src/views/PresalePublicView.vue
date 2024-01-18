@@ -1,5 +1,10 @@
 <template>
-  <div>
+  <div class="dark:bg-mkPrimary text-mkPrimary dark:text-mkWhite selection:bg-mkPurple selection:text-mkWhite flex flex-col items-center"
+    :class="{ 'bgnew': isDarkMode }">
+
+    <LayoutHeader></LayoutHeader>
+
+    <div class="text-white bg-transparent p-12">
     <h2>Werk Token Presale-Public Sale Overview</h2>
 
     <h3>WERK Token's Role in Web3 Ecosystem Transformation</h3>
@@ -72,12 +77,25 @@
      <p class="mt-4 font-bold">
         For further details and updates, participants are directed to visit the project's official website or contact the team through provided channels.
      </p>
+   </div>
+     <LayoutFooter/>
   </div>
 </template>
 
 <script>
+import { inject } from "vue";
+import LayoutHeader from "../components/LayoutHeader.vue";
+import LayoutFooter from "@/components/LayoutFooter.vue";
 export default {
+   components: {
+    LayoutHeader,
+    LayoutFooter,
+  },
+  setup() {
+    const isDarkMode = inject("isDarkMode");
 
+    return { isDarkMode };
+  },
 }
 </script>
 
