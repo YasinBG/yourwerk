@@ -107,7 +107,7 @@ export default {
       {
         title: "Collaborations & Staking",
         content:
-          "Until the first 100 projects, 1% of the non-circulating tokens that are not planned to be burned in that month will be burned with each new collaboration announcement.  Special staking offers will be made to qualified large investors to encourage them to buy WERK Token from the market and invest long-term.",
+          "Until the first 100 projects, 1% of the non-circulating tokens that are not planned to be burned in that month will be burned with each new collaboration announcement.  Special staking offers will be made to qualified large investors to encourage them to buy WERK 1000X from the market and invest long-term.",
         // content2:
         //   "The transparency inherent in blockchain allows all participants to view the entire transaction history, promoting accountability and eliminating the need for blind trust in centralized systems.",
         imgSrc: "illustration-features-tab-2.svg",
@@ -115,7 +115,7 @@ export default {
       {
         title: "Win Win",
         content:
-          "Collaborating Web3 applications and games can earn a commission of 1-5% on transactions made with WERK Token, as per the agreements. In addition to the amount specified in the burning schedule, tokens equivalent to the total monthly commission volume will also be burned.",
+          "Collaborating Web3 applications and games can earn a commission of 1-5% on transactions made with WERK 1000X, as per the agreements. In addition to the amount specified in the burning schedule, tokens equivalent to the total monthly commission volume will also be burned.",
         // content2:
         //   "Interoperability is a notable blockchain feature, facilitating seamless communication and data exchange between different blockchain networks, fostering a more connected and collaborative digital ecosystem.",
         imgSrc: "illustration-features-tab-3.svg",

@@ -53,71 +53,71 @@ export default {
   setup() {
     const faqList = ref([
       {
-        question: "What is WERK Token and what is its purpose?",
+        question: "What is WERK 1000X and what is its purpose?",
         answer:
-          "WERK Token is an innovative and comprehensive crypto project aiming to revolutionize the Web3 world. It seeks to facilitate transaction processes among Web3 games, DeFi projects, and other Web3 applications, supporting the ecosystem's integrated and harmonious development.",
+          "WERK 1000X is an innovative and comprehensive crypto project aiming to revolutionize the Web3 world. It seeks to facilitate transaction processes among Web3 games, DeFi projects, and other Web3 applications, supporting the ecosystem's integrated and harmonious development.",
         open: false,
       },
       {
         question:
-          "What problems does WERK Token address in the Web3 ecosystem?",
+          "What problems does WERK 1000X address in the Web3 ecosystem?",
         answer:
-          "WERK Token addresses the issue of isolated and disjointed development among Web3 projects by providing a common transaction tool. This enhances collaboration and interaction between projects, making the ecosystem more integrated and efficient.",
+          "WERK 1000X addresses the issue of isolated and disjointed development among Web3 projects by providing a common transaction tool. This enhances collaboration and interaction between projects, making the ecosystem more integrated and efficient.",
         open: false,
       },
       {
         question:
-          "What is WERK Token's deflationary tokenomics policy and how does it benefit investors?",
+          "What is WERK 1000X's deflationary tokenomics policy and how does it benefit investors?",
         answer:
-          "WERK Token's deflationary tokenomics policy aims to gradually reduce the market supply of tokens, increasing their value over time. This offers investors a potential for long-term value appreciation.",
+          "WERK 1000X's deflationary tokenomics policy aims to gradually reduce the market supply of tokens, increasing their value over time. This offers investors a potential for long-term value appreciation.",
         open: false,
       },
       {
         question:
-          "How does WERK Token integrate with advanced technologies like AI?",
+          "How does WERK 1000X integrate with advanced technologies like AI?",
         answer:
-          "WERK Token addresses the unique challenges in AI-supported projects by offering high transaction capacity and speed, optimized for AI applications. This enhances the efficiency and effectiveness of AI-based Web3 projects.",
+          "WERK 1000X addresses the unique challenges in AI-supported projects by offering high transaction capacity and speed, optimized for AI applications. This enhances the efficiency and effectiveness of AI-based Web3 projects.",
         open: false,
       },
       {
-        question: "What advantages does WERK Token offer to users?",
+        question: "What advantages does WERK 1000X offer to users?",
         answer:
-          "WERK Token is designed as a user-friendly, secure, and universal transaction tool, enabling users to transfer value safely and easily across Web3 projects.",
-        open: false,
-      },
-      {
-        question:
-          "How does WERK Token benefit the Web3 gaming and application sector?",
-        answer:
-          "WERK Token simplifies transaction processes for Web3 gaming and application users, facilitating cross-platform interaction. This encourages broader adoption of the sector and offers cost savings for developers.",
+          "WERK 1000X is designed as a user-friendly, secure, and universal transaction tool, enabling users to transfer value safely and easily across Web3 projects.",
         open: false,
       },
       {
         question:
-          "What are WERK Token's blockchain infrastructure and technical features?",
+          "How does WERK 1000X benefit the Web3 gaming and application sector?",
         answer:
-          "WERK Token utilizes the Binance Chain infrastructure, known for its high efficiency, reliability, low transaction costs, and advanced security protocols, ensuring a seamless and secure experience for its users.",
+          "WERK 1000X simplifies transaction processes for Web3 gaming and application users, facilitating cross-platform interaction. This encourages broader adoption of the sector and offers cost savings for developers.",
         open: false,
       },
       {
         question:
-          "How does WERK Token aim to increase transaction volume and liquidity?",
+          "What are WERK 1000X's blockchain infrastructure and technical features?",
         answer:
-          "WERK Token plans to increase transaction volume and liquidity by collaborating with Web3 applications and games by allowing them to receive commissions and performing regular token burns.",
+          "WERK 1000X utilizes the Binance Chain infrastructure, known for its high efficiency, reliability, low transaction costs, and advanced security protocols, ensuring a seamless and secure experience for its users.",
         open: false,
       },
       {
         question:
-          "How does WERK Token manage community participation and engagement?",
+          "How does WERK 1000X aim to increase transaction volume and liquidity?",
         answer:
-          "WERK Token actively engages with its community through interactive platforms and social media, incorporating their feedback into the project's development. It offers special advantages, rewards, and access to its users, further integrating them into the project.",
+          "WERK 1000X plans to increase transaction volume and liquidity by collaborating with Web3 applications and games by allowing them to receive commissions and performing regular token burns.",
         open: false,
       },
       {
         question:
-          "What are WERK Token's future plans and sustainability strategies?",
+          "How does WERK 1000X manage community participation and engagement?",
         answer:
-          "WERK Token aims to cater to a wide range of use cases in the medium and long term, aiming to become a common payment tool in everyday life. It plans to implement innovations like AI integration, token-based loyalty programs, and smart contract-enabled automatic payments to achieve this goal.",
+          "WERK 1000X actively engages with its community through interactive platforms and social media, incorporating their feedback into the project's development. It offers special advantages, rewards, and access to its users, further integrating them into the project.",
+        open: false,
+      },
+      {
+        question:
+          "What are WERK 1000X's future plans and sustainability strategies?",
+        answer:
+          "WERK 1000X aims to cater to a wide range of use cases in the medium and long term, aiming to become a common payment tool in everyday life. It plans to implement innovations like AI integration, token-based loyalty programs, and smart contract-enabled automatic payments to achieve this goal.",
         open: false,
       },
     ]);

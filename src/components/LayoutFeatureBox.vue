@@ -5,7 +5,7 @@
         v-motion="fadeRight"
         class="bg-clip-text text-transparent bg-gradient-to-r from-mkSecondary to-white"
       >
-        Werk Token Use Cases
+        Werk 1000X Use Cases
       </h1>
       <div class="gradientLine w-full mx-auto !mt-4" v-motion="leftLine"></div>
     </div>

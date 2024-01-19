@@ -13,7 +13,7 @@
       v-motion="fadeLeft"
     >
       Detailed action plan for the first year. This roadmap comprehensively
-      outlines WERK Token project’s goals and main strategies for 2024, with
+      outlines <span class="bg-clip-text text-transparent bg-gradient-to-r from-mkSecondary to-white">WERK 1000X</span> project’s goals and main strategies for 2024, with
       each quarter set to contribute to the overall success and growth of the
       project.
     </p>
