@@ -6,12 +6,12 @@
   
 </div>
   <div class="text-center mt-2">
-    Ajeltake Road, Reg no: 118412, Marshall Island, info@multifunctional.com
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium reprehenderit quos accusantium eos voluptas est suscipit.
   </div>
   <div class="lg:flex w-full lg:justify-evenly mx-auto  pt-10 ">
 
 
-    <div class="my-12 mx-4">
+    <div class="my-12 flex justify-center">
        <LayoutLogo></LayoutLogo>
 
     </div>
@@ -24,7 +24,7 @@
       
     </div>
 
-    <div class=" lg:flex flex-col mt-12">
+    <div class=" lg:flex  my-12 flex justify-center">
       <FooterIcons></FooterIcons>
        
        </div>

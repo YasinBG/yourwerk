@@ -24,14 +24,14 @@
 
            <router-link to="/TermsCondition">
            <button class="hover:opacity-70 focus:opacity-70 transition-all duration-200 ease-linear cursor-pointer uppercase">
-            TermsCondition
+            Terms & Conditions
              </button>
 
             </router-link>
 
             <router-link to="/PresalePublic">
            <button class="hover:opacity-70 focus:opacity-70 transition-all duration-200 ease-linear cursor-pointer uppercase">
-            PresalePublic
+            Presale-Public Sale
              </button>
 
             </router-link>
