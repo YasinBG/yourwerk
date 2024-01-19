@@ -30,7 +30,7 @@
        </div>
        
     </div>
-    <div class="mt-6 items-center mx-4">
+    <div class="lg:mt-6 items-center mx-4">
         
         <FooterDetail></FooterDetail>
   </div>
