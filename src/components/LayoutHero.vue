@@ -3,22 +3,22 @@
     class="HeroSection flex flex-col lg:flex-row justify-between items-center lg:gap-44 max-w-[1000px] mx-auto py-12 lg:py-24 z-10"
     style="position: relative"
   >
-    <div class="leftSection lg:w-1/2 space-y-12 lg:text-start text-center">
-      <div class="text-5xl font-extrabold ...">
+    <div class="leftSection lg:w-3/4 space-y-12 lg:text-start text-center">
+      <div class="text-6xl font-extrabold ...">
         <span
           class="bg-clip-text text-transparent bg-gradient-to-r from-mkSecondary to-white"
         >
-          Transaction Tool for Whole Web3 Ecosystem
+        Transaction Tool for the Entire WEB3 Ecosystem
         </span>
       </div>
-      <p class="px-4 lg:px-0 lg:text-xl font-semibold">
+      <p class="px-4 lg:px-0 lg:text-2xl font-semibold">
         An innovative token project offering an accessible, secure, and
-        sustainable web3 experience for everyone.
+        sustainable WEB3 experience for everyone.
       </p>
 
       <a
         v-if="isDarkMode"
-        href="https://werktoken.netlify.app/#/"
+        href="https://werk1000x.netlify.app/#/"
         target="_blank"
         class="neon-button !mb-12 lg:mb-0 !text-white"
         @mouseover="handleHover"

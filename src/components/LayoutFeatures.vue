@@ -2,7 +2,7 @@
   <!-- Features -->
   <div class="features mt-44 z-20" v-motion="fadeLeft">
     <div class="container mx-auto mt-16 px-6 md:px-0">
-      <h2 class="mb-6 heading1 lg:!text-8xl">Unique Deflationary Policies</h2>
+      <h2 class="mb-6 heading1 lg:!text-8xl bg-clip-text text-transparent bg-gradient-to-r from-mkSecondary to-white">Unique Deflationary Policies</h2>
       <!-- <p class="max-w-xl mx-auto text-center">
         Blockchain is a decentralized ledger system that ensures reliability and
         transparency. It maintains the immutability of data and supports
@@ -63,16 +63,16 @@
             >
               {{ panel.title }}
             </h3>
-            <p class="max-w-md text-center text-white/80 md:text-left mt-4">
+            <p class="max-w-md text-center text-xl text-white/80 md:text-left mt-4">
               {{ panel.content }}
             </p>
-            <!-- <p class="max-w-md text-center text-mkGray md:text-left mt-4">
+            <p class="max-w-md text-center text-xl text-white/80 md:text-left mt-4">
               {{ panel.content2 }}
-            </p> -->
+            </p>
             <div class="mx-auto md:mx-0 mt-8 text-center md:text-start">
               <button class="neon-button !text-white">
                 <a
-                  href="https://werktoken.netlify.app/#/topic/Token%20Economics,%20Distribution,%20and%20Staking%20Policy"
+                  href="https://werk1000x.netlify.app/#/topic/Token%20Economics,%20Distribution,%20and%20Staking%20Policy"
                   target="_blank"
                   >More Info</a
                 >
@@ -99,25 +99,25 @@ export default {
       {
         title: "Burn Burn",
         content:
-          "The total number of tokens will be reduced from 100,000,000 to 50,000,000 in one year. A fixed number of 4,166,667 tokens will be burned each month according to the schedule.",
-        // content2:
-        //   "Blockchain's consensus mechanisms, like proof-of-work or proof-of-stake, ensure agreement on the validity of transactions among network participants, fostering trust without a central authority.",
+          "The total number of tokens will be reduced from 1.000 to 500 in one year.",
+        content2:
+          " A fixed number of 41,66667 tokens will be burned each month according to the schedule.",
         imgSrc: "illustration-features-tab-1.svg",
       },
       {
         title: "Collaborations & Staking",
         content:
-          "Until the first 100 projects, 1% of the non-circulating tokens that are not planned to be burned in that month will be burned with each new collaboration announcement.  Special staking offers will be made to qualified large investors to encourage them to buy WERK 1000X from the market and invest long-term.",
-        // content2:
-        //   "The transparency inherent in blockchain allows all participants to view the entire transaction history, promoting accountability and eliminating the need for blind trust in centralized systems.",
+          "Until the first 100 projects, 1% of the non-circulating tokens that are not planned to be burned in that month will be burned with each new collaboration announcement.  ",
+        content2:
+          "Special staking offers will be made to qualified large investors to encourage them to buy WERK 1000X from the market and invest long-term.",
         imgSrc: "illustration-features-tab-2.svg",
       },
       {
         title: "Win Win",
         content:
-          "Collaborating Web3 applications and games can earn a commission of 1-5% on transactions made with WERK 1000X, as per the agreements. In addition to the amount specified in the burning schedule, tokens equivalent to the total monthly commission volume will also be burned.",
-        // content2:
-        //   "Interoperability is a notable blockchain feature, facilitating seamless communication and data exchange between different blockchain networks, fostering a more connected and collaborative digital ecosystem.",
+          "Collaborating Web3 applications and games can earn a commission of 1-5% on transactions made with WERK 1000X, as per the agreements. ",
+        content2:
+          "In addition to the amount specified in the burning schedule, tokens equivalent to the total monthly commission volume will also be burned.",
         imgSrc: "illustration-features-tab-3.svg",
       },
     ]);

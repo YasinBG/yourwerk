@@ -44,10 +44,10 @@
           >
             As an Investment Tool
           </h5>
-          <p class="text-center text-white/80 md:text-left flex-wrap">
+          <p class="text-center text-lg text-white/80 md:text-left flex-wrap">
             WERK, as an innovative investment tool that enriches your digital
             asset portfolios, offers sustainable growth and stable return
-            opportunities in the rapidly expanding market of the Web3 ecosystem.
+            opportunities in the rapidly expanding market of the WEB3 ecosystem.
           </p>
         </div>
       </div>
@@ -75,10 +75,10 @@
           >
             As a Currency
           </h5>
-          <p class="text-center text-white/80 md:text-left flex-wrap">
+          <p class="text-center text-lg text-white/80 md:text-left flex-wrap">
             WERK, as a tool that simplifies your daily life and opens new doors
             in the digital world, enables you to securely complete transactions
-            in a short time as an alternative payment method in Web3 projects.
+            in a short time as an alternative payment method in WEB3 projects.
           </p>
         </div>
       </div>
@@ -104,10 +104,10 @@
           >
             Management and Voting
           </h5>
-          <p class="text-center text-white/80 md:text-left flex-wrap">
+          <p class="text-center text-lg text-white/80 md:text-left flex-wrap">
             WERK grants token holders an active role in shaping the project’s
             future, offering a transparent and tamper-resistant voting mechanism
-            at the heart of the Web3 ecosystem, fostering a democratic and
+            at the heart of the WEB3 ecosystem, fostering a democratic and
             participatory approach.
           </p>
         </div>

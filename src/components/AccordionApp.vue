@@ -8,7 +8,7 @@
       <div class="faq-open cursor-pointer w-full" @click="toggleFaq(index)">
         <h3
           class="flex items-center justify-between py-2 px-2 font-body group-hover:duration-200 text-lg"
-          :class="faq.open ? '  border-none' : 'border-b border-b-gray-800'"
+          :class="faq.open ? '  border-none text-mkSecondary' : 'border-b border-b-gray-800 '"
         >
           <span class="mr-4">
             {{ faq.question }}
@@ -34,7 +34,7 @@
         </h3>
         <div
           :class="faq.open ? ' answer-open' : ' answer'"
-          class="pl-4 pr-8 answer text-lg font-medium text-mkGray pb-4 leading-relaxed flex items-center flex-col"
+          class="pl-4 pr-8 answer text-lg font-medium text-white/80 pb-4 leading-relaxed flex items-center flex-col"
         >
           <span>
             {{ faq.answer }}
@@ -55,14 +55,14 @@ export default {
       {
         question: "What is WERK 1000X and what is its purpose?",
         answer:
-          "WERK 1000X is an innovative and comprehensive crypto project aiming to revolutionize the Web3 world. It seeks to facilitate transaction processes among Web3 games, DeFi projects, and other Web3 applications, supporting the ecosystem's integrated and harmonious development.",
+          "WERK 1000X is an innovative and comprehensive crypto project aiming to revolutionize the WEB3 world. It seeks to facilitate transaction processes among WEB3 games, DeFi projects, and other WEB3 applications, supporting the ecosystem's integrated and harmonious development.",
         open: false,
       },
       {
         question:
-          "What problems does WERK 1000X address in the Web3 ecosystem?",
+          "What problems does WERK 1000X address in the WEB3 ecosystem?",
         answer:
-          "WERK 1000X addresses the issue of isolated and disjointed development among Web3 projects by providing a common transaction tool. This enhances collaboration and interaction between projects, making the ecosystem more integrated and efficient.",
+          "WERK 1000X addresses the issue of isolated and disjointed development among WEB3 projects by providing a common transaction tool. This enhances collaboration and interaction between projects, making the ecosystem more integrated and efficient.",
         open: false,
       },
       {
@@ -76,20 +76,20 @@ export default {
         question:
           "How does WERK 1000X integrate with advanced technologies like AI?",
         answer:
-          "WERK 1000X addresses the unique challenges in AI-supported projects by offering high transaction capacity and speed, optimized for AI applications. This enhances the efficiency and effectiveness of AI-based Web3 projects.",
+          "WERK 1000X addresses the unique challenges in AI-supported projects by offering high transaction capacity and speed, optimized for AI applications. This enhances the efficiency and effectiveness of AI-based WEB3 projects.",
         open: false,
       },
       {
         question: "What advantages does WERK 1000X offer to users?",
         answer:
-          "WERK 1000X is designed as a user-friendly, secure, and universal transaction tool, enabling users to transfer value safely and easily across Web3 projects.",
+          "WERK 1000X is designed as a user-friendly, secure, and universal transaction tool, enabling users to transfer value safely and easily across WEB3 projects.",
         open: false,
       },
       {
         question:
-          "How does WERK 1000X benefit the Web3 gaming and application sector?",
+          "How does WERK 1000X benefit the WEB3 gaming and application sector?",
         answer:
-          "WERK 1000X simplifies transaction processes for Web3 gaming and application users, facilitating cross-platform interaction. This encourages broader adoption of the sector and offers cost savings for developers.",
+          "WERK 1000X simplifies transaction processes for WEB3 gaming and application users, facilitating cross-platform interaction. This encourages broader adoption of the sector and offers cost savings for developers.",
         open: false,
       },
       {
@@ -103,7 +103,7 @@ export default {
         question:
           "How does WERK 1000X aim to increase transaction volume and liquidity?",
         answer:
-          "WERK 1000X plans to increase transaction volume and liquidity by collaborating with Web3 applications and games by allowing them to receive commissions and performing regular token burns.",
+          "WERK 1000X plans to increase transaction volume and liquidity by collaborating with WEB3 applications and games by allowing them to receive commissions and performing regular token burns.",
         open: false,
       },
       {

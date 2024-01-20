@@ -44,7 +44,7 @@
           <li
             class="hover:opacity-70 focus:opacity-70 transition-all duration-200 ease-linear cursor-pointer"
           >
-            <a href="https://werktoken.netlify.app/#/" target="_blank"
+            <a href="https://werk1000x.netlify.app/#/" target="_blank"
               >WhitePaper</a
             >
           </li>
@@ -53,11 +53,11 @@
           >
             <a href="#" @click="navigateTo('section1')">How To Buy</a>
           </li>
-          <li
+          <!-- <li
             class="hover:opacity-70 focus:opacity-70 transition-all duration-200 ease-linear cursor-pointer"
           >
             <a href="#">Contact</a>
-          </li>
+          </li> -->
           <li
             class="hover:opacity-70 focus:opacity-70 transition-all duration-200 ease-linear cursor-pointer"
           >

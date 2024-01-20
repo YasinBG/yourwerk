@@ -188,7 +188,7 @@
                   />
                 </svg>
               </span>
-              <span>{{ item.text1 }}</span>
+              <span class="text-base">{{ item.text1 }}</span>
             </div>
             <div class="text-sm flex items-start justify-start">
               <span class="mr-1">
@@ -215,7 +215,7 @@
                   />
                 </svg>
               </span>
-              <span>{{ item.text2 }}</span>
+              <span class="text-base">{{ item.text2 }}</span>
             </div>
             <div class="text-sm flex items-start justify-start">
               <span class="mr-1">
@@ -242,7 +242,7 @@
                   />
                 </svg>
               </span>
-              <span>{{ item.text3 }}</span>
+              <span class="text-base">{{ item.text3 }}</span>
             </div>
             <div
               class="text-sm flex items-start justify-start"
@@ -272,7 +272,7 @@
                   />
                 </svg>
               </span>
-              <span>{{ item.text4 }}</span>
+              <span class="text-base">{{ item.text4 }}</span>
             </div>
             <div
               class="text-sm flex items-start justify-start"
@@ -302,7 +302,7 @@
                   />
                 </svg>
               </span>
-              <span>{{ item.text5 }}</span>
+              <span class="text-base">{{ item.text5 }}</span>
             </div>
             <div
               class="text-sm flex items-start justify-start"
@@ -332,7 +332,7 @@
                   />
                 </svg>
               </span>
-              <span>{{ item.text6 }}</span>
+              <span class="text-base">{{ item.text6 }}</span>
             </div>
             <div
               class="text-sm flex items-start justify-start"
@@ -362,7 +362,7 @@
                   />
                 </svg>
               </span>
-              <span>{{ item.text7 }}</span>
+              <span class="text-base">{{ item.text7 }}</span>
             </div>
           </div>
         </div>
@@ -450,14 +450,14 @@ export default {
         text5:
           "Establish Special Agreements with DEX Projects and Wallet Applications.",
         text6:
-          "Develop Collaborations with at least 30 Web3 AI projects and 70 Web3 game/application projects.",
-        text7: "Burn 12.500.000 tokens.",
+          "Develop Collaborations with at least 30 WEB3 AI projects and 70 WEB3 game/application projects.",
+        text7: "Burn 125 tokens.",
       },
       {
         title: "Second Quarter",
         subtitle: "Beyond Just Cryptocurrency",
         text1: "Increase the number of collaborative projects to 300.",
-        text2: "Increase the number of burned tokens to at least 25.000.000.",
+        text2: "Increase the number of burned tokens to at least 250.",
         text3: "Initiate efforts to list on Cryptocurrency Exchanges.",
         text4:
           "Make deals with large investors to increase market demand for tokens.",
@@ -465,7 +465,7 @@ export default {
       {
         title: "Third Quarter",
         subtitle: "Beyond Just Cryptocurrency",
-        text1: "Reach 37.500.000 burned tokens.",
+        text1: "Reach 375 burned tokens.",
         text2: "Increase the number of collaborative projects to 500.",
         text3: "Strengthen ongoing deals with large investors.",
       },
@@ -473,7 +473,7 @@ export default {
         title: "Fourth Quarter",
         subtitle: "Addressing Key Issues",
         text1:
-          "Maximize the number of burned tokens to 50.000.000 by the end of the year.",
+          "Maximize the number of burned tokens to 500 by the end of the year.",
         text2: "Extend collaborations to 750 projects.",
         text3:
           "Continue partnerships with large investors to maintain and support market value.",
