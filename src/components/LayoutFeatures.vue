@@ -54,6 +54,7 @@
               :src="require(`../assets/${panel.imgSrc}`)"
               alt=""
               class="relative  w-full h-96 rounded-xl object-cover z-10"
+
             />
           </div>
           <!-- Panel Content -->

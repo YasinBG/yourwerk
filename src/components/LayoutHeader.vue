@@ -23,15 +23,7 @@
           :hovered="{ scale: 1.2 }"
           class="logo flex items-center text-3xl cursor-pointer"
         >
-          <!-- <p
-            class="font-serif text-6xl bg-clip-text text-transparent bg-gradient-to-r from-mkSecondary to-white"
-          >
-            W
-          </p>
-          ERK<span
-            class="bg-clip-text text-transparent bg-gradient-to-r from-mkSecondary to-white ml-2"
-            >1000</span
-          ><span class="text-3xl">X</span> -->
+          
           <img src="../assets/logo5.svg" class="w-12 object-cover" alt="">
           <div class="flex items-center text-3xl ml-2 ">
              <div
@@ -40,8 +32,6 @@
             <p class="bg-clip-text text-transparent bg-gradient-to-l from-mkSecondary to-white">WERK</p>
             <p class="absolute top-1 -right-14 text-lg bg-clip-text text-transparent bg-gradient-to-l from-mkSecondary to-white">1000X</p>
           </div>
-         
-          <!-- ><span class="text-3xl">X</span> -->
           </div>
         </RouterLink>
         <ul
@@ -60,19 +50,16 @@
             >
           </li>
           <li
-            class="hover:opacity-70 focus:opacity-70 transition-all duration-200 ease-linear cursor-pointer"
+            class="opacity-70 focus:opacity-70 transition-all duration-200 ease-linear cursor-pointer relative group"
           >
             <a href="#" @click="navigateTo('section1')">How To Buy</a>
+            <span class="absolute top-0 opacity-0 left-0 p-2 bg-black/70  w-full text-xs text-center rounded group-hover:translate-y-5 group-hover:opacity-100 transition-all duration-300 ease-linear translate-y-10">Coming soon ⏳ </span>
           </li>
-          <!-- <li
-            class="hover:opacity-70 focus:opacity-70 transition-all duration-200 ease-linear cursor-pointer"
-          >
-            <a href="#">Contact</a>
-          </li> -->
           <li
-            class="hover:opacity-70 focus:opacity-70 transition-all duration-200 ease-linear cursor-pointer"
+            class="opacity-70 focus:opacity-70 transition-all duration-200 ease-linear cursor-pointer relative group px-8"
           >
             <a href="#">Buy</a>
+            <span class="absolute top-0 opacity-0 left-0 p-2 bg-black/70  w-full text-xs text-center rounded group-hover:translate-y-5 group-hover:opacity-100 transition-all duration-300 ease-linear translate-y-10">Coming soon ⏳ </span>
           </li>
         </ul>
       </div>

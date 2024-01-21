@@ -29,6 +29,10 @@ module.exports = {
           "0%": { transform: "rotate(0)" },
           "100%": { transform: "rotate(360deg)" },
         },
+        rotateWord: {
+          '0%': { transform: 'rotate(0deg)' },
+        '100%': { transform: 'rotate(360deg)' },
+        },
         leftLine: {
           "0%": { transform: "scaleX(0.4)", "transform-origin": "0% 0%" },
           "100%": { transform: "scaleX(1)", "transform-origin": "0% 0%" },
@@ -41,6 +45,7 @@ module.exports = {
         rotate: "rotate 0.6s ease-in-out both",
         leftLine:
           "leftLine 1.7s  cubic-bezier(0.390, 0.575, 0.565, 1.000) both",
+          rotateWord: "rotateWord 40s linear infinite"
       },
       colors: {
         mkPrimary: "#0d0a09",

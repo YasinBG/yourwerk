@@ -34,8 +34,8 @@
         >Learn More</a
       >
     </div>
-    <div class="rightSection w-full animate-rotate lg:w-1/2 overflow-hidden ">
-      <div class="HeroImg bgchange" :class="{ 'animate-wiggle': isHovered }">
+    <div class="rightSection w-full  lg:w-1/2 overflow-hidden group animate-rotateWord ">
+      <div class="HeroImg bgchange" :class="{ 'animate-rotate ': isHovered }">
         <img
           class="px-4 lg:px-0 w-full h-full object-cover -rotate-12"
           src="../assets/logo5.svg"
