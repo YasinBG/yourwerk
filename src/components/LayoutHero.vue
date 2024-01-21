@@ -49,6 +49,20 @@
       </div>
     </div>
   </div>
+  <!-- bubble -->
+  <div class="bubble absolute w-full flex items-center justify-around bottom-20">
+    <img src="../assets/token.png" class="w-6 " alt="">
+    <img src="../assets/token.png" class="w-6 " alt="">
+    <img src="../assets/token.png" class="w-6 " alt="">
+    <img src="../assets/token.png" class="w-6 " alt="">
+    <img src="../assets/token.png" class="w-6 " alt="">
+    <img src="../assets/token.png" class="w-6 " alt="">
+    <img src="../assets/token.png" class="w-6 " alt="">
+    <img src="../assets/token.png" class="w-6 " alt="">
+    <img src="../assets/token.png" class="w-6 " alt="">
+    <img src="../assets/token.png" class="w-6 " alt="">
+    <img src="../assets/token.png" class="w-6 " alt="">
+  </div>
   <div
     class="background bgchange relative"
     :class="{ 'background-hovered': isHovered }"
