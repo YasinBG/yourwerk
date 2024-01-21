@@ -311,6 +311,6 @@ body {
     width: 2000px;
     height: 300px;
     right: 60%;
-    @apply absolute rounded-r-full top-60 bg-mkPurple/90;
+    @apply absolute rounded-r-full top-60 bg-[#FFA500]/80;
   }
 }

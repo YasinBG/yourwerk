@@ -53,7 +53,7 @@
             <img
               :src="require(`../assets/${panel.imgSrc}`)"
               alt=""
-              class="relative w-96 object-cover z-10"
+              class="relative  w-full h-96 rounded-xl object-cover z-10"
             />
           </div>
           <!-- Panel Content -->
@@ -102,7 +102,7 @@ export default {
           "The total number of tokens will be reduced from 1.000 to 500 in one year.",
         content2:
           " A fixed number of 41,66667 tokens will be burned each month according to the schedule.",
-        imgSrc: "illustration-features-tab-1.svg",
+        imgSrc: "Burn.svg",
       },
       {
         title: "Collaborations & Staking",
@@ -110,7 +110,7 @@ export default {
           "Until the first 100 projects, 1% of the non-circulating tokens that are not planned to be burned in that month will be burned with each new collaboration announcement.  ",
         content2:
           "Special staking offers will be made to qualified large investors to encourage them to buy WERK 1000X from the market and invest long-term.",
-        imgSrc: "illustration-features-tab-2.svg",
+        imgSrc: "Collab.svg",
       },
       {
         title: "Win Win",
@@ -118,7 +118,7 @@ export default {
           "Collaborating Web3 applications and games can earn a commission of 1-5% on transactions made with WERK 1000X, as per the agreements. ",
         content2:
           "In addition to the amount specified in the burning schedule, tokens equivalent to the total monthly commission volume will also be burned.",
-        imgSrc: "illustration-features-tab-3.svg",
+        imgSrc: "Win.svg",
       },
     ]);
 
