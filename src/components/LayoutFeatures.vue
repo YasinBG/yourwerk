@@ -14,7 +14,7 @@
   <section id="tabs" v-motion="fadeUp">
     <!-- Tabs/Panels Container -->
     <div class="container relative mx-auto my-6 lg:mb-32 mt-4 px-6">
-      <div class="bg-tabs"></div>
+      <!-- <div class="bg-tabs"></div> -->
       <!-- Tabs Flex Container -->
       <div
         class="flex flex-col justify-center w-full mx-auto mb-6 border-b border-b-gray-700 md:space-x-10 md:flex-row"
@@ -103,7 +103,7 @@ export default {
           "The total number of tokens will be reduced from 1.000 to 500 in one year.",
         content2:
           " A fixed number of 41,66667 tokens will be burned each month according to the schedule.",
-        imgSrc: "Burn.svg",
+        imgSrc: "illustration-features-tab-1.svg",
       },
       {
         title: "Collaborations & Staking",
