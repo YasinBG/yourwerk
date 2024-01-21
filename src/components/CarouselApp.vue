@@ -478,16 +478,6 @@ export default {
         text3:
           "Continue partnerships with large investors to maintain and support market value.",
       },
-      // {
-      //   title: "The Future of Blockchain",
-      //   subtitle: "Emerging Trends and Predictions",
-      //   text1:
-      //     "Integration with AI and IoT: Exploring how blockchain can synergize with other technologies.",
-      //   text2:
-      //     "Decentralized Finance (DeFi): The rise of financial services built on blockchain.",
-      //   text3:
-      //     "Quantum Computing & Blockchain: Preparing for future challenges in blockchain security with the advent of quantum computing.",
-      // },
     ]);
     const scrollContainer = ref(null);
     const isMobile = ref(window.innerWidth < 1024);
