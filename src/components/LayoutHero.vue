@@ -1,10 +1,10 @@
 <template>
   <div
-    class="HeroSection flex flex-col lg:flex-row justify-between items-center lg:gap-44 max-w-[1000px] mx-auto py-12 lg:py-24 z-10"
+    class="HeroSection flex flex-col lg:flex-row justify-between items-start lg:gap-44 max-w-[1000px] mx-auto py-12 lg:py-24 z-10"
     style="position: relative"
   >
-    <div class="leftSection lg:w-3/4 space-y-12 lg:text-start text-center">
-      <div class="text-6xl font-extrabold ...">
+    <div class="leftSection lg:w-2/3 space-y-12 lg:text-start text-center">
+      <div class="text-5xl font-extrabold ...">
         <span
           class="bg-clip-text text-transparent bg-gradient-to-r from-mkSecondary to-white"
         >
@@ -34,13 +34,18 @@
         >Learn More</a
       >
     </div>
-    <div class="rightSection w-full overflow-hidden lg:w-1/2">
+    <div class="rightSection w-full animate-rotate lg:w-1/2 overflow-hidden ">
       <div class="HeroImg bgchange" :class="{ 'animate-wiggle': isHovered }">
         <img
+          class="px-4 lg:px-0 w-full h-full object-cover -rotate-12"
+          src="../assets/logo5.svg"
+          alt="image"
+        />
+        <!-- <img
           class="w-full h-full object-cover rotate-12"
           src="../assets/hero-removebg.png"
           alt="image"
-        />
+        /> -->
       </div>
     </div>
   </div>

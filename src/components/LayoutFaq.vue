@@ -1,13 +1,13 @@
 <template>
-  <div class="mx-4 lg:mx-0 mt-44">
-    <h3 class="heading1" v-motion="fadeUp">
+  <div class="mx-4 lg:mx-0 mt-20">
+    <h3 class="heading1 lg:!text-7xl" v-motion="fadeUp">
       <span
-        class="bg-clip-text text-transparent bg-gradient-to-r from-mkSecondary to-white"
+        class="bg-clip-text text-transparent bg-gradient-to-l from-mkSecondary to-white"
       >
         Frequently Asked Questions
       </span>
       <div
-        class="gradientLine max-w-lg mx-auto !my-10"
+        class="gradientLine max-w-7xl mx-auto !my-10"
         v-motion="leftLine"
       ></div>
     </h3>

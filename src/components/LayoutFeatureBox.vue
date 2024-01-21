@@ -1,6 +1,6 @@
 <template>
   <section id="section1" class="flex flex-col items-center mb-32">
-    <div class="titte heading1 !text-6xl !my-20 md:pt-10">
+    <div class="titte heading1 lg:!text-7xl !my-20 md:pt-10">
       <h1
         v-motion="fadeRight"
         class="bg-clip-text text-transparent bg-gradient-to-r from-mkSecondary to-white"

@@ -1,7 +1,7 @@
 <template>
   <!-- Animation Section -->
   <div
-    class="ScrollAnimation w-full relative py-20 mt-24 lg:mt-32 pointer-events-none !-skew-y-6"
+    class="ScrollAnimation w-full relative py-10 lg:py-20 my-10 lg:my-10 pointer-events-none !-skew-y-6"
   >
     <div
       :class="{ 'yes': isDarkMode }"
@@ -10,7 +10,7 @@
     <div class="pt-20">
       <h1
         v-motion="fadeUp"
-        class="heading1 text-xl lg:!text-7xl !mb-0 pt-10 dark:!text-white !text-mkPrimary scroller-bg"
+        class="heading1 text-xl lg:!text-7xl !mb-0 pt-10 dark:!text-mkSecondary !text-mkPrimary scroller-bg"
       >
         The Transaction Tool of the Future
       </h1>

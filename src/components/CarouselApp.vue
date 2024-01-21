@@ -1,5 +1,5 @@
 <template>
-  <div class="my-10 flex flex-col w-full items-center">
+  <div class="my-4 flex flex-col w-full items-center">
     <div
       ref="scrollContainer"
       class="scroll-snap-container shadow-mkPurple/80 shadow-xl rounded-xl"
@@ -160,9 +160,9 @@
               />
             </svg>
           </span>
-          <h2 class="text-xl font-bold mb-2">{{ item.title }}</h2>
+          <h2 class="text-xl font-bold mb-2 bg-clip-text text-transparent bg-gradient-to-l from-mkSecondary to-white">{{ item.title }}</h2>
           <!-- <h2 class="font-semibold mb-2">{{ item.subtitle }}</h2> -->
-          <div class="space-y-2">
+          <div class="">
             <div class="text-sm flex items-start justify-start font-light">
               <span class="mr-1">
                 <svg
@@ -188,7 +188,7 @@
                   />
                 </svg>
               </span>
-              <span class="text-base">{{ item.text1 }}</span>
+              <span class="md:text-base">{{ item.text1 }}</span>
             </div>
             <div class="text-sm flex items-start justify-start">
               <span class="mr-1">
@@ -215,7 +215,7 @@
                   />
                 </svg>
               </span>
-              <span class="text-base">{{ item.text2 }}</span>
+              <span class="md:text-base">{{ item.text2 }}</span>
             </div>
             <div class="text-sm flex items-start justify-start">
               <span class="mr-1">
@@ -242,7 +242,7 @@
                   />
                 </svg>
               </span>
-              <span class="text-base">{{ item.text3 }}</span>
+              <span class="md:text-base">{{ item.text3 }}</span>
             </div>
             <div
               class="text-sm flex items-start justify-start"
@@ -272,7 +272,7 @@
                   />
                 </svg>
               </span>
-              <span class="text-base">{{ item.text4 }}</span>
+              <span class="md:text-base">{{ item.text4 }}</span>
             </div>
             <div
               class="text-sm flex items-start justify-start"
@@ -302,7 +302,7 @@
                   />
                 </svg>
               </span>
-              <span class="text-base">{{ item.text5 }}</span>
+              <span class="md:text-base">{{ item.text5 }}</span>
             </div>
             <div
               class="text-sm flex items-start justify-start"
@@ -332,7 +332,7 @@
                   />
                 </svg>
               </span>
-              <span class="text-base">{{ item.text6 }}</span>
+              <span class="md:text-base">{{ item.text6 }}</span>
             </div>
             <div
               class="text-sm flex items-start justify-start"
@@ -362,7 +362,7 @@
                   />
                 </svg>
               </span>
-              <span class="text-base">{{ item.text7 }}</span>
+              <span class="md:text-base">{{ item.text7 }}</span>
             </div>
           </div>
         </div>
@@ -623,7 +623,8 @@ export default {
   background-repeat: no-repeat;
   background-size: cover;
 
-  border: 3.5px solid #b9c7d5c7;
+  /* border: 3.5px solid #b9c7d5c7; */
+  border: 3.5px solid #f89844c8;
 }
 .cardBg {
   background: linear-gradient(

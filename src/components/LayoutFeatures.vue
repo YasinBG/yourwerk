@@ -1,8 +1,8 @@
 <template>
   <!-- Features -->
-  <div class="features mt-44 z-20" v-motion="fadeLeft">
+  <div class="features mt-12 lg:mt-44 z-20" v-motion="fadeLeft">
     <div class="container mx-auto mt-16 px-6 md:px-0">
-      <h2 class="mb-6 heading1 lg:!text-8xl bg-clip-text text-transparent bg-gradient-to-r from-mkSecondary to-white">Unique Deflationary Policies</h2>
+      <h2 class="!mb-3 pb-2 heading1 lg:!text-7xl bg-clip-text text-transparent bg-gradient-to-r from-mkSecondary to-white">Unique Deflationary Policies</h2>
       <!-- <p class="max-w-xl mx-auto text-center">
         Blockchain is a decentralized ledger system that ensures reliability and
         transparency. It maintains the immutability of data and supports
@@ -13,7 +13,7 @@
   <!-- Features Tabs -->
   <section id="tabs" v-motion="fadeUp">
     <!-- Tabs/Panels Container -->
-    <div class="container relative mx-auto my-6 mb-32 mt-12 px-6">
+    <div class="container relative mx-auto my-6 lg:mb-32 mt-4 px-6">
       <div class="bg-tabs"></div>
       <!-- Tabs Flex Container -->
       <div
@@ -27,7 +27,7 @@
           @click="activateTab(index)"
         >
           <div
-            class="py-5 font-semibold text-2xl"
+            class="py-5 font-semibold text-xl"
             :class="{
               'border-mkPurple border-b-4 text-mkPurple': activeTab === index,
             }"
@@ -53,7 +53,7 @@
             <img
               :src="require(`../assets/${panel.imgSrc}`)"
               alt=""
-              class="relative z-10"
+              class="relative w-96 object-cover z-10"
             />
           </div>
           <!-- Panel Content -->

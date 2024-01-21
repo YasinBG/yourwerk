@@ -21,9 +21,9 @@
           }"
           :variants="{ custom: { scale: 2 } }"
           :hovered="{ scale: 1.2 }"
-          class="logo flex items-center text-3xl cursor-pointer italic"
+          class="logo flex items-center text-3xl cursor-pointer"
         >
-          <p
+          <!-- <p
             class="font-serif text-6xl bg-clip-text text-transparent bg-gradient-to-r from-mkSecondary to-white"
           >
             W
@@ -31,7 +31,18 @@
           ERK<span
             class="bg-clip-text text-transparent bg-gradient-to-r from-mkSecondary to-white ml-2"
             >1000</span
-          ><span class="text-3xl">X</span>
+          ><span class="text-3xl">X</span> -->
+          <img src="../assets/logo5.svg" class="w-12 object-cover" alt="">
+          <div class="flex items-center text-3xl ml-2 ">
+             <div
+            class="font-serif text-3xl  relative"
+          >
+            <p class="bg-clip-text text-transparent bg-gradient-to-l from-mkSecondary to-white">WERK</p>
+            <p class="absolute top-1 -right-14 text-lg bg-clip-text text-transparent bg-gradient-to-l from-mkSecondary to-white">1000X</p>
+          </div>
+         
+          <!-- ><span class="text-3xl">X</span> -->
+          </div>
         </RouterLink>
         <ul
           class="nav-list flex items-center space-x-12 font-semibold uppercase"
@@ -69,7 +80,7 @@
     <!-- Mobile Navbar -->
     <div class="lg:hidden block">
       <div class="flex justify-between items-center">
-        <span
+        <!-- <div
           v-motion
           :initial="{ opacity: 0, y: -100 }"
           :enter="{
@@ -86,7 +97,31 @@
             class="italic font-serif bg-clip-text text-transparent bg-gradient-to-r from-mkSecondary to-white"
             >W</span
           ><span class="font-bold">erk</span>
-        </span>
+        </div> -->
+        <RouterLink
+          to="/"
+          v-motion
+          :initial="{ opacity: 0, y: -100 }"
+          :enter="{
+            opacity: 1,
+            y: 0,
+            scale: 1,
+            transition: { duration: 700 },
+          }"
+          :variants="{ custom: { scale: 2 } }"
+          :hovered="{ scale: 1.2 }"
+          class="logo flex items-center text-3xl cursor-pointer"
+        >
+          <img src="../assets/logo5.svg" class="w-12 object-cover" alt="">
+          <div class="flex items-center text-3xl ml-2 ">
+             <div
+            class="font-serif text-3xl  relative"
+          >
+            <p class="bg-clip-text text-transparent bg-gradient-to-l from-mkSecondary to-white">WERK</p>
+            <p class="absolute top-1 -right-14 text-lg bg-clip-text text-transparent bg-gradient-to-l from-mkSecondary to-white">1000X</p>
+          </div>
+          </div>
+        </RouterLink>
         <!-- hamburger menu -->
         <div
           @click="toggleMenu"
@@ -97,7 +132,7 @@
         </div>
       </div>
       <nav class="site-nav mobileBg" :class="{ 'site-nav--open': isNavOpen }">
-        <ul>
+        <ul @click="closeNavMobile">
           <li class="flex items-center border-b border-b-[#103b68]">
             <router-link to="/" class="!flex items-center w-full px-4 py-6">
               <span class="mr-4">
@@ -118,9 +153,9 @@
             </router-link>
           </li>
           <li class="border-b border-b-[#103b68]">
-            <routerLink
-              to="#"
-              href="#"
+            <a
+              href="https://werk1000x.netlify.app/#/"
+              target="_blank"
               class="!flex items-center w-full px-4 py-6"
             >
               <span class="mr-4">
@@ -139,7 +174,7 @@
                 </svg>
               </span>
               <span>WhitePaper </span>
-            </routerLink>
+            </a>
           </li>
           <li class="border-b border-b-[#103b68]">
             <routerLink
@@ -165,7 +200,7 @@
               <span>How to Buy</span>
             </routerLink>
           </li>
-          <li class="border-b border-b-[#103b68]">
+          <!-- <li class="border-b border-b-[#103b68]">
             <routerLink to="#" class="!flex items-center w-full px-4 py-6">
               <span class="mr-4">
                 <svg
@@ -184,7 +219,7 @@
               </span>
               <span> Contact </span>
             </routerLink>
-          </li>
+          </li> -->
           <li class="">
             <routerLink to="#" class="!flex items-center w-full px-4 py-6">
               <span class="mr-4">
@@ -232,10 +267,10 @@
           Us on social media
         </div>
         <!-- Social media -->
-        <div class="Social-Media flex items-center w-full py-4 mx-auto">
+        <div class="Social-Media flex items-center w-full py-4 mx-auto" @click="closeNavMobile">
           <ul class="flex justify-around items-center w-full">
             <li class="social-Icon p-4 rounded-full">
-              <a href="" class="">
+              <a href="https://www.youtube.com/channel/UCQlgdA0AOCQEnl5gGSmwy3A" target="_blank" class="">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
@@ -418,6 +453,11 @@ export default {
       isNavOpen.value = false;
     };
 
+    //* Mobile'de tıklanınca navbar kapama
+    const closeNavMobile = () => {
+      isNavOpen.value = false;
+    }
+
     return {
       headerBackgroundColor,
       updateScroll,
@@ -426,6 +466,7 @@ export default {
       isDarkMode,
       navigateTo,
       mobileNavigate,
+      closeNavMobile
     };
   },
 };
