@@ -40,7 +40,7 @@
         </div>
         <div class="h-full">
           <h5
-            class="pt-8 pb-4 text-xl font-bold text-center md:text-left uppercase"
+            class="pt-8 pb-4 text-xl font-bold text-center md:text-left uppercase text-mkSecondary"
           >
             As an Investment Tool
           </h5>
@@ -71,7 +71,7 @@
         </div>
         <div class="h-full">
           <h5
-            class="pt-8 pb-4 text-xl font-bold text-center md:text-left uppercase"
+            class="pt-8 pb-4 text-xl font-bold text-center md:text-left uppercase text-mkSecondary"
           >
             As a Currency
           </h5>
@@ -100,7 +100,7 @@
         </div>
         <div class="h-full">
           <h5
-            class="pt-8 pb-4 text-xl font-bold text-center md:text-left uppercase"
+            class="pt-8 pb-4 text-xl font-bold text-center md:text-left uppercase text-mkSecondary"
           >
             Management and Voting
           </h5>
@@ -152,42 +152,17 @@ export default {
 
 <style lang="css" scoped>
 .bgCard {
-  /* background: url("../assets/mkover.webp"); */
-  /* background: linear-gradient(to right, #080a10, #241b28); */
 
-  /* background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; */
-
-  background: linear-gradient(
-    to left top,
-    #0b2142,
-    #0d2e55,
-    #13447a,
-    #12487b,
-    #14558e
-  );
-
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-
+background: #000;
   border: 3.5px solid #b9c7d5c7;
 }
 
 .cardGlass {
-  background: linear-gradient(
-    to bottom,
-    #1c437d,
-    #0b2142,
-    #0d2e55,
-    #13447a,
-    #12487b,
-    #14558e
-  );
+  
 
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: rgba(0, 0, 0, 0.9);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
 }
 </style>

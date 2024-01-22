@@ -171,7 +171,7 @@ export default {
 }
 
 .tagBg {
-  background: linear-gradient(
+  /* background: linear-gradient(
     to bottom,
     #1c437d,
     #0b2142,
@@ -179,7 +179,11 @@ export default {
     #13447a,
     #12487b,
     #14558e
-  );
+  ); */
+  background: rgba(0, 0, 0, 0.1);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+border: 1px solid rgba(255, 255, 255, 0.3);
   color: #e2ecf6;
 }
 </style>

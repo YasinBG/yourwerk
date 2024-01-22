@@ -600,34 +600,21 @@ export default {
 }
 
 .IconBg {
-  background: linear-gradient(
-    to left top,
-    #0b2142,
-    #0d2e55,
-    #13447a,
-    #12487b,
-    #14558e
-  );
+  
 
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: rgba(255, 255, 255, 0.2);
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
 
-  /* border: 3.5px solid #b9c7d5c7; */
   border: 3.5px solid #f89844c8;
 }
 .cardBg {
-  background: linear-gradient(
-    to left top,
-    #0b2142,
-    #0d2e55,
-    #13447a,
-    #12487b,
-    #14558e
-  );
-
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: rgba(0, 0, 0, 0.3);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
 }
 </style>

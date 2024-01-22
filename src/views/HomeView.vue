@@ -95,23 +95,25 @@ export default {
 <style lang="css" scoped>
 .bgnew {
   /* background: url("../assets/mkover.webp"); */
-  background: linear-gradient(
+  /* background: linear-gradient(
     to right,
     #0b2142,
     #0d2e55,
     #103b68,
     #12487b,
     #14558e
-  );
+  ); */
   /* background: linear-gradient(to right, #080a10, #241b28); */
 
   /* background: linear-gradient(to right, #080a10, #241b28, #241a28, #090b11); */
   /* background: linear-gradient(to right, #1a182c, #241a28); */
-
+/* 
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; */
   /* background-attachment: fixed; */
+
+  background: #000;
 
   /* background-image: linear-gradient(180deg, #080a10 0%, #080a1000 100%); */
   /* transition: background 0.3s, border-radius 0.3s, opacity 0.3s; */
@@ -125,15 +127,7 @@ export default {
   padding: 12px;
   border-radius: 50%;
 
-  background: linear-gradient(
-    to bottom,
-    #1c437d,
-    #0b2142,
-    #0d2e55,
-    #13447a,
-    #12487b,
-    #14558e
-  );
+  background: #f89844;
 
   background-position: center;
   background-repeat: no-repeat;
@@ -144,16 +138,8 @@ export default {
 }
 
 .scroll-to-top-btn:hover {
-  background: linear-gradient(
-    to top,
-    #1c437d,
-    #0b2142,
-    #0d2e55,
-    #13447a,
-    #12487b,
-    #14558e,
-    #0d2e55
-  );
+  background: rgba(255, 255, 255, 0.3);
+
 }
 
 @media (max-width: 768px) {

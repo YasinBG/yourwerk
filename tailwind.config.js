@@ -61,7 +61,7 @@ module.exports = {
         mkBlue: "#007fff",
         mkPurple: "#f89844",
         mkGray: "#a6adb9",
-        // mkDarkGray: "#14161a",
+        mkDarkGray2: "#0F0F0F",
         mkDarkGray: "#191a1e",
         mkWhite: "#eae9ea",
       },

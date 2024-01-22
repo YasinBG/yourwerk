@@ -9,6 +9,7 @@
 body {
   /* font-family: "Montserrat", sans-serif; */
   font-family: "Bai Jamjuree", sans-serif;
+  background: #000;
 }
 
 :root {
@@ -17,7 +18,8 @@ body {
   /* --clr-neon: hsl(28, 93%, 62%); */
   /* --clr-neon: hsl(271, 76%, 53%); */
   /* --clr-neon: hsl(28, 93%, 62%); */
-  --clr-neon: hsl(211, 76%, 51%);
+  /* --clr-neon: hsl(211, 76%, 51%); */
+  --clr-neon: hsl(28, 93%, 62%);
 }
 
 .heading1 {

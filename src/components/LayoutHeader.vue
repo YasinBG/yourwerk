@@ -1,8 +1,8 @@
 <template>
   <header
-    class="header w-full sticky top-0 p-6 transition-all duration-500 ease-in-out z-50"
+    class="header w-full sticky top-0 p-6 transition-all duration-500 ease-linear z-50"
     :class="{
-      'headerImgBg': headerBackgroundColor === 'dark',
+      ' bg-black': headerBackgroundColor === 'dark',
       'bg-mkPurple text-white': headerBackgroundColor === 'mkBg',
     }"
   >
@@ -52,14 +52,14 @@
           <li
             class="opacity-70 focus:opacity-70 transition-all duration-200 ease-linear cursor-pointer relative group"
           >
-            <a href="#" @click="navigateTo('section1')">How To Buy</a>
-            <span class="absolute top-0 opacity-0 left-0 p-2 bg-black/70  w-full text-xs text-center rounded group-hover:translate-y-5 group-hover:opacity-100 transition-all duration-300 ease-linear translate-y-10">Coming soon ⏳ </span>
+            <a href="#" @click="navigateTo('section1')" class="pointer-events-none">How To Buy</a>
+            <span class="absolute top-0 opacity-0 left-0 p-2 bg-mkDarkGray  w-full text-xs text-center rounded group-hover:translate-y-5 group-hover:opacity-100 transition-all duration-300 ease-linear translate-y-10">Coming soon ⏳ </span>
           </li>
           <li
             class="opacity-70 focus:opacity-70 transition-all duration-200 ease-linear cursor-pointer relative group px-8"
           >
-            <a href="#">Buy</a>
-            <span class="absolute top-0 opacity-0 left-0 p-2 bg-black/70  w-full text-xs text-center rounded group-hover:translate-y-5 group-hover:opacity-100 transition-all duration-300 ease-linear translate-y-10">Coming soon ⏳ </span>
+            <a href="#" class="pointer-events-none">Buy</a>
+            <span class="absolute top-0 opacity-0 left-0 p-2 bg-mkDarkGray  w-full text-xs text-center rounded group-hover:translate-y-5 group-hover:opacity-100 transition-all duration-300 ease-linear translate-y-10">Coming soon ⏳ </span>
           </li>
         </ul>
       </div>
@@ -147,7 +147,6 @@
           </li>
           <li class="border-b border-b-[#103b68]">
             <routerLink
-              @click="mobileNavigate('section1')"
               to="#"
               class="!flex items-center w-full px-4 py-6"
             >
@@ -357,7 +356,6 @@
 
 <script>
 import { inject, onMounted, onUnmounted, ref, watch } from "vue";
-import { useNavigation } from "@/directives/useNavigation";
 export default {
   setup() {
     // Header
@@ -393,12 +391,9 @@ export default {
       isNavOpen.value = !isNavOpen.value;
     };
 
-    //* Navigation Scroll
-    const { navigateTo } = useNavigation();
-
+  
     //* Mobile'de scroll yönlendirmesi.
-    const mobileNavigate = (event) => {
-      navigateTo(event);
+    const mobileNavigate = () => {
       isNavOpen.value = false;
     };
 
@@ -413,7 +408,6 @@ export default {
       isNavOpen,
       toggleMenu,
       isDarkMode,
-      navigateTo,
       mobileNavigate,
       closeNavMobile
     };
@@ -424,11 +418,11 @@ export default {
 <style lang="css">
 .headerImgBg {
   /* background: url("../assets/mkover.webp"); */
-  background: linear-gradient(to right, #103b68, #241b28);
+  /* background: linear-gradient(to right, #103b68, #241b28);
 
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; */
 }
 
 /* hamburger menü */
@@ -509,7 +503,7 @@ export default {
 }
 
 .mobileBg {
-  background: linear-gradient(
+  /* background: linear-gradient(
     to right,
     #0b2142,
     #0d2e55,
@@ -520,19 +514,19 @@ export default {
 
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; */
 }
 
 .social-Icon {
   background: linear-gradient(
     to top,
-    #1c437d,
+    /* #1c437d,
     #0b2142,
     #0d2e55,
     #13447a,
     #12487b,
     #14558e,
-    #0d2e55
+    #0d2e55 */
   );
 }
 </style>
