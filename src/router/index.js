@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from "vue-router";
 import HomeView from "../views/HomeView.vue";
+
 import PrivacyView from "../views/PrivacyView.vue";
 import TermsConditionView from "../views/TermsConditionView.vue";
 import PresalePublicView from "../views/PresalePublicView.vue";

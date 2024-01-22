@@ -132,33 +132,35 @@
       class="absolute -bottom-20 lg:h-20 w-full bg-gradient-to-b from-black to-transparent z-10 pointer-events-none"
     ></div>
   </div>
+  <div class="absolute top-0 left-0">
+
+    <StarView />
+  </div>
+
 </template>
 
 <script>
+import StarView from "@/views/StarView.vue";
 import { inject, ref } from "vue";
 export default {
-  setup() {
-    //* Button hover svg opacity
-    const isHovered = ref(false);
-    const handleHover = () => {
-      isHovered.value = true;
-    };
-    const handleHoverOut = () => {
-      isHovered.value = false;
-    };
-
-    const isDarkMode = inject("isDarkMode");
-
- 
-
-    return {
-      isDarkMode,
-      isHovered,
-      handleHoverOut,
-      handleHover,
-
-    };
-  },
+    setup() {
+        //* Button hover svg opacity
+        const isHovered = ref(false);
+        const handleHover = () => {
+            isHovered.value = true;
+        };
+        const handleHoverOut = () => {
+            isHovered.value = false;
+        };
+        const isDarkMode = inject("isDarkMode");
+        return {
+            isDarkMode,
+            isHovered,
+            handleHoverOut,
+            handleHover,
+        };
+    },
+    components: { StarView }
 };
 </script>
 
