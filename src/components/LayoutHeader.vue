@@ -123,7 +123,7 @@
           </li>
           <li class="border-b border-b-mkSecondary">
             <a
-              href="https://werk1000x.netlify.app/#/"
+              href="https://werkpaper.netlify.app"
               target="_blank"
               class="!flex items-center w-full px-4 py-6"
             >

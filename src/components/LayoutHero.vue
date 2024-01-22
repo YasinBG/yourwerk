@@ -45,7 +45,7 @@
     </div>
   </div>
   <!-- bubble -->
-  <div class="bubble absolute w-full flex items-center justify-around bottom-20">
+  <div class="bubble  hidden md:flex absolute w-full items-center justify-around bottom-20">
     <img v-for="WerkToken in 11" :key="WerkToken" src="../assets/token.png" class="w-6 " alt="">
   </div>
   <div
