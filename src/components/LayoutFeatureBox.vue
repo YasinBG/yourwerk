@@ -3,7 +3,7 @@
     <div class="titte heading1 lg:!text-7xl !my-20 md:pt-10">
       <h1
         v-motion="fadeRight"
-        class="bg-clip-text text-transparent bg-gradient-to-r from-mkSecondary to-white"
+        class="bg-clip-text text-transparent bg-gradient-to-r from-mkSecondary to-white px-4 md:px-0"
       >
         Werk 1000X Use Cases
       </h1>

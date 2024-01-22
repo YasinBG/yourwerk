@@ -34,18 +34,13 @@
         >Learn More</a
       >
     </div>
-    <div class="rightSection w-full  lg:w-1/2 overflow-hidden group animate-rotateWord ">
+    <div class="rightSection w-full lg:w-1/2 group">
       <div class="HeroImg bgchange" :class="{ 'animate-rotate ': isHovered }">
         <img
-          class="px-4 lg:px-0 w-full h-full object-cover -rotate-12"
+          class="px-4 lg:px-0 w-[70%]  animate-rotateWord mx-auto md:w-full h-full object-cover-rotate-12"
           src="../assets/logo5.svg"
           alt="image"
         />
-        <!-- <img
-          class="w-full h-full object-cover rotate-12"
-          src="../assets/hero-removebg.png"
-          alt="image"
-        /> -->
       </div>
     </div>
   </div>

@@ -1,40 +1,23 @@
 <template>
-  <div>
+  <div class="lg:pl-12">
      
-     <ul class="nav-list flex items-center space-x-12 font-semibold uppercase  ">
-       <li  v-for="menu in menus" :key="menu"    
-               class="hover:opacity-70 focus:opacity-70 transition-all duration-200 ease-linear cursor-pointer uppercase"
-             >
-             <a href="#">{{ menu.name }}</a>
-               
-             </li>
-             
-     </ul>
-
-     <div class="flex items-center space-x-12 font-semibold uppercase mx-auto justify-center mt-10">
+     <div class="  flex flex-col lg:flex-row space-y-4 lg:space-y-0 py-4 lg:py-0 items-center justify-between w-full text-center mx-auto lg:space-x-4">
       <router-link to="/Privacy">
-            
-            <button class="hover:opacity-70 focus:opacity-70 transition-all duration-200 ease-linear cursor-pointer uppercase">
-             
-             Privacy Policy</button>
+          <button class="hover:opacity-70 focus:opacity-70 transition-all duration-200 ease-linear cursor-pointer uppercase bg-clip-text text-transparent bg-gradient-to-t from-mkSecondary to-white">
+            Privacy Policy
+          </button>
+      </router-link>
 
-             
-           
-           </router-link>
-
-           <router-link to="/TermsCondition">
-           <button class="hover:opacity-70 focus:opacity-70 transition-all duration-200 ease-linear cursor-pointer uppercase">
-            Terms & Conditions
-             </button>
-
-            </router-link>
-
-            <router-link to="/PresalePublic">
-           <button class="hover:opacity-70 focus:opacity-70 transition-all duration-200 ease-linear cursor-pointer uppercase">
+      <router-link to="/TermsCondition">
+          <button class="hover:opacity-70 focus:opacity-70 transition-all duration-200 ease-linear cursor-pointer uppercase bg-clip-text text-transparent bg-gradient-to-t from-mkSecondary to-white">
+          Terms & Conditions
+          </button>
+      </router-link>
+      <router-link to="/PresalePublic">
+           <button class="hover:opacity-70 focus:opacity-70 transition-all duration-200 ease-linear cursor-pointer uppercase bg-clip-text text-transparent bg-gradient-to-t from-mkSecondary to-white">
             Presale-Public Sale
-             </button>
-
-            </router-link>
+            </button>
+        </router-link>
      </div>
      
 
@@ -44,7 +27,6 @@
 
 <script>
 
-import { ref } from 'vue'
 
 export default {
     components:{
@@ -53,29 +35,8 @@ export default {
 
     setup(){
 
-    const menus = ref([
-      {
-        name:'home', detail:'',
-      },
-      {
-        name:'whitepaper',  detail:'',
-      },
-      {
-        name:'home to buy',  detail:'',
-      },
-      {
-        name:'contact',  detail:'',
-      },
-       {
-      name:'buy',  detail:'',
-      },
-     
-      
-     
-     
-    ])
+    
       return{
-          menus
       }
     }
 }

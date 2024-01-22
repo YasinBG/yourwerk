@@ -102,7 +102,7 @@
       </div>
       <nav class="site-nav mobileBg" :class="{ 'site-nav--open': isNavOpen }">
         <ul @click="closeNavMobile">
-          <li class="flex items-center border-b border-b-[#103b68]">
+          <li class="flex items-center border-b border-b-mkSecondary">
             <router-link to="/" class="!flex items-center w-full px-4 py-6">
               <span class="mr-4">
                 <svg
@@ -121,7 +121,7 @@
               <span>Home</span>
             </router-link>
           </li>
-          <li class="border-b border-b-[#103b68]">
+          <li class="border-b border-b-mkSecondary">
             <a
               href="https://werk1000x.netlify.app/#/"
               target="_blank"
@@ -145,7 +145,7 @@
               <span>WhitePaper </span>
             </a>
           </li>
-          <li class="border-b border-b-[#103b68]">
+          <li class="border-b border-b-mkSecondary">
             <routerLink
               to="#"
               class="!flex items-center w-full px-4 py-6"
@@ -210,7 +210,7 @@
             </routerLink>
           </li>
         </ul>
-        <div class="border-t-mkPrimary border-t my-2"></div>
+        <div class="border-t-mkSecondary border-t my-2"></div>
         <div class="text-center py-2 font-semibold uppercase">
           Us on social media
         </div>
@@ -241,49 +241,7 @@
               </a>
             </li>
             <li class="social-Icon p-4 rounded-full">
-              <a href="">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  class="feather feather-facebook"
-                >
-                  <path
-                    d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
-                  ></path>
-                </svg>
-              </a>
-            </li>
-            <li class="social-Icon p-4 rounded-full">
-              <a href="">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  class="feather feather-instagram"
-                >
-                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-                  <path
-                    d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"
-                  ></path>
-                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
-                </svg>
-              </a>
-            </li>
-            <li class="social-Icon p-4 rounded-full">
-              <a href="">
+              <a href="https://t.me/WERK1000x" target="_blank">
                 <svg
                   width="24px"
                   height="24px"
@@ -301,7 +259,7 @@
               </a>
             </li>
             <li class="social-Icon p-4 rounded-full">
-              <a href="">
+              <a href="https://twitter.com/Werk_1000X" target="_blank">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -348,7 +306,7 @@
             </li>
           </ul>
         </div>
-        <div class="border-b-mkPrimary border-b my-2"></div>
+        <div class="border-b-mkSecondary border-b mt-2"></div>
       </nav>
     </div>
   </header>
@@ -497,7 +455,7 @@ export default {
 .site-nav a:hover,
 .site-nav a:focus {
   /* background: #e4b363; */
-  background: #0d2e55;
+  background: #252729;
   /* color: #464655; */
   color: #eae9ea;
 }

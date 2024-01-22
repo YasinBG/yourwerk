@@ -10,7 +10,7 @@
     <div class="pt-20">
       <h1
         v-motion="fadeUp"
-        class="heading1 text-xl lg:!text-7xl !mb-0 pt-10 dark:!text-mkSecondary !text-mkPrimary scroller-bg"
+        class="heading1 text-xl lg:!text-7xl !mb-0 pt-10 dark:!text-mkSecondary !text-mkPrimary scroller-bg px-4 md:px-0"
       >
         The Transaction Tool of the Future
       </h1>
