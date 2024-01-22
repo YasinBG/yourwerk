@@ -6,3 +6,5 @@ module.exports = defineConfig({
   publicPath: process.env.NODE_ENV !== 'development' ? '/yourwerk' : '/',
 
 })
+
+

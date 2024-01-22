@@ -73,7 +73,7 @@
             <div class="mx-auto md:mx-0 mt-8 text-center md:text-start">
               <button class="neon-button !text-white">
                 <a
-                  href="https://werk1000x.netlify.app/#/topic/Token%20Economics,%20Distribution,%20and%20Staking%20Policy"
+                  href="https://werkpaper.netlify.app/#/topic/Token%20Economics,%20Distribution,%20and%20Staking%20Policy"
                   target="_blank"
                   >More Info</a
                 >

@@ -18,7 +18,7 @@
 
       <a
         v-if="isDarkMode"
-        href="https://werk1000x.netlify.app/#/"
+        href="https://werkpaper.netlify.app"
         target="_blank"
         class="neon-button !mb-12 lg:mb-0 !text-white"
         @mouseover="handleHover"

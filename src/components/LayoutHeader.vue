@@ -45,7 +45,7 @@
           <li
             class="hover:opacity-70 focus:opacity-70 transition-all duration-200 ease-linear cursor-pointer"
           >
-            <a href="https://werk1000x.netlify.app/#/" target="_blank"
+            <a href="https://werkpaper.netlify.app" target="_blank"
               >WhitePaper</a
             >
           </li>
