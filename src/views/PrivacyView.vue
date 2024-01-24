@@ -5,12 +5,12 @@
   >
     <LayoutHeader></LayoutHeader>
     <div class="text-white bg-transparent max-w-[1000px] w-full mx-auto py-20">
-      <h2  class="text-4xl bg-clip-text !text-transparent !bg-gradient-to-r !from-mkSecondary !to-white text-center heading1 mt-4">Privacy Policy for WERK Token WEBSITE</h2>
+      <h2  class="text-4xl bg-clip-text !text-transparent !bg-gradient-to-r !from-mkSecondary !to-white text-center heading1 mt-4">Privacy Policy for WERK 1000X WEBSITE</h2>
       <p class="md:text-end text-center ml-2 md:ml-0 font-semibold text-white/80">Effective Date: 01/10/2024</p>
       <h4 class="bg-clip-text !text-transparent !bg-gradient-to-t !from-mkSecondary !to-white  heading3 px-4 md:px-0 !text-start mt-10">Introduction:</h4>
       <p class="ml-4 px-4 md:px-0 my-2 leading-relaxed text-white/80">
         This Privacy Policy delineates our approach to managing your information
-        in relation to the WERK Token ecosystem, emphasizing our commitment to
+        in relation to the WERK 1000X ecosystem, emphasizing our commitment to
         privacy in the rapidly evolving Web3 landscape.
       </p>
 
@@ -29,7 +29,7 @@
         </li>
 
         <li class="ml-4 px-4 md:px-0 my-2 leading-relaxed text-white/80">
-          <span class="bg-clip-text !text-transparent !bg-gradient-to-r border-b border-b-mkSecondary !from-mkSecondary !to-white  heading5 !text-start">Usage Data:</span> We may track interaction with the WERK Token platform to
+          <span class="bg-clip-text !text-transparent !bg-gradient-to-r border-b border-b-mkSecondary !from-mkSecondary !to-white  heading5 !text-start">Usage Data:</span> We may track interaction with the WERK 1000X platform to
           enhance service quality and user experience.
         </li>
       </ul>
@@ -42,7 +42,7 @@
         </li>
         <li class="ml-4 px-4 md:px-0 my-2 leading-relaxed text-white/80">
           <span class="bg-clip-text !text-transparent !bg-gradient-to-r border-b border-b-mkSecondary !from-mkSecondary !to-white  heading5 !text-start">Communication and Support:</span>
-           Personal Data facilitates user support, updates, and information dissemination related to WERK Token website.
+           Personal Data facilitates user support, updates, and information dissemination related to WERK 1000X website.
 
         </li>
         <li class="ml-4 px-4 md:px-0 my-2 leading-relaxed text-white/80">

@@ -1,6 +1,6 @@
 <template>
   <!-- Features -->
-  <div class="features mt-12 lg:mt-44 z-20" v-motion="fadeLeft">
+  <div class="features mt-12 lg:mt-44 z-20" v-motion="fadeUp">
     <div class="container mx-auto mt-16 px-6 md:px-0">
       <h2 class="!mb-3 pb-2 heading1 lg:!text-7xl bg-clip-text text-transparent bg-gradient-to-r from-mkSecondary to-white">Unique Deflationary Policies</h2>
       <!-- <p class="max-w-xl mx-auto text-center">
@@ -58,7 +58,7 @@
             />
           </div>
           <!-- Panel Content -->
-          <div class="panel-content animate-fadeInSlide">
+          <div class="panel-content animate-fadeInSlide flex flex-col justify-center">
             <h3
               class="mt-12 text-3xl font-semibold text-center md:mt-0 md:text-left bg-clip-text text-transparent bg-gradient-to-r from-mkSecondary to-white"
             >
@@ -69,6 +69,9 @@
             </p>
             <p class="max-w-md text-center text-xl text-white/80 md:text-left mt-4">
               {{ panel.content2 }}
+            </p>
+            <p v-if="panel.content3" class="max-w-md text-center text-xl text-white/80 md:text-left mt-4">
+              {{ panel.content3 }}
             </p>
             <div class="mx-auto md:mx-0 mt-8 text-center md:text-start">
               <button class="neon-button !text-white">
@@ -111,6 +114,7 @@ export default {
           "Until the first 100 projects, 1% of the non-circulating tokens that are not planned to be burned in that month will be burned with each new collaboration announcement.  ",
         content2:
           "Special staking offers will be made to qualified large investors to encourage them to buy WERK 1000X from the market and invest long-term.",
+        content3: "The most ambitious staking programs in Cryptocurrency history will be launched.",
         imgSrc: "collabortations.png",
       },
       {

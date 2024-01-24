@@ -4,8 +4,8 @@
     2024© WERK 1000X | All Rights Reserved
   </div>
   
-  <div class="text-center mt-2 max-w-lg px-4 md:px-0">
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium reprehenderit quos accusantium eos voluptas est suscipit.
+  <div class="text-center mt-4 font-medium max-w-lg px-4 text-sm md:px-0">
+    Contact us for additional information regarding Werk 1000X and to stay informed about upcoming events.
   </div>
 </div>
 <div class="w-full flex flex-col md:flex-row items-center justify-between max-w-5xl mx-auto pt-10 ">
