@@ -35,9 +35,9 @@
       >
     </div>
     <div class="rightSection w-full lg:w-1/2 group">
-      <div class="HeroImg bgchange w-full overflow-hidden" :class="{ 'animate-rotate ': isHovered }">
+      <div class="HeroImg bgchange w-[65%] md:w-full mx-auto overflow-hidden" :class="{ 'animate-rotate ': isHovered }">
         <img
-          class="px-4 lg:px-0 w-[95%]  animate-rotateWord mx-auto md:w-full h-full object-cover"
+          class="px-4 lg:px-0 w-full  animate-rotateWord mx-auto md:w-full h-full object-cover"
           src="../assets/logo5.svg"
           alt="image"
         />
