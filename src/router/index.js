@@ -9,6 +9,7 @@ const routes = [
     path: "/",
     name: "home",
     component: HomeView,
+    meta: { title: "WERK1000X" },
   },
 
   {
@@ -40,5 +41,8 @@ const router = createRouter({
     }
   },
 });
-
+router.beforeEach((to, from, next) => {
+  document.title = to.meta.title || "WERK1000X";
+  next();
+});
 export default router;

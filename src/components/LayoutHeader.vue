@@ -23,15 +23,24 @@
           :hovered="{ scale: 1.2 }"
           class="logo flex items-center text-3xl cursor-pointer"
         >
-          
-          <img src="../assets/logo5.svg" class="w-12 object-cover" alt="">
-          <div class="flex items-center text-3xl ml-2 ">
-             <div
-            class="font-serif text-3xl  relative"
-          >
-            <p class="bg-clip-text text-transparent bg-gradient-to-l from-mkSecondary to-white">WERK</p>
-            <p class="absolute top-1 -right-14 text-lg bg-clip-text text-transparent bg-gradient-to-l from-mkSecondary to-white">1000X</p>
-          </div>
+          <img
+            src="../assets/headerLogo.png"
+            class="w-12 object-cover"
+            alt=""
+          />
+          <div class="flex items-center text-3xl ml-2">
+            <div class="font-serif text-3xl relative">
+              <p
+                class="bg-clip-text text-transparent bg-gradient-to-l from-mkSecondary to-white"
+              >
+                WERK
+              </p>
+              <p
+                class="absolute top-1 -right-14 text-lg bg-clip-text text-transparent bg-gradient-to-l from-mkSecondary to-white"
+              >
+                1000X
+              </p>
+            </div>
           </div>
         </RouterLink>
         <ul
@@ -45,21 +54,32 @@
           <li
             class="hover:opacity-70 focus:opacity-70 transition-all duration-200 ease-linear cursor-pointer"
           >
-            <a href="https://werkpaper.netlify.app" target="_blank"
+            <a href="https://www.werk1000x.online" target="_blank"
               >WhitePaper</a
             >
           </li>
           <li
             class="opacity-70 focus:opacity-70 transition-all duration-200 ease-linear cursor-pointer relative group"
           >
-            <a href="#" @click="navigateTo('section1')" class="pointer-events-none">How To Buy</a>
-            <span class="absolute top-0 opacity-0 left-0 p-2 bg-mkDarkGray  w-full text-xs text-center rounded group-hover:translate-y-5 group-hover:opacity-100 transition-all duration-300 ease-linear translate-y-10">Coming soon ⏳ </span>
+            <a
+              href="#"
+              @click="navigateTo('section1')"
+              class="pointer-events-none"
+              >How To Buy</a
+            >
+            <span
+              class="absolute top-0 opacity-0 left-0 p-2 bg-mkDarkGray w-full text-xs text-center rounded group-hover:translate-y-5 group-hover:opacity-100 transition-all duration-300 ease-linear translate-y-10"
+              >Coming soon ⏳
+            </span>
           </li>
           <li
             class="opacity-70 focus:opacity-70 transition-all duration-200 ease-linear cursor-pointer relative group px-8"
           >
             <a href="#" class="pointer-events-none">Buy</a>
-            <span class="absolute top-0 opacity-0 left-0 p-2 bg-mkDarkGray  w-full text-xs text-center rounded group-hover:translate-y-5 group-hover:opacity-100 transition-all duration-300 ease-linear translate-y-10">Coming soon ⏳ </span>
+            <span
+              class="absolute top-0 opacity-0 left-0 p-2 bg-mkDarkGray w-full text-xs text-center rounded group-hover:translate-y-5 group-hover:opacity-100 transition-all duration-300 ease-linear translate-y-10"
+              >Coming soon ⏳
+            </span>
           </li>
         </ul>
       </div>
@@ -81,14 +101,24 @@
           :hovered="{ scale: 1.2 }"
           class="logo flex items-center text-3xl cursor-pointer"
         >
-          <img src="../assets/logo5.svg" class="w-12 object-cover" alt="">
-          <div class="flex items-center text-3xl ml-2 ">
-             <div
-            class="font-serif text-3xl  relative"
-          >
-            <p class="bg-clip-text text-transparent bg-gradient-to-l from-mkSecondary to-white">WERK</p>
-            <p class="absolute top-1 -right-14 text-lg bg-clip-text text-transparent bg-gradient-to-l from-mkSecondary to-white">1000X</p>
-          </div>
+          <img
+            src="../assets/headerLogo.png"
+            class="w-12 object-cover"
+            alt=""
+          />
+          <div class="flex items-center text-3xl ml-2">
+            <div class="font-serif text-3xl relative">
+              <p
+                class="bg-clip-text text-transparent bg-gradient-to-l from-mkSecondary to-white"
+              >
+                WERK
+              </p>
+              <p
+                class="absolute top-1 -right-14 text-lg bg-clip-text text-transparent bg-gradient-to-l from-mkSecondary to-white"
+              >
+                1000X
+              </p>
+            </div>
           </div>
         </RouterLink>
         <!-- hamburger menu -->
@@ -123,7 +153,7 @@
           </li>
           <li class="border-b border-b-mkSecondary">
             <a
-              href="https://werkpaper.netlify.app"
+              href="https://www.werk1000x.online"
               target="_blank"
               class="!flex items-center w-full px-4 py-6"
             >
@@ -146,10 +176,7 @@
             </a>
           </li>
           <li class="border-b border-b-mkSecondary">
-            <routerLink
-              to="#"
-              class="!flex items-center w-full px-4 py-6"
-            >
+            <routerLink to="#" class="!flex items-center w-full px-4 py-6">
               <span class="w-8 h-8">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -215,10 +242,17 @@
           Us on social media
         </div>
         <!-- Social media -->
-        <div class="Social-Media flex items-center w-full py-4 mx-auto" @click="closeNavMobile">
+        <div
+          class="Social-Media flex items-center w-full py-4 mx-auto"
+          @click="closeNavMobile"
+        >
           <ul class="flex justify-around items-center w-full">
             <li class="social-Icon p-4 rounded-full">
-              <a href="https://www.youtube.com/channel/UCQlgdA0AOCQEnl5gGSmwy3A" target="_blank" class="">
+              <a
+                href="https://www.youtube.com/channel/UCQlgdA0AOCQEnl5gGSmwy3A"
+                target="_blank"
+                class=""
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
@@ -304,6 +338,25 @@
                 </svg>
               </a>
             </li>
+            <li class="social-Icon p-4 rounded-full">
+              <a href="mailto:contact@werk1000x.com">
+                <svg
+                  width="24px"
+                  height="24px"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M16 12C16 14.2091 14.2091 16 12 16C9.79086 16 8 14.2091 8 12C8 9.79086 9.79086 8 12 8C14.2091 8 16 9.79086 16 12ZM16 12V13.5C16 14.8807 17.1193 16 18.5 16V16C19.8807 16 21 14.8807 21 13.5V12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21H16"
+                    stroke="#FFF"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+            </li>
           </ul>
         </div>
         <div class="border-b-mkSecondary border-b mt-2"></div>
@@ -349,7 +402,6 @@ export default {
       isNavOpen.value = !isNavOpen.value;
     };
 
-  
     //* Mobile'de scroll yönlendirmesi.
     const mobileNavigate = () => {
       isNavOpen.value = false;
@@ -358,7 +410,7 @@ export default {
     //* Mobile'de tıklanınca navbar kapama
     const closeNavMobile = () => {
       isNavOpen.value = false;
-    }
+    };
 
     return {
       headerBackgroundColor,
@@ -367,7 +419,7 @@ export default {
       toggleMenu,
       isDarkMode,
       mobileNavigate,
-      closeNavMobile
+      closeNavMobile,
     };
   },
 };

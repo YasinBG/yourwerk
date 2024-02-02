@@ -8,7 +8,7 @@
         <span
           class="bg-clip-text text-transparent bg-gradient-to-r from-mkSecondary to-white"
         >
-        Transaction Tool for the Entire WEB3 Ecosystem
+          Transaction Tool for the Entire WEB3 Ecosystem
         </span>
       </div>
       <p class="px-4 lg:px-0 lg:text-2xl font-semibold">
@@ -18,7 +18,7 @@
 
       <a
         v-if="isDarkMode"
-        href="https://werkpaper.netlify.app"
+        href="https://www.werk1000x.online"
         target="_blank"
         class="neon-button !mb-12 lg:mb-0 !text-white"
         @mouseover="handleHover"
@@ -35,9 +35,12 @@
       >
     </div>
     <div class="rightSection w-full lg:w-1/2 group">
-      <div class="HeroImg bgchange w-[65%] md:w-full mx-auto overflow-hidden" :class="{ 'animate-rotate ': isHovered }">
+      <div
+        class="HeroImg bgchange w-[65%] md:w-full mx-auto overflow-hidden"
+        :class="{ 'animate-rotate ': isHovered }"
+      >
         <img
-          class="px-4 lg:px-0 w-full  animate-rotateWord mx-auto md:w-full h-full object-cover"
+          class="px-4 lg:px-0 w-full animate-rotateWord mx-auto md:w-full h-full object-cover"
           src="../assets/logo5.svg"
           alt="image"
         />
@@ -45,8 +48,16 @@
     </div>
   </div>
   <!-- bubble -->
-  <div class="bubble  hidden md:flex absolute w-full items-center justify-around bottom-20">
-    <img v-for="WerkToken in 11" :key="WerkToken" src="../assets/token.png" class="w-6 " alt="">
+  <div
+    class="bubble hidden md:flex absolute w-full items-center justify-around bottom-20"
+  >
+    <img
+      v-for="WerkToken in 11"
+      :key="WerkToken"
+      src="../assets/token.png"
+      class="w-6"
+      alt=""
+    />
   </div>
   <div
     class="background bgchange relative"
@@ -128,34 +139,32 @@
     ></div>
   </div>
   <div class="absolute top-0 left-0">
-
     <StarView />
   </div>
-
 </template>
 
 <script>
 import StarView from "@/views/StarView.vue";
 import { inject, ref } from "vue";
 export default {
-    setup() {
-        //* Button hover svg opacity
-        const isHovered = ref(false);
-        const handleHover = () => {
-            isHovered.value = true;
-        };
-        const handleHoverOut = () => {
-            isHovered.value = false;
-        };
-        const isDarkMode = inject("isDarkMode");
-        return {
-            isDarkMode,
-            isHovered,
-            handleHoverOut,
-            handleHover,
-        };
-    },
-    components: { StarView }
+  setup() {
+    //* Button hover svg opacity
+    const isHovered = ref(false);
+    const handleHover = () => {
+      isHovered.value = true;
+    };
+    const handleHoverOut = () => {
+      isHovered.value = false;
+    };
+    const isDarkMode = inject("isDarkMode");
+    return {
+      isDarkMode,
+      isHovered,
+      handleHoverOut,
+      handleHover,
+    };
+  },
+  components: { StarView },
 };
 </script>
 
