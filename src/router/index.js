@@ -4,6 +4,7 @@ import HomeView from "../views/HomeView.vue";
 // import PrivacyView from "../views/PrivacyView.vue";
 // import TermsConditionView from "../views/TermsConditionView.vue";
 // import PresalePublicView from "../views/PresalePublicView.vue";
+import BuyView from "../views/BuyView.vue";
 const routes = [
   {
     path: "/",
@@ -32,7 +33,8 @@ const routes = [
   {
     path: "/Buy",
     name: "Buy",
-    component: () => import("../views/BuyView.vue"),
+    component: BuyView,
+    // component: () => import("../views/BuyView.vue"),
   },
 ];
 

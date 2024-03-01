@@ -9,22 +9,22 @@
     <!-- Desktop Navbar -->
     <div class="wrapper hidden lg:block max-w-5xl mx-auto">
       <div class="primary-header flex justify-between items-center">
+        <!-- v-motion
+        :initial="{ opacity: 0, y: -100 }"
+        :enter="{
+          opacity: 1,
+          y: 0,
+          scale: 1,
+          transition: { duration: 700 },
+        }"
+        :variants="{ custom: { scale: 2 } }"
+        :hovered="{ scale: 1.2 }" -->
         <RouterLink
           to="/"
-          v-motion
-          :initial="{ opacity: 0, y: -100 }"
-          :enter="{
-            opacity: 1,
-            y: 0,
-            scale: 1,
-            transition: { duration: 700 },
-          }"
-          :variants="{ custom: { scale: 2 } }"
-          :hovered="{ scale: 1.2 }"
-          class="logo flex items-center text-3xl cursor-pointer"
+          class="logo flex items-center text-3xl cursor-pointer hover:scale-125 transition-all duration-200 ease-linear"
         >
           <img
-            src="../assets/headerLogo.png"
+            :src="require(`../assets/headerLogo.png`)"
             class="w-12 h-12 object-cover"
             alt="werk1000x"
           />
@@ -301,7 +301,7 @@
               </a>
             </li>
             <li class="social-Icon p-4 rounded-full">
-              <a href="https://twitter.com/Werk_1000X" target="_blank">
+              <a href="https://twitter.com/Werk1000X" target="_blank">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   xmlns:xlink="http://www.w3.org/1999/xlink"
