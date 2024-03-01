@@ -56,8 +56,8 @@
           <div class="flex justify-center md:w-1/2">
             <img
               :src="require(`../assets/${panel.imgSrc}`)"
-              alt=""
-              class="relative w-full h-full md:h-96 rounded-xl object-cover z-10"
+              :alt="panel.title"
+              class="relative w-full h-full md:h-full md:w-96 rounded-3xl border shadow-lg shadow-mkSecondary border-mkSecondary object-cover z-10"
             />
           </div>
           <!-- Panel Content -->
@@ -118,7 +118,7 @@ export default {
           "The total number of tokens will be reduced from 1.000 to 500 in one year.",
         content2:
           " A fixed number of 41,66667 tokens will be burned each month according to the schedule.",
-        imgSrc: "burn.png",
+        imgSrc: "b1.jpg",
       },
       {
         title: "Collaborations & Staking",
@@ -128,7 +128,7 @@ export default {
           "Special staking offers will be made to qualified large investors to encourage them to buy WERK 1000X from the market and invest long-term.",
         content3:
           "The most ambitious staking programs in Cryptocurrency history will be launched.",
-        imgSrc: "collabortations.png",
+        imgSrc: "c1.jpg",
       },
       {
         title: "Win Win",
@@ -136,7 +136,7 @@ export default {
           "Collaborating Web3 applications and games can earn a commission of 1-5% on transactions made with WERK 1000X, as per the agreements. ",
         content2:
           "In addition to the amount specified in the burning schedule, tokens equivalent to the total monthly commission volume will also be burned.",
-        imgSrc: "win.png",
+        imgSrc: "w1.jpg",
       },
     ]);
 

@@ -5,16 +5,16 @@
   >
     <div class="leftSection lg:w-2/3 space-y-12 lg:text-start text-center">
       <div class="text-5xl font-extrabold ...">
-        <span
+        <h1
           class="bg-clip-text text-transparent bg-gradient-to-r from-mkSecondary to-white"
         >
           Transaction Tool for the Entire WEB3 Ecosystem
-        </span>
+        </h1>
       </div>
-      <p class="px-4 lg:px-0 lg:text-2xl font-semibold">
+      <h2 class="px-4 lg:px-0 lg:text-2xl font-semibold">
         An innovative token project offering an accessible, secure, and
         sustainable WEB3 experience for everyone.
-      </p>
+      </h2>
 
       <a
         v-if="isDarkMode"
@@ -34,17 +34,53 @@
         >Learn More</a
       >
     </div>
-    <div class="rightSection w-full lg:w-1/2 group">
-      <div
+    <div class="rightSection w-full lg:w-[60%] group">
+      <!-- <div
         class="HeroImg bgchange w-[65%] md:w-full mx-auto overflow-hidden"
         :class="{ 'animate-rotate ': isHovered }"
       >
         <img
           class="px-4 lg:px-0 w-full animate-rotateWord mx-auto md:w-full h-full object-cover"
-          src="../assets/logo5.svg"
+          src="../assets/logo.png"
           alt="image"
         />
-      </div>
+      </div> -->
+      <RouterLink
+        to="/Buy"
+        class="shadow-mkSecondary shadow-2xl rounded-lg inline-block p-4 w-full group"
+      >
+        <div class="relative">
+          <div class="">
+            <iframe
+              src="https://tokentool.bitbond.com/tokensale/0x8E2Dbf1224eE9e37dd6acD8F819E971dFA67f2E5?chainId=56"
+              width="100%"
+              height="450px"
+              frameborder="0"
+              name="tokensale"
+              class="pointer-events-none rounded-lg"
+            ></iframe>
+          </div>
+          <div
+            class="opacity-0 group-hover:opacity-100 absolute top-0 left-0 w-full h-full bg-black/80 z-50 transition-all duration-300 ease-linear"
+          >
+            <div class="relative w-full h-full">
+              <div
+                class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-full"
+              >
+                <span
+                  class="text-mkSecondary flex items-center justify-center h-full font-semibold underline underline-offset-4 animate-pulse"
+                  >Click for purchase page</span
+                >
+              </div>
+              <img
+                class="object-cover w-44 h-44 absolute top-3/4 left-1/2 -translate-x-1/2 -translate-y-3/4 pt-10 pl-10 animate-pulse"
+                src="../assets/click.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </RouterLink>
     </div>
   </div>
   <!-- bubble -->

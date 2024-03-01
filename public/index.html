@@ -1,21 +1,42 @@
 <!DOCTYPE html>
-<html lang="" class="dark">
+<html lang="en" class="dark">
   <head>
-    <meta charset="utf-8" />
+    <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <link rel="icon" href="<%= BASE_URL %>favicon.ico" />
     <title><%= htmlWebpackPlugin.options.title %></title>
+    <meta
+      name="description"
+      content="Discover an innovative token project that provides an accessible, secure, and sustainable experience in the WEB3 ecosystem. Our platform offers seamless token trading and transaction processes, catering to enthusiasts, investors, and followers of blockchain projects and WEB3 technology. Explore our integrated tools and take your WEB3 journey to the next level."
+    />
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-N9ZNRDCZ");
+    </script>
+    <!-- End Google Tag Manager -->
   </head>
   <body class="dark:bg-mkPrimary text-mkWhite">
-    <noscript>
-      <strong
-        >We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work
-        properly without JavaScript enabled. Please enable it to
-        continue.</strong
-      >
-    </noscript>
+    <noscript> </noscript>
     <div id="app"></div>
-    <!-- built files will be auto injected -->
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-N9ZNRDCZ"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
   </body>
 </html>

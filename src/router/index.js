@@ -1,31 +1,38 @@
 import { createRouter, createWebHistory } from "vue-router";
 import HomeView from "../views/HomeView.vue";
 
-import PrivacyView from "../views/PrivacyView.vue";
-import TermsConditionView from "../views/TermsConditionView.vue";
-import PresalePublicView from "../views/PresalePublicView.vue";
+// import PrivacyView from "../views/PrivacyView.vue";
+// import TermsConditionView from "../views/TermsConditionView.vue";
+// import PresalePublicView from "../views/PresalePublicView.vue";
 const routes = [
   {
     path: "/",
     name: "home",
     component: HomeView,
-    meta: { title: "WERK1000X" },
+    meta: {
+      title: "WERK1000X | Transaction Tool for the Entire WEB3 Ecosystem",
+    },
   },
 
   {
     path: "/Privacy",
     name: "Privacy",
-    component: PrivacyView,
+    component: () => import("../views/PresalePublicView.vue"),
   },
   {
     path: "/TermsCondition",
     name: "TermsCondition",
-    component: TermsConditionView,
+    component: () => import("../views/TermsConditionView.vue"),
   },
   {
     path: "/PresalePublic",
     name: "PresalePublic",
-    component: PresalePublicView,
+    component: () => import("../views/PresalePublicView.vue"),
+  },
+  {
+    path: "/Buy",
+    name: "Buy",
+    component: () => import("../views/BuyView.vue"),
   },
 ];
 
@@ -40,9 +47,13 @@ const router = createRouter({
       return { top: 0 };
     }
   },
+  linkActiveClass: "active-link",
 });
 router.beforeEach((to, from, next) => {
-  document.title = to.meta.title || "WERK1000X";
+  document.title =
+    to.meta.title ||
+    "WERK1000X | Transaction Tool for the Entire WEB3 Ecosystem";
   next();
 });
+
 export default router;

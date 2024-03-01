@@ -2,7 +2,7 @@
   <div>
     <ul class="flex justify-center items-center mx-auto">
       <li class="mx-4 text-center items-center">
-        <a href="https://twitter.com/Werk_1000X" target="_blank">
+        <a href="https://twitter.com/Werk1000X" target="_blank">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             xmlns:xlink="http://www.w3.org/1999/xlink"

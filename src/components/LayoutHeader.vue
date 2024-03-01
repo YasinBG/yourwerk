@@ -25,8 +25,8 @@
         >
           <img
             src="../assets/headerLogo.png"
-            class="w-12 object-cover"
-            alt=""
+            class="w-12 h-12 object-cover"
+            alt="werk1000x"
           />
           <div class="flex items-center text-3xl ml-2">
             <div class="font-serif text-3xl relative">
@@ -73,13 +73,18 @@
             </span>
           </li>
           <li
-            class="opacity-70 focus:opacity-70 transition-all duration-200 ease-linear cursor-pointer relative group px-8"
+            class="transition-all duration-200 ease-linear cursor-pointer relative group px-8"
           >
-            <a href="#" class="pointer-events-none">Buy</a>
-            <span
+            <RouterLink
+              to="/Buy"
+              class="bg-mkSecondary px-8 py-2 rounded-xl text-white hover:bg-white hover:!text-mkSecondary duration-300 ease-linear"
+              :class="ActiveClass"
+              >Buy</RouterLink
+            >
+            <!-- <span
               class="absolute top-0 opacity-0 left-0 p-2 bg-mkDarkGray w-full text-xs text-center rounded group-hover:translate-y-5 group-hover:opacity-100 transition-all duration-300 ease-linear translate-y-10"
               >Coming soon ⏳
-            </span>
+            </span> -->
           </li>
         </ul>
       </div>
@@ -103,8 +108,8 @@
         >
           <img
             src="../assets/headerLogo.png"
-            class="w-12 object-cover"
-            alt=""
+            class="w-12 h-12 object-cover"
+            alt="werk1000x"
           />
           <div class="flex items-center text-3xl ml-2">
             <div class="font-serif text-3xl relative">
@@ -130,7 +135,10 @@
           <div class="hamburger"></div>
         </div>
       </div>
-      <nav class="site-nav mobileBg" :class="{ 'site-nav--open': isNavOpen }">
+      <nav
+        class="site-nav mobileBg z-50"
+        :class="{ 'site-nav--open': isNavOpen }"
+      >
         <ul @click="closeNavMobile">
           <li class="flex items-center border-b border-b-mkSecondary">
             <router-link to="/" class="!flex items-center w-full px-4 py-6">
@@ -196,7 +204,7 @@
             </routerLink>
           </li>
           <li class="">
-            <routerLink to="#" class="!flex items-center w-full px-4 py-6">
+            <routerLink to="/Buy" class="!flex items-center w-full px-4 py-6">
               <span class="mr-4">
                 <svg
                   fill="#FFF"
@@ -366,7 +374,8 @@
 </template>
 
 <script>
-import { inject, onMounted, onUnmounted, ref, watch } from "vue";
+import { computed, inject, onMounted, onUnmounted, ref, watch } from "vue";
+import { useRoute } from "vue-router";
 export default {
   setup() {
     // Header
@@ -412,6 +421,16 @@ export default {
       isNavOpen.value = false;
     };
 
+    // Buy Button
+
+    const route = useRoute();
+
+    const isActiveLink = route.name === "Buy";
+
+    const ActiveClass = computed(() => {
+      return isActiveLink ? ["active-link", "activeButton"] : "inactiveButton";
+    });
+
     return {
       headerBackgroundColor,
       updateScroll,
@@ -420,12 +439,19 @@ export default {
       isDarkMode,
       mobileNavigate,
       closeNavMobile,
+      ActiveClass,
     };
   },
 };
 </script>
 
 <style lang="css">
+/* Buy Page Active Link Dynamic Class */
+.activeButton {
+  background: transparent !important;
+  border: 1px solid #f89844;
+}
+
 .headerImgBg {
   /* background: url("../assets/mkover.webp"); */
   /* background: linear-gradient(to right, #103b68, #241b28);
@@ -473,7 +499,8 @@ export default {
 /* Mobile Link */
 .site-nav {
   position: absolute;
-  top: 100%;
+  /* top: 100%; */
+  top: 96px;
   right: 0%;
   /* background: #252525; */
   background: #14161a;
